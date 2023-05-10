@@ -1,0 +1,23 @@
+{
+  "name": "middleearthmap",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.56.0",
+    "vite": "^3.2.3"
+  },
+  "description": "🔗 Link: [middleearthmap.app](https://middleearthmap.app/)",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

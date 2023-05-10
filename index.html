@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora"
+          rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link href="assets/icons/the_one_ring.ico" rel="icon"/>
+    <link href="/leaflet/leaflet.css" rel="stylesheet"/>
+    <script src="/leaflet/leaflet.js"></script>
+    <script src="/leaflet/smooth_bounce/bundle.min.js"></script>
+    <link href="/leaflet/marker_cluster/MarkerCluster.css" rel="stylesheet"/>
+    <link href="/leaflet/marker_cluster/MarkerCluster.Default.css" rel="stylesheet"/>
+    <script src="/leaflet/marker_cluster/leaflet.markercluster.js"></script>
+
+    <title>Middle-Earth Map</title>
+    <meta content="Discover Middle Earth during Third Age with this interactive map." name="description"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+<a href="#" id="open-btn">
+    <img alt="open filters" src="assets/icons/layers.svg">
+</a>
+<div id="loader-screen">
+    <h1>
+        Welcome to Middle-Earth
+    </h1>
+    <div id="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<main id="map">
+</main>
+
+<aside id="filters-container">
+        <span class="material-symbols-outlined" id="close-btn">
+            <img alt="close filters" src="assets/icons/close.svg">
+        </span>
+    <section id="filters">
+        <h1 id="main-title">tus muertos el mapa interactivo</h1>
+        <!-- <div id="site-description">Discover Middle-Earth during the Third Age</div> -->
+
+        <fieldset id="filters-quests">
+            <legend>Quests</legend>
+
+            <div>
+                <input data-category="quests" data-filter="all" id="all-quests" name="all-quests" type="checkbox">
+                <label for="all-quests">All</label>
+            </div>
+
+            <div>
+                <input data-category="quests" data-filter="erebor" id="erebor-quest" name="erebor-quest"
+                       type="checkbox">
+                <label for="erebor-quest">Quest for Erebor</label>
+            </div>
+
+            <div>
+                <input data-category="quests" data-filter="ring" id="ring-quest" name="ring-quest"
+                       type="checkbox">
+                <label for="ring-quest">Quest of the Ring</label>
+            </div>
+            <div>
+                <input data-category="quests" data-filter="caos" id="caos-quest" name="caos-quest"
+                       type="checkbox">
+                <label for="caos-quest">Caos events</label>
+            </div>
+        </fieldset>
+
+        <fieldset id="filters-places">
+            <legend>Places</legend>
+
+            <div>
+                <input data-category="places" data-filter="all" id="all-places" name="all-places" type="checkbox">
+                <label for="all-places">All</label>
+            </div>
+
+            <div>
+                <input data-category="places" data-filter="human" id="human-places" name="human-places" type="checkbox">
+                <label for="human-places">Humans</label>
+            </div>
+
+            <div>
+                <input data-category="places" data-filter="elven" id="elven-places" name="elven-places" type="checkbox">
+                <label for="elven-places">Elves</label>
+            </div>
+
+            <div>
+                <input data-category="places" data-filter="dwarven" id="dwarven-places" name="dwarven-places"
+                       type="checkbox">
+                <label for="dwarven-places">Dwarves</label>
+            </div>
+
+            <div>
+                <input data-category="places" data-filter="hobbit" id="hobbit-places" name="hobbit-places"
+                       type="checkbox">
+                <label for="hobbit-places">Hobbits</label>
+            </div>
+
+            <div>
+                <input data-category="places" data-filter="dark" id="dark-places" name="dark-places" type="checkbox">
+                <label for="dark-places">Evil</label>
+            </div>
+            <div>
+                <input data-category="places" data-filter="ogre" id="ogre-places" name="ogre-places" type="checkbox">
+                <label for="ogre-places">Ogre</label>
+            </div>
+            <div>
+                <input data-category="places" data-filter="elfhel" id="elfhel-places" name="elfhel-places" type="checkbox" >
+                <label for="elfhel-places">Elf</label>
+            </div>
+        </fieldset>
+
+        <fieldset id="filters-events">
+            <legend>Events</legend>
+
+            <div>
+                <input data-category="events" data-filter="all" id="all-events" name="all-events" type="checkbox">
+                <label for="all-events">All</label>
+            </div>
+
+            <div>
+                <input data-category="events" data-filter="battle" id="battle-events" name="battle-events"
+                       type="checkbox">
+                <label for="battle-events">Battles</label>
+            </div>
+
+            <div>
+                <input data-category="events" data-filter="death" id="death-events" name="death-events"
+                       type="checkbox">
+                <label for="death-events">Deaths</label>
+            </div>
+
+            <div>
+                <input data-category="events" data-filter="encounter" id="encounter-events" name="encounter-events"
+                       type="checkbox">
+                <label for="encounter-events">Encounters</label>
+            </div>
+        </fieldset>
+
+        <!-- <fieldset id="filters-paths">
+            <legend>Paths</legend>
+
+            <div>
+                <input data-category="paths" data-filter="all" id="all-paths" name="all-paths" type="checkbox">
+                <label for="all-paths">All</label>
+            </div>
+
+            <div>
+                <input data-category="paths" data-filter="thorin" id="thorin-path" name="thorin-path"
+                       type="checkbox">
+                <label for="thorin-path">Thorin and Company</label>
+            </div>
+
+            <div>
+                <input data-category="paths" data-filter="frodo_sam" id="frodo_sam-path" name="frodo_sam-path"
+                       type="checkbox">
+                <label for="frodo_sam-path">Frodo & Sam</label>
+            </div>
+
+            <div>
+                <input data-category="paths" data-filter="merry_pippin" id="merry_pippin-path" name="merry_pippin-path"
+                       type="checkbox">
+                <label for="merry_pippin-path">Merry & Pippin</label>
+            </div>
+
+            <div>
+                <input data-category="paths" data-filter="legolas_gimli" id="legolas_gimli-path"
+                       name="legolas_gimli-path"
+                       type="checkbox">
+                <label for="legolas_gimli-path">Gimli & Legolas</label>
+            </div>
+
+            <div>
+                <input data-category="paths" data-filter="boromir" id="boromir-path" name="boromir-path"
+                       type="checkbox">
+                <label for="boromir-path">Boromir</label>
+            </div>
+
+            <div>
+                <input data-category="paths" data-filter="aragorn" id="aragorn-path" name="aragorn-path"
+                       type="checkbox">
+                <label for="aragorn-path">Aragorn</label>
+            </div>
+
+            <div>
+                <input data-category="paths" data-filter="gandalf_grey" id="gandalf_grey-path" name="gandalf_grey-path"
+                       type="checkbox">
+                <label for="gandalf_grey-path">Gandalf the Grey</label>
+            </div>
+
+            <div>
+                <input data-category="paths" data-filter="gandalf_white" id="gandalf_white-path"
+                       name="gandalf_white-path"
+                       type="checkbox">
+                <label for="gandalf_white-path">Gandalf the White</label>
+            </div>
+        </fieldset> -->
+
+        <fieldset id="filters-spawn">
+            <legend>Spawn</legend>
+            <div>
+                <input data-category="spawn" data-filter="caos" id="caos-places" name="caos-places" type="checkbox">
+                <label for="caos-places">Caos Spawn</label>
+            </div>
+        </fieldset>
+
+        <footer>
+            Created by el puto amo aka peter parker
+        </footer>
+    </section>
+  
+
+
+</aside>
+
+<script src="index.js" type="module"></script>
+</body>
+</html>
