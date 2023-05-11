@@ -51,6 +51,64 @@ aside #close-btn {
   display: flex;
   justify-content: center;
 }
+/*Quito el recuadro del checkbox*/
+.iconaside{
+  width:30px;
+}
+#all-quests{
+  display: none;
+}
+#erebor-quest{
+  display: none;
+}
+#ring-quest{
+  display: none;
+}
+#caos-quest{
+  display: none;
+}
+#all-places{
+  display: none;
+}
+#human-places{
+  display: none;
+}
+#elven-places{
+  display: none;
+}
+#dwarven-places{
+  display: none;
+}
+#hobbit-places{
+  display: none;
+}
+#dark-places{
+  display: none;
+}
+#ogre-places{
+  display: none;
+}
+#elfhel-places{
+  display: none;
+}
+#all-events{
+  display: none;
+}
+#battle-events{
+  display: none;
+}
+#death-events{
+  display: none;
+}
+#encounter-events{
+  display: none;
+}
+#caos-places{
+  display: none;
+}
+
+
+
 /*Posición del botón de cierre y transición de cierre*/
 @media (min-width: 1000px) {
   aside #close-btn {

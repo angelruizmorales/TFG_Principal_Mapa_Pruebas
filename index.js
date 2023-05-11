@@ -197,18 +197,16 @@ renderPathsFromFilters(getFilters());
 
 ////hacer una funciona que cuente valores en el json y nos devuelva la cantidad almacenada en una variable para luego mandarla al assets
  
-function countmarkers(x, y){
-    let countmarkers = 0;
-    let position = 0;
-
-
-    while ((position = text.indexof(y, position)) !== -1){
-        ++countmarkers;
-
-        position += y.length;
-    }
-
-    return countmarkers
-} 
-let text = 'hola como estas hola hola';
-console.log(countmarkers(x, 'hola'))
+// let view = "";
+// view = `<div> ${markersData.title} </div>`;
+// let oTags = pruebas.tags;
+// for (const [key, value] of Object.entries(oTags)){
+//     let arr = value;
+//     arr.forEach((val) => {
+//         if (val==valor)
+//         view += `<div>Ok:${val}</div>`;
+//          else
+//          view += `<div>Ko:${val}</div>`;
+//         }
+//         );
+// }
