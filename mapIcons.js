@@ -17,10 +17,10 @@ const popupAnchor = [3, -27];
 export const battleIcon = L.icon({
     iconUrl: battleImg,
 
-    iconSize: iconSize, // size of the icon
-    iconAnchor: iconAnchor, // point of the icon which will correspond to marker's location
-    popupAnchor: popupAnchor, // point from which the popup should open relative to the iconAnchor
-    autoPanPaddingTopLeft: L.Point(1000, 1000)
+    iconSize: iconSize, // Tamaño
+    iconAnchor: iconAnchor, //posición del icono que depende de su marcador 
+    popupAnchor: popupAnchor, // posición en la que se abre el popup dependiedo del iconAnchor
+    // autoPanPaddingTopLeft: L.Point(1000, 1000)
 });
 
 export const deathIcon = L.icon({

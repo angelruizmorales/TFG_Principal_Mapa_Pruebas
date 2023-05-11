@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora"
           rel="stylesheet">
     <link href="index.css" rel="stylesheet">
-    <link href="assets/icons/the_one_ring.ico" rel="icon"/>
+    <link href="assets/icons/warhammer.svg" rel="icon"/>
     <link href="/leaflet/leaflet.css" rel="stylesheet"/>
     <script src="/leaflet/leaflet.js"></script>
     <script src="/leaflet/smooth_bounce/bundle.min.js"></script>
@@ -13,17 +13,18 @@
     <link href="/leaflet/marker_cluster/MarkerCluster.Default.css" rel="stylesheet"/>
     <script src="/leaflet/marker_cluster/leaflet.markercluster.js"></script>
 
-    <title>Middle-Earth Map</title>
+    <title>Warhammer Fantasy Map</title>
     <meta content="Discover Middle Earth during Third Age with this interactive map." name="description"/>
     <meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
 <body>
+    
 <a href="#" id="open-btn">
-    <img alt="open filters" src="assets/icons/layers.svg">
+    <img alt="open filters" src="assets/icons/compass.svg">
 </a>
 <div id="loader-screen">
     <h1>
-        Welcome to Middle-Earth
+        Welcome to Warhammer Fantasy
     </h1>
     <div id="lds-ring">
         <div></div>
@@ -31,18 +32,17 @@
         <div></div>
         <div></div>
     </div>
+
 </div>
 <main id="map">
 </main>
-
 <aside id="filters-container">
         <span class="material-symbols-outlined" id="close-btn">
             <img alt="close filters" src="assets/icons/close.svg">
         </span>
     <section id="filters">
-        <h1 id="main-title">tus muertos el mapa interactivo</h1>
+        <h1 id="main-title">Warhammer Fantasy</h1>
         <!-- <div id="site-description">Discover Middle-Earth during the Third Age</div> -->
-
         <fieldset id="filters-quests">
             <legend>Quests</legend>
 
@@ -208,13 +208,11 @@
         </fieldset>
 
         <footer>
-            Created by el puto amo aka peter parker
+            
         </footer>
     </section>
-  
-
-
 </aside>
+
 
 <script src="index.js" type="module"></script>
 </body>

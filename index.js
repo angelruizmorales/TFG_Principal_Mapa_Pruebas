@@ -3,6 +3,7 @@ import markersData from './assets/data/markers.json';
 import pathsData from './assets/data/paths.json';
 import {battleIcon, darkIcon, deathIcon, dwarfIcon, elfIcon, encounterIcon, hobbitIcon, humanIcon, ogreIcon, elfhelIcon} from "./mapIcons.js";
 
+//Defino el tamaño del zoom
 const map = L.map('map', {
     crs: L.CRS.Simple,
     minZoom: -2,
@@ -29,7 +30,7 @@ map.addLayer(cluster);
 
 const pathsLayer = L.layerGroup([]);
 map.addLayer(pathsLayer)
-//me devuelve la informacion de cada punto de interes como su nombre, descripción, fecha... "solo de los puntos de interes de los path lo hacemos en otra"
+//me devuelve la informacion de cada punto de interes como su nombre, descripción, fecha... "solo de los puntos de interes, de los path lo hacemos en otra"
 const createInfoDialog = (data) => {
     let info = ``;
     if (data.title) {
@@ -82,7 +83,7 @@ const renderMarkersFromFilters = (filters) => {
             }
         }
         if (isRendered) {
-            markers.push(createMarker(map, m).setBouncingOptions({
+            markers.push(createMarker(map, m).setBouncingOptions({ //setBouncingOptions es para la animación del boto de los iconos.
                 elastic: false,
                 bounceHeight: 5
             }).addEventListener('mouseover', function () {
@@ -183,20 +184,31 @@ renderMarkersFromFilters(getFilters());
 renderPathsFromFilters(getFilters());
 
 
+//Al hacer click me devuelve la posición en el mapa   /////Tamaño modificado en el index.css ".leaflet-popup" es de manera global ver si es posible cambiar el tamaño solo de este.
+// var popup = L.popup();
+// function onMapClick(e) {
+//     popup
+//         .setLatLng(e.latlng)
+//         .setContent("x:" +  e.latlng.lat.toString() + "<br>"+ "y:" +  e.latlng.lng.toString())
+//         .openOn(map);
+// }
 
-//Al hacer click me devuelve la posición en el mapa   /////falta cambiar el tamaño del popup
-var popup = L.popup();
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("x:" +  e.latlng.lat.toString() + "<br>"+ "y:" +  e.latlng.lng.toString())
-        .openOn(map);
-}
-
-map.on('click', onMapClick);
+// map.on('click', onMapClick);
 
 ////hacer una funciona que cuente valores en el json y nos devuelva la cantidad almacenada en una variable para luego mandarla al assets
-var x = 0;
-function cont(){
+ 
+function countmarkers(x, y){
+    let countmarkers = 0;
+    let position = 0;
 
-}
+
+    while ((position = text.indexof(y, position)) !== -1){
+        ++countmarkers;
+
+        position += y.length;
+    }
+
+    return countmarkers
+} 
+let text = 'hola como estas hola hola';
+console.log(countmarkers(x, 'hola'))

@@ -3,6 +3,7 @@
   font-family: RingBearer;
   src: url("./assets/fonts/RingbearerMedium.ttf");
 }
+/* Desplegable */
 aside {
   display: flex;
   flex-direction: column;
@@ -20,17 +21,20 @@ aside {
   box-shadow: -7px 5px 7px -1px rgba(0, 0, 0, 0.63);
   overflow: visible;
 }
+/*Tamaño del desplegable ancho*/
 @media (min-width: 1000px) {
   aside {
     width: 30vw;
   }
 }
+/*El movimiento del desplegable*/
 aside.active {
   transform: translateX(0%);
 }
 aside.active #close-btn {
   transform: translateX(0%);
 }
+/*Botón cerrar desplegable*/
 aside #close-btn {
   text-decoration: none;
   color: black;
@@ -47,6 +51,7 @@ aside #close-btn {
   display: flex;
   justify-content: center;
 }
+/*Posición del botón de cierre y transición de cierre*/
 @media (min-width: 1000px) {
   aside #close-btn {
     left: -1.5rem;
@@ -59,6 +64,7 @@ aside #close-btn:hover {
   opacity: 0.9;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.63);
 }
+/*Tamaño del título , sombra , posición*/
 aside #main-title {
   font-size: 1.8rem;
   margin: 2rem 0 1rem 0;
@@ -69,6 +75,7 @@ aside #main-title {
 aside #site-description {
   text-align: center;
 }
+/*Tamaño del desplegable largo*/
 aside #filters {
   padding: 1rem 2rem;
   overflow-y: auto;
@@ -76,6 +83,7 @@ aside #filters {
   flex-direction: column;
   height: 100%;
 }
+/*Tamaño letras puntos de interes dentro del recuadro , posición , margenes, sombra del recuadro*/
 aside #filters fieldset {
   display: flex;
   flex-wrap: wrap;
@@ -87,26 +95,31 @@ aside #filters fieldset {
   box-shadow: -5px 3px 7px -1px rgba(0, 0, 0, 0.5);
   font-size: 1.2rem;
 }
+/*Tamaño de las letras del título de cada apartado*/
 aside #filters fieldset legend {
   font-size: 1.5rem;
   margin-right: 2rem;
   font-weight: bold;
   padding: 0 1rem;
 }
+/*Footer*/
 aside footer {
   margin-top: auto;
   text-align: center;
   padding-top: 2rem;
 }
+/*Por debajo del footer*/
 aside footer .credits {
   font-size: 0.8rem;
   margin-bottom: 1rem;
 }
+/*Tamaño del popup que trae leaflet, afecta de manera general a todos los popup, a no ser que el popup tenga una clase que le afecte específicamente*/
 .leaflet-popup {
   width: 90vw;
   max-width: 30rem;
   z-index: 420;
 }
+/*Color del popup leaflet*/
 .leaflet-popup .leaflet-popup-content-wrapper {
   background: #F9F4ED;
 }
@@ -128,26 +141,32 @@ aside footer .credits {
     padding: 1rem 2rem;
   }
 }
+/*Se aplica a la etiqueta title*/
 .leaflet-popup .title {
   font-weight: bold;
   font-size: 1.4rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid #cecece;
   padding-bottom: 1rem;
+  
 }
+/*Se aplica a la etiqueta date*/
 .leaflet-popup .date {
   font-weight: bold;
   font-size: 1rem;
 }
+/*Se aplica a la etiqueta description*/
 .leaflet-popup .description {
   font-size: 1rem;
   line-height: 1.4rem;
 }
+/*Posición del cuadro del enlace*/
 .leaflet-popup .info-link-container {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
 }
+/*El cuador del enlace*/
 .leaflet-popup a.info-link {
   border: 1px solid black;
   background-color: rgba(0, 0, 0, 0.78);
@@ -155,14 +174,16 @@ aside footer .credits {
   text-decoration: none;
   color: white;
   text-align: center;
+  font-size: 1rem;
 }
+/*Hover del cuadro del enlace*/
 .leaflet-popup a.info-link:hover {
   opacity: 0.9;
   color: aliceblue;
   text-decoration: underline;
 }
-
-.path-tooltip {
+/*Info del path al poner el mouse encima*/
+/* .path-tooltip {
   background: #F9F4ED !important;
   border-radius: 20px !important;
   padding: 1rem !important;
@@ -177,8 +198,9 @@ aside footer .credits {
 }
 .path-tooltip .path-date {
   font-weight: bold;
-}
+} */
 
+/*Container del mapa y color. Tamaño del mapa*/
 main.leaflet-container {
   height: 100vh;
   width: 100vw;
@@ -186,7 +208,7 @@ main.leaflet-container {
   background: rgb(32, 32, 32);
   font-family: "Lora", serif;
 }
-
+/*Tamaño de los iconos*/
 .leaflet-marker-icon {
   width: 1.8rem !important;
   height: 1.8rem !important;
@@ -194,7 +216,7 @@ main.leaflet-container {
 .leaflet-marker-icon:hover {
   opacity: 0.7 !important;
 }
-
+/*Cluster color , tamaño, border-radius*/
 .marker-cluster {
   background: transparent !important;
 }
@@ -210,10 +232,13 @@ main.leaflet-container {
   font-weight: bold;
   line-height: 1.7rem;
 }
-
+/*Aquí controlo el body de la página*/
 html, body {
   width: 100vw;
   height: 100vh;
+  /* Pone le mapa en el centro
+  top: 50%; 
+  left: 50%; */
   font-size: 20px;
   font-family: "Lora", serif;
   overflow: hidden;
@@ -222,7 +247,7 @@ html, body {
 body {
   position: relative;
 }
-
+/*Botón para abrir desplegable*/
 #open-btn {
   position: absolute;
   top: 0;
@@ -238,7 +263,7 @@ body {
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
-
+/*Pantalla de carga*/
 #loader-screen {
   position: fixed;
   width: 100vw;
@@ -268,14 +293,14 @@ body {
     font-size: 5rem;
   }
 }
-
+/*Mirar esto???????????????????????????????????????????????????????????????????????????????????????????????????????*/
 #loader-screen #lds-ring {
   display: inline-block;
   position: relative;
   width: 80px;
   height: 80px;
 }
-
+/*Animación de carga*/
 #loader-screen #lds-ring div {
   box-sizing: border-box;
   display: block;
