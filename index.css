@@ -103,7 +103,13 @@ aside #close-btn {
 #encounter-events{
   display: none;
 }
-#caos-places{
+#caos-spawn{
+  display: none;
+}
+#elfhel-spawn{
+  display: none;
+}
+#human-spawn{
   display: none;
 }
 
@@ -259,13 +265,20 @@ aside footer .credits {
 } */
 
 /*Container del mapa y color. Tamaño del mapa*/
+
 main.leaflet-container {
-  height: 100vh;
+  height: 100vw;
   width: 100vw;
   position: absolute;
   background: rgb(32, 32, 32);
   font-family: "Lora", serif;
 }
+
+/*Tamaño real del mapa en px*/
+/* #map{
+  width:5000px ;
+  height:4344px ;
+} */
 /*Tamaño de los iconos*/
 .leaflet-marker-icon {
   width: 1.8rem !important;

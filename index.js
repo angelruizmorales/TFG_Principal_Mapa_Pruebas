@@ -1,16 +1,16 @@
-import mapImage from '/assets/images/warmap.webp';
+import mapImage from './assets/images/warmap.webp';
 import markersData from './assets/data/markers.json';
 import pathsData from './assets/data/paths.json';
 import {battleIcon, darkIcon, deathIcon, dwarfIcon, elfIcon, encounterIcon, hobbitIcon, humanIcon, ogreIcon, elfhelIcon} from "./mapIcons.js";
 
-//Defino el tamaño del zoom
+// CRS.Simple toma la forma de [y, x] en lugar de [x, y], de la misma manera que Leaflet utiliza [lat, lng] en lugar de [lng, lat].Traducido esto a unas coordenadas cartesianas, tendríamos el par [y , x]||| defino el tamaño del zoom
 const map = L.map('map', {
     crs: L.CRS.Simple,
-    minZoom: -2,
-    maxZoom: 2
+    minZoom: -4,
+    maxZoom: 4
 });
 
-const bounds = [[0, 0], [4334, 5000]];
+const bounds = [[0, 0], [3093, 4524]];//Tamaño de la imagen en px en este caso es 4524x3093
 L.imageOverlay(mapImage, bounds).addEventListener('load', () => {
     setTimeout(() => {
         document.getElementById("lds-ring").style.opacity = '0';
@@ -21,6 +21,12 @@ L.imageOverlay(mapImage, bounds).addEventListener('load', () => {
 }).addTo(map);
 
 map.fitBounds(bounds);
+
+
+//var prueba = L.marker([2500,2500]).addTo(map).bindPopup('prueba');
+
+
+
 
 //markerClusterGroup lo uso para agrupar marcadores que estan en la misma posición y así no se superponen . También utilizamos maxClusterRadius para el radio de efecto del mismo 
 const cluster = L.markerClusterGroup({
@@ -46,6 +52,7 @@ const createInfoDialog = (data) => {
     if (data.description) {
         info += `<p class="description">${data.description}</p>`;
     }
+    console.log(data);
     if (data.infoLink) {
         info += `<span class="info-link-container"><a class="info-link" href="${data.infoLink}" target="_blank">Learn more on Tolkien Gateway</a></span>`;
     }
@@ -136,7 +143,7 @@ const onFilterChange = (e) => {
 }
 //creamos en los puntos de interes los icons
 const createMarker = (map, data) => {
-    const t = L.latLng([4334 - data.y, data.x]);
+    const t = L.latLng([data.y, data.x]);
     let markerOptions = {
         title: data.title,
         alt: data.title,
@@ -161,8 +168,12 @@ const createMarker = (map, data) => {
         markerOptions.icon = ogreIcon
     }else if (data.tags?.places?.includes('elfhel')) {
         markerOptions.icon = elfhelIcon
-    }else if (data.tags?.spawn?.includes('caos')) {
+    }else if (data.tags?.spawn?.includes('caosspawn')) {
         markerOptions.icon = ogreIcon
+    }else if (data.tags?.spawn?.includes('elfhelspawn')) {
+        markerOptions.icon = elfhelIcon
+    }else if (data.tags?.spawn?.includes('humanspawn')) {
+        markerOptions.icon = humanIcon
     }
     return L.marker(t, markerOptions).bindPopup(createInfoDialog(data));
 }
@@ -184,29 +195,25 @@ renderMarkersFromFilters(getFilters());
 renderPathsFromFilters(getFilters());
 
 
-//Al hacer click me devuelve la posición en el mapa   /////Tamaño modificado en el index.css ".leaflet-popup" es de manera global ver si es posible cambiar el tamaño solo de este.
-// var popup = L.popup();
-// function onMapClick(e) {
-//     popup
-//         .setLatLng(e.latlng)
-//         .setContent("x:" +  e.latlng.lat.toString() + "<br>"+ "y:" +  e.latlng.lng.toString())
-//         .openOn(map);
+//El modo habitual de representar un punto en coordenadas cartesianas es con el formato [x y] , 
+//que como hemos visto es el contrario al que utiliza Leaflet. Si nos encontramos más cómodos trabajando en el sistema “normal” podemos intentar realizar su conversión. Para eso necesitaremos escribir una función de transformación.
+// var yx = L.latLng;
+// var yx = function(x,y){
+//     if(L.Util.isArray(x)){
+//         return yx(x[1],x[0]);
+//     }
+//     return yx(y,x);
 // }
 
-// map.on('click', onMapClick);
+//Al hacer click me devuelve la posición en el mapa   /////Tamaño modificado en el index.css ".leaflet-popup" es de manera global ver si es posible cambiar el tamaño solo de este.
+ var popup = L.popup();
+ function onMapClick(e) {
+     popup
+         .setLatLng(e.latlng)
+         .setContent("x:" +  e.latlng.lng.toString() + "<br>" + "y:" +  e.latlng.lat.toString()  )
+         .openOn(map);
+ }
+
+ map.on('click', onMapClick);
 
 ////hacer una funciona que cuente valores en el json y nos devuelva la cantidad almacenada en una variable para luego mandarla al assets
- 
-// let view = "";
-// view = `<div> ${markersData.title} </div>`;
-// let oTags = pruebas.tags;
-// for (const [key, value] of Object.entries(oTags)){
-//     let arr = value;
-//     arr.forEach((val) => {
-//         if (val==valor)
-//         view += `<div>Ok:${val}</div>`;
-//          else
-//          view += `<div>Ko:${val}</div>`;
-//         }
-//         );
-// }

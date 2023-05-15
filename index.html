@@ -18,6 +18,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
 <body>
+
     
 <a href="#" id="open-btn">
     <img alt="open filters" src="assets/icons/compass.svg">
@@ -210,18 +211,31 @@
         <fieldset id="filters-spawn">
             <legend>Spawn</legend>
             <div>
-                <input data-category="spawn" data-filter="caos" id="caos-places" name="caos-places" type="checkbox">
-                <label for="caos-places">Caos Spawn</label>
+                <input data-category="spawn" data-filter="caosspawn" id="caos-spawn" name="caos-spawn-spawn" type="checkbox">
+                <label for="caos-spawn">Caos Spawn</label>
                 <img class="iconaside" src="assets/icons/ogre.svg"> 
+                
+            </div>
+            <div>
+                <input data-category="spawn" data-filter="elfhelspawn" id="elfhel-spawn" name="elfhel-spawn" type="checkbox">
+                <label for="elfhel-spawn">Elf Spawn</label>
+                <img class="iconaside" src="assets/icons/elfhel.svg"> 
+                
+            </div>
+            <div>
+                <input data-category="spawn" data-filter="humanspawn" id="human-spawn" name="human-spawn" type="checkbox">
+                <label for="human-spawn">Human Spawn</label>
+                <img class="iconaside" src="assets/icons/castle.svg"> 
                 
             </div>
         </fieldset>
 
         <footer>
-            
+             
         </footer>
     </section>
 </aside>
+
 
 
 <script src="index.js" type="module"></script>
