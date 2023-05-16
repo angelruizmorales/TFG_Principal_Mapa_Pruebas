@@ -12,7 +12,6 @@
     <link href="/leaflet/marker_cluster/MarkerCluster.css" rel="stylesheet"/>
     <link href="/leaflet/marker_cluster/MarkerCluster.Default.css" rel="stylesheet"/>
     <script src="/leaflet/marker_cluster/leaflet.markercluster.js"></script>
-
     <title>Warhammer Fantasy Map</title>
     <meta content="Discover Middle Earth during Third Age with this interactive map." name="description"/>
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -23,6 +22,7 @@
 <a href="#" id="open-btn">
     <img alt="open filters" src="assets/icons/compass.svg">
 </a>
+
 <div id="loader-screen">
     <h1>
         Welcome to Warhammer Fantasy
@@ -37,6 +37,7 @@
 </div>
 <main id="map">
 </main>
+
 <aside id="filters-container">
         <span class="material-symbols-outlined" id="close-btn">
             <img alt="close filters" src="assets/icons/close.svg">
@@ -229,14 +230,29 @@
                 
             </div>
         </fieldset>
+        <fieldset id="filters-spawn">
+            <legend>Custom</legend>
+            <form action="">
+                <label for="">Nombre:</label>
+                <input type="text"><br>
+                <label for="">Info:</label>
+                <input type="text"><br>
+                <label for="">x:</label>
+                <input type="text"><br>
+                <label for="">y:</label>
+                <input type="text"><br>
+                <button class="custom-add" onclick="add()"><img src="assets/icons/custom.svg"></button>
+                <!-- <button onclick="customadd()">add</button> -->
+            </form>
 
-        <footer>
-             
-        </footer>
+        </fieldset>
     </section>
 </aside>
-
-
+<aside>
+</aside>
+        
+<footer>
+</footer>
 
 <script src="index.js" type="module"></script>
 </body>

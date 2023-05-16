@@ -1,13 +1,13 @@
 import mapImage from './assets/images/warmap.webp';
 import markersData from './assets/data/markers.json';
 import pathsData from './assets/data/paths.json';
-import {battleIcon, darkIcon, deathIcon, dwarfIcon, elfIcon, encounterIcon, hobbitIcon, humanIcon, ogreIcon, elfhelIcon} from "./mapIcons.js";
+import {battleIcon, darkIcon, deathIcon, dwarfIcon, elfIcon, encounterIcon, hobbitIcon, humanIcon, ogreIcon, elfhelIcon, customIcon} from "./mapIcons.js";
 
 // CRS.Simple toma la forma de [y, x] en lugar de [x, y], de la misma manera que Leaflet utiliza [lat, lng] en lugar de [lng, lat].Traducido esto a unas coordenadas cartesianas, tendríamos el par [y , x]||| defino el tamaño del zoom
 const map = L.map('map', {
     crs: L.CRS.Simple,
-    minZoom: -4,
-    maxZoom: 4
+    minZoom: -2,
+    maxZoom: 2
 });
 
 const bounds = [[0, 0], [3093, 4524]];//Tamaño de la imagen en px en este caso es 4524x3093
@@ -66,6 +66,7 @@ const getFilters = () => {
         'quests': [],
         'paths': [],
         'spawn': [],
+        'custom': [],
     };
     document.querySelectorAll('#filters fieldset').forEach(category => {
         category.querySelectorAll('input[type=checkbox]:checked').forEach(filter => {
@@ -174,6 +175,8 @@ const createMarker = (map, data) => {
         markerOptions.icon = elfhelIcon
     }else if (data.tags?.spawn?.includes('humanspawn')) {
         markerOptions.icon = humanIcon
+    }else if (data.tags?.custom?.includes('custom')) {
+        markerOptions.icon = customIcon
     }
     return L.marker(t, markerOptions).bindPopup(createInfoDialog(data));
 }
@@ -195,16 +198,6 @@ renderMarkersFromFilters(getFilters());
 renderPathsFromFilters(getFilters());
 
 
-//El modo habitual de representar un punto en coordenadas cartesianas es con el formato [x y] , 
-//que como hemos visto es el contrario al que utiliza Leaflet. Si nos encontramos más cómodos trabajando en el sistema “normal” podemos intentar realizar su conversión. Para eso necesitaremos escribir una función de transformación.
-// var yx = L.latLng;
-// var yx = function(x,y){
-//     if(L.Util.isArray(x)){
-//         return yx(x[1],x[0]);
-//     }
-//     return yx(y,x);
-// }
-
 //Al hacer click me devuelve la posición en el mapa   /////Tamaño modificado en el index.css ".leaflet-popup" es de manera global ver si es posible cambiar el tamaño solo de este.
  var popup = L.popup();
  function onMapClick(e) {
@@ -213,7 +206,11 @@ renderPathsFromFilters(getFilters());
          .setContent("x:" +  e.latlng.lng.toString() + "<br>" + "y:" +  e.latlng.lat.toString()  )
          .openOn(map);
  }
-
  map.on('click', onMapClick);
 
 ////hacer una funciona que cuente valores en el json y nos devuelva la cantidad almacenada en una variable para luego mandarla al assets
+
+
+
+
+//Función para guardar localizaciones en una base de datos.
