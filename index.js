@@ -223,6 +223,16 @@ renderPathsFromFilters(getFilters());
 //Overlays en el mapa
 // var imageUrl = 'https://maps.lib.utexas.edu/maps/historical/newark_nj_1922.jpg';
 
+ 
+// function viewimg() {
+//     if(BlackPyramid )
+
+// }
+
+
+
+
+
 var BlackPyramid = 'https://3.bp.blogspot.com/-c6pcdjcfx80/VKg9bmH0lgI/AAAAAAAAGZk/xBrdW4vGdcE/s1600/BlackPyramid.png';
 var errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
 var altText = 'Image of Newark, N.J. in 1922. Source: The University of Texas at Austin, UT Libraries Map Collection.';
@@ -234,8 +244,9 @@ var BlackPyramid = L.imageOverlay(BlackPyramid, BlackPyramidlatLngBounds, {
     alt: altText,
     interactive: true
 }).addTo(map);
-L.rectangle(BlackPyramidlatLngBounds).addTo(map);
-map.fitBounds(BlackPyramidlatLngBounds);
+// L.rectangle(BlackPyramidlatLngBounds).addTo(map);
+// map.fitBounds(BlackPyramidlatLngBounds);
+BlackPyramid.remove();
 
 
 
@@ -270,3 +281,26 @@ L.rectangle(LotherntLngBounds).addTo(map);
 map.fitBounds(LotherntLngBounds);
 
 
+
+// Para verificar si hay alguna capa en una determinada coordenada en Leaflet, puedes utilizar el método eachLayer() en el objeto map para recorrer todas las capas del mapa y verificar si alguna de ellas se superpone con la coordenada especificada. Aquí tienes un ejemplo de cómo hacerlo:
+
+// javascript
+// Copy code
+// var targetLatLng = L.latLng(1800, 2250);  // Coordenada objetivo a verificar
+
+// var hasLayer = false;
+
+// map.eachLayer(function(layer) {
+//   if (layer.getBounds && layer.getBounds().contains(targetLatLng)) {
+//     hasLayer = true;
+//   }
+// });
+
+// if (hasLayer) {
+//   console.log('Hay una capa en la coordenada especificada.');
+// } else {
+//   console.log('No hay ninguna capa en la coordenada especificada.');
+// }
+// En este ejemplo, la variable targetLatLng representa la coordenada que deseas verificar. El código recorre todas las capas del mapa utilizando eachLayer() y verifica si alguna de ellas tiene límites (getBounds()) y si esos límites contienen la coordenada objetivo. Si se encuentra una capa en la coordenada especificada, la variable hasLayer se establece en true.
+
+// Recuerda adaptar el código según tus necesidades y asegúrate de que map sea la referencia correcta a tu instancia del mapa Leaflet.
