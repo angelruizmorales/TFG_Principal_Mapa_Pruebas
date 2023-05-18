@@ -3,12 +3,14 @@ import markersData from './assets/data/markers.json';
 import pathsData from './assets/data/paths.json';
 import {battleIcon, darkIcon, deathIcon, dwarfIcon, elfIcon, encounterIcon, hobbitIcon, humanIcon, ogreIcon, elfhelIcon, customIcon} from "./mapIcons.js";
 
+
 // CRS.Simple toma la forma de [y, x] en lugar de [x, y], de la misma manera que Leaflet utiliza [lat, lng] en lugar de [lng, lat].Traducido esto a unas coordenadas cartesianas, tendríamos el par [y , x]||| defino el tamaño del zoom
 const map = L.map('map', {
     crs: L.CRS.Simple,
     minZoom: -2,
     maxZoom: 2
 });
+
 
 const bounds = [[0, 0], [3093, 4524]];//Tamaño de la imagen en px en este caso es 4524x3093
 L.imageOverlay(mapImage, bounds).addEventListener('load', () => {
@@ -214,3 +216,57 @@ renderPathsFromFilters(getFilters());
 
 
 //Función para guardar localizaciones en una base de datos.
+
+
+
+
+//Overlays en el mapa
+// var imageUrl = 'https://maps.lib.utexas.edu/maps/historical/newark_nj_1922.jpg';
+
+var BlackPyramid = 'https://3.bp.blogspot.com/-c6pcdjcfx80/VKg9bmH0lgI/AAAAAAAAGZk/xBrdW4vGdcE/s1600/BlackPyramid.png';
+var errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
+var altText = 'Image of Newark, N.J. in 1922. Source: The University of Texas at Austin, UT Libraries Map Collection.';
+// Primero la y, luego la x   los primeros son los de arriba y los otros los de abajo
+var BlackPyramidlatLngBounds = L.latLngBounds([[1803.375,2232], [1780.625,2262]]);
+var BlackPyramid = L.imageOverlay(BlackPyramid, BlackPyramidlatLngBounds, {
+    opacity: 0.8,
+    errorOverlayUrl: errorOverlayUrl,
+    alt: altText,
+    interactive: true
+}).addTo(map);
+L.rectangle(BlackPyramidlatLngBounds).addTo(map);
+map.fitBounds(BlackPyramidlatLngBounds);
+
+
+
+var Khemri = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSldlkYu_MGLk6RZqwqyVslyCNLc1v2bqzIYA&usqp=CAU';
+var errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
+var altText = 'Image of Newark, N.J. in 1922. Source: The University of Texas at Austin, UT Libraries Map Collection.';
+//Primero la y, luego la x   los primeros son los de arriba y los otros los de abajo
+var KhemrilatLngBounds = L.latLngBounds([[1824.625,2318], [1802.125,2343.75]]);
+var Khemri = L.imageOverlay(Khemri, KhemrilatLngBounds, {
+    opacity: 0.8,
+    errorOverlayUrl: errorOverlayUrl,
+    alt: altText,
+    interactive: true
+}).addTo(map);
+L.rectangle(KhemrilatLngBounds).addTo(map);
+map.fitBounds(KhemrilatLngBounds);
+
+
+
+var Lothern = 'https://2.bp.blogspot.com/-cQWGR84hYFo/Wfdb7UaprnI/AAAAAAAACU4/bniaIi25T2we5As9NqiXbLLsCSkq79hFgCLcBGAs/s400/lothern.jpg';
+var errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
+var altText = 'Image of Newark, N.J. in 1922. Source: The University of Texas at Austin, UT Libraries Map Collection.';
+//Primero la y, luego la x   los primeros son los de arriba y los otros los de abajo
+var LotherntLngBounds = L.latLngBounds([[1865.625,1238.25], [1853.875,1261]]);
+var Lothern = L.imageOverlay(Lothern, LotherntLngBounds, {
+    opacity: 0.8,
+    errorOverlayUrl: errorOverlayUrl,
+    alt: altText,
+    interactive: true
+}).addTo(map);
+L.rectangle(LotherntLngBounds).addTo(map);
+map.fitBounds(LotherntLngBounds);
+
+
