@@ -207,13 +207,9 @@ renderPathsFromFilters(getFilters());
  }
  map.on('click', onMapClick);
 
+ 
 ////hacer una funciona que cuente valores en el json y nos devuelva la cantidad almacenada en una variable para luego mandarla al assets
-
-
-
-
-//Función para guardar localizaciones en una base de datos.
-
+////Función para guardar localizaciones en una base de datos.
 
 
 //Función para crear imageOverlay en el mapa y al hacer click en un botón en el html que cargue o elimine las imageOverlay.
@@ -226,7 +222,7 @@ renderPathsFromFilters(getFilters());
         interactive: true
       });
         overlay.on('click', function() {
-            window.location.href = imgData.redirectUrl; // Redireccionar a la URL especificada en imgData.redirectUrl
+            window.location.href = imgData.redirectUrl; // Redireccionar a la URL especificada en imgData.redirectUrl.
       });
       imgData.overlay = overlay;
     });
@@ -246,12 +242,12 @@ renderPathsFromFilters(getFilters());
   
   createImages();
 
-//Función para volver al mapa de inicio
+//Función para volver al mapa de inicio.
   function moveToCoordinates(lat, lng, zoom) {
     map.setView([lat, lng], zoom);
 }
 const button = document.getElementById('inicial-point');
 button.addEventListener('click', function() {
-    // Llama a la función moveToCoordinates con las coordenadas y el zoom deseados
+    // Llama a la función moveToCoordinates con las coordenadas y el zoom deseados.
     moveToCoordinates(2101.5, 2250, 0);
 });
