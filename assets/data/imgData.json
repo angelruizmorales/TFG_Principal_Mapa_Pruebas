@@ -1,0 +1,30 @@
+[
+    {
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSldlkYu_MGLk6RZqwqyVslyCNLc1v2bqzIYA&usqp=CAU",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "Khemri",
+      "latLngBounds": [[1824.625, 2318], [1802.125, 2343.75]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://warhammerfantasy.fandom.com/es/wiki/Khemri"
+    },
+    {
+      "url": "https://2.bp.blogspot.com/-cQWGR84hYFo/Wfdb7UaprnI/AAAAAAAACU4/bniaIi25T2we5As9NqiXbLLsCSkq79hFgCLcBGAs/s400/lothern.jpg",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "Lothern",
+      "latLngBounds": [[1865.625, 1238.25], [1853.875, 1261]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://2.bp.blogspot.com/-cQWGR84hYFo/Wfdb7UaprnI/AAAAAAAACU4/bniaIi25T2we5As9NqiXbLLsCSkq79hFgCLcBGAs/s400/lothern.jpg"
+    },
+    {
+      "url": "https://3.bp.blogspot.com/-c6pcdjcfx80/VKg9bmH0lgI/AAAAAAAAGZk/xBrdW4vGdcE/s1600/BlackPyramid.png",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "BlackPyramid",
+      "latLngBounds": [[1803.375,2232], [1780.625,2262]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://warhammerfantasy.fandom.com/wiki/Black_Pyramid_of_Nagash"
+    }
+  ]
+  

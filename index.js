@@ -2,15 +2,17 @@ import mapImage from './assets/images/warmap.webp';
 import markersData from './assets/data/markers.json';
 import pathsData from './assets/data/paths.json';
 import {battleIcon, darkIcon, deathIcon, dwarfIcon, elfIcon, encounterIcon, hobbitIcon, humanIcon, ogreIcon, elfhelIcon, customIcon} from "./mapIcons.js";
+import imgData from './assets/data/imgData.json';
 
 
 // CRS.Simple toma la forma de [y, x] en lugar de [x, y], de la misma manera que Leaflet utiliza [lat, lng] en lugar de [lng, lat].Traducido esto a unas coordenadas cartesianas, tendríamos el par [y , x]||| defino el tamaño del zoom
 const map = L.map('map', {
     crs: L.CRS.Simple,
-    minZoom: -2,
-    maxZoom: 2
+    minZoom: -1,
+    maxZoom: 1,
+    zoomAnimation: true,
+    zoomControl: false
 });
-
 
 const bounds = [[0, 0], [3093, 4524]];//Tamaño de la imagen en px en este caso es 4524x3093
 L.imageOverlay(mapImage, bounds).addEventListener('load', () => {
@@ -23,12 +25,7 @@ L.imageOverlay(mapImage, bounds).addEventListener('load', () => {
 }).addTo(map);
 
 map.fitBounds(bounds);
-
-
-//var prueba = L.marker([2500,2500]).addTo(map).bindPopup('prueba');
-
-
-
+map.setView([bounds[1][0] / 2, bounds[1][1] / 2], 0);
 
 //markerClusterGroup lo uso para agrupar marcadores que estan en la misma posición y así no se superponen . También utilizamos maxClusterRadius para el radio de efecto del mismo 
 const cluster = L.markerClusterGroup({
@@ -219,88 +216,42 @@ renderPathsFromFilters(getFilters());
 
 
 
+//Función para crear imageOverlay en el mapa y al hacer click en un botón en el html que cargue o elimine las imageOverlay.
+  function createImages() {
+    imgData.forEach(function(imgData) {
+      const overlay = L.imageOverlay(imgData.url, L.latLngBounds(imgData.latLngBounds), {
+        opacity: 0.8,
+        errorOverlayUrl: imgData.errorOverlayUrl,
+        alt: imgData.altText,
+        interactive: true
+      });
+        overlay.on('click', function() {
+            window.location.href = imgData.redirectUrl; // Redireccionar a la URL especificada en imgData.redirectUrl
+      });
+      imgData.overlay = overlay;
+    });
+  }
+  function renderImages() {
+    imgData.forEach(function(imgData) {
+      if (imgData.isVisible) {
+        map.removeLayer(imgData.overlay);
+      } else {
+        imgData.overlay.addTo(map);
+      }
+      imgData.isVisible = !imgData.isVisible;
+    });
+  }  
+  const viewimg = document.getElementById('buttonViewImg');
+  viewimg.onclick = renderImages;
+  
+  createImages();
 
-//Overlays en el mapa
-// var imageUrl = 'https://maps.lib.utexas.edu/maps/historical/newark_nj_1922.jpg';
-
- 
-// function viewimg() {
-//     if(BlackPyramid )
-
-// }
-
-
-
-
-
-var BlackPyramid = 'https://3.bp.blogspot.com/-c6pcdjcfx80/VKg9bmH0lgI/AAAAAAAAGZk/xBrdW4vGdcE/s1600/BlackPyramid.png';
-var errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
-var altText = 'Image of Newark, N.J. in 1922. Source: The University of Texas at Austin, UT Libraries Map Collection.';
-// Primero la y, luego la x   los primeros son los de arriba y los otros los de abajo
-var BlackPyramidlatLngBounds = L.latLngBounds([[1803.375,2232], [1780.625,2262]]);
-var BlackPyramid = L.imageOverlay(BlackPyramid, BlackPyramidlatLngBounds, {
-    opacity: 0.8,
-    errorOverlayUrl: errorOverlayUrl,
-    alt: altText,
-    interactive: true
-}).addTo(map);
-// L.rectangle(BlackPyramidlatLngBounds).addTo(map);
-// map.fitBounds(BlackPyramidlatLngBounds);
-BlackPyramid.remove();
-
-
-
-var Khemri = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSldlkYu_MGLk6RZqwqyVslyCNLc1v2bqzIYA&usqp=CAU';
-var errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
-var altText = 'Image of Newark, N.J. in 1922. Source: The University of Texas at Austin, UT Libraries Map Collection.';
-//Primero la y, luego la x   los primeros son los de arriba y los otros los de abajo
-var KhemrilatLngBounds = L.latLngBounds([[1824.625,2318], [1802.125,2343.75]]);
-var Khemri = L.imageOverlay(Khemri, KhemrilatLngBounds, {
-    opacity: 0.8,
-    errorOverlayUrl: errorOverlayUrl,
-    alt: altText,
-    interactive: true
-}).addTo(map);
-L.rectangle(KhemrilatLngBounds).addTo(map);
-map.fitBounds(KhemrilatLngBounds);
-
-
-
-var Lothern = 'https://2.bp.blogspot.com/-cQWGR84hYFo/Wfdb7UaprnI/AAAAAAAACU4/bniaIi25T2we5As9NqiXbLLsCSkq79hFgCLcBGAs/s400/lothern.jpg';
-var errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
-var altText = 'Image of Newark, N.J. in 1922. Source: The University of Texas at Austin, UT Libraries Map Collection.';
-//Primero la y, luego la x   los primeros son los de arriba y los otros los de abajo
-var LotherntLngBounds = L.latLngBounds([[1865.625,1238.25], [1853.875,1261]]);
-var Lothern = L.imageOverlay(Lothern, LotherntLngBounds, {
-    opacity: 0.8,
-    errorOverlayUrl: errorOverlayUrl,
-    alt: altText,
-    interactive: true
-}).addTo(map);
-L.rectangle(LotherntLngBounds).addTo(map);
-map.fitBounds(LotherntLngBounds);
-
-
-
-// Para verificar si hay alguna capa en una determinada coordenada en Leaflet, puedes utilizar el método eachLayer() en el objeto map para recorrer todas las capas del mapa y verificar si alguna de ellas se superpone con la coordenada especificada. Aquí tienes un ejemplo de cómo hacerlo:
-
-// javascript
-// Copy code
-// var targetLatLng = L.latLng(1800, 2250);  // Coordenada objetivo a verificar
-
-// var hasLayer = false;
-
-// map.eachLayer(function(layer) {
-//   if (layer.getBounds && layer.getBounds().contains(targetLatLng)) {
-//     hasLayer = true;
-//   }
-// });
-
-// if (hasLayer) {
-//   console.log('Hay una capa en la coordenada especificada.');
-// } else {
-//   console.log('No hay ninguna capa en la coordenada especificada.');
-// }
-// En este ejemplo, la variable targetLatLng representa la coordenada que deseas verificar. El código recorre todas las capas del mapa utilizando eachLayer() y verifica si alguna de ellas tiene límites (getBounds()) y si esos límites contienen la coordenada objetivo. Si se encuentra una capa en la coordenada especificada, la variable hasLayer se establece en true.
-
-// Recuerda adaptar el código según tus necesidades y asegúrate de que map sea la referencia correcta a tu instancia del mapa Leaflet.
+//Función para volver al mapa de inicio
+  function moveToCoordinates(lat, lng, zoom) {
+    map.setView([lat, lng], zoom);
+}
+const button = document.getElementById('inicial-point');
+button.addEventListener('click', function() {
+    // Llama a la función moveToCoordinates con las coordenadas y el zoom deseados
+    moveToCoordinates(2101.5, 2250, 0);
+});

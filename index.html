@@ -12,6 +12,7 @@
     <link href="/leaflet/marker_cluster/MarkerCluster.css" rel="stylesheet"/>
     <link href="/leaflet/marker_cluster/MarkerCluster.Default.css" rel="stylesheet"/>
     <script src="/leaflet/marker_cluster/leaflet.markercluster.js"></script>
+    <script src="https://unpkg.com/leaflet-video-overlay/dist/leaflet-video-overlay.min.js"></script>
     <title>Warhammer Fantasy Map</title>
     <meta content="Discover Middle Earth during Third Age with this interactive map." name="description"/>
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -24,7 +25,6 @@
             <img class="iconaside warhammer" src="assets/icons/warhammer.svg">
             <label class="text-white h4">Warhammer Fantasy Map</label>
             <li><a href="https://www.games-workshop.com/es-ES/Inicio?_requestid=8901414">Games workshop</a></li>
-            <button onclick="Lothern()">Lothern</button>
           </div>
         </div>
         <nav class="navbar navbar-dark bg-dark">
@@ -50,16 +50,15 @@
     <img alt="open filters" src="assets/icons/compass.svg">
 </a>
 <a href="#" id="view-img">
-    <img alt="view img" src="assets/icons/viewimg.svg" >
+    <img id="buttonViewImg" alt="view img" src="assets/icons/viewimg.svg">
 </a>
 <a href="#" id="view-layer">
     <img alt="view layer" src="assets/icons/layer.svg" >
 </a>
+<a href="#" id="inicial-point">
+    <img alt="view layer" src="assets/icons/returntomap.svg" >
+</a>
 <main id="map">
-    
-    <!-- <a class="leaflet-control-zoom-in" href="#" title="zoom in" role="button" aria-label="zoom in" aria-disabled="false">
-        <span aria-hidden="true">*</span>
-    </a> -->
 </main>
 
 

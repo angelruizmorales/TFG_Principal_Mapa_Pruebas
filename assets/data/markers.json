@@ -911,6 +911,23 @@
     "x":2271,
     "y":1782.75
   }
+  ,
+  {
+    "title": "Temple of skulls",
+    "sindarinTitle": "Orodruin, Amon Amarth",
+    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
+    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "tags": {
+      "spawn": [
+        "caosspawn"
+      ],
+      "quests":[
+        "caos"
+      ]
+    },
+    "x":2699,
+    "y":1526.75
+  }
   
   
 ]

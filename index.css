@@ -178,6 +178,16 @@ aside #filters fieldset legend {
 #view-layer:hover {
   opacity: 0.7;
 }
+#inicial-point {
+  position: absolute;
+  top: 0;
+  right: 14.5rem;
+  z-index: 410;
+  width: 2.8rem;
+}
+#inicial-point:hover {
+  opacity: 0.7;
+}
 /*Quito el recuadro del checkbox*/
 .iconaside{
   width:30px;
@@ -358,7 +368,6 @@ main.leaflet-container {
   width:5000px ;
   height:4344px ;
 } */
-
 /*Tamaño de los iconos*/
 .leaflet-marker-icon {
   width: 1.8rem !important;
