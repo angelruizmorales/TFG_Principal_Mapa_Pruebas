@@ -1,6 +1,5 @@
 import mapImage from './assets/images/warmap.webp';
 import markersData from './assets/data/markers.json';
-import pathsData from './assets/data/paths.json';
 import {battleIcon, darkIcon, deathIcon, dwarfIcon, elfIcon, encounterIcon, hobbitIcon, humanIcon, ogreIcon, elfhelIcon, customIcon} from "./mapIcons.js";
 import imgData from './assets/data/imgData.json';
 
@@ -32,9 +31,6 @@ const cluster = L.markerClusterGroup({
     maxClusterRadius: 20
 });
 map.addLayer(cluster);
-
-const pathsLayer = L.layerGroup([]);
-map.addLayer(pathsLayer)
 //me devuelve la informacion de cada punto de interes como su nombre, descripción, fecha... "solo de los puntos de interes, de los path lo hacemos en otra"
 const createInfoDialog = (data) => {
     let info = ``;
@@ -63,7 +59,6 @@ const getFilters = () => {
         'places': [],
         'events': [],
         'quests': [],
-        'paths': [],
         'spawn': [],
         'custom': [],
     };
@@ -101,30 +96,6 @@ const renderMarkersFromFilters = (filters) => {
     }
     cluster.addLayers(markers)
 }
-//carga los path
-const renderPathsFromFilters = (filters) => {
-    pathsLayer.clearLayers();
-    for (const p of pathsData) {
-        if (filters.paths.includes(p.id)) {
-            const latLongs = p.path.map(l => [4334 - l[1], l[0]])
-            const line = L.polyline(latLongs, {color: p.color, weight: 4})
-            line.bindTooltip(pathTooltip(p), {
-                sticky: true,
-                className: "path-tooltip"
-            }).addTo(pathsLayer);
-        }
-    }
-}
-
-//me da la info de los path nombre , distancia y fecha de inicio
-const pathTooltip = (path) => (
-    `
-        <div class="path-name">${path.name}</div> 
-        <div class="path-date">[ ${path.startDate} - <br/> ${path.endDate} ]</div>
-        <div class="path-distance">${path.distance}</div> 
-    `
-)
-
 const onFilterChange = (e) => {
     const element = e.target;
     if (element.dataset.filter === 'all') {
@@ -139,7 +110,6 @@ const onFilterChange = (e) => {
         })
     }
     renderMarkersFromFilters(getFilters());
-    renderPathsFromFilters(getFilters());
 }
 //creamos en los puntos de interes los icons
 const createMarker = (map, data) => {
@@ -194,18 +164,23 @@ document.getElementById('close-btn').addEventListener('click', () => {
 });
 
 renderMarkersFromFilters(getFilters());
-renderPathsFromFilters(getFilters());
 
 
 //Al hacer click me devuelve la posición en el mapa   /////Tamaño modificado en el index.css ".leaflet-popup" es de manera global ver si es posible cambiar el tamaño solo de este.
- var popup = L.popup();
- function onMapClick(e) {
-     popup
-         .setLatLng(e.latlng)
-         .setContent("x:" +  e.latlng.lng.toString() + "<br>" + "y:" +  e.latlng.lat.toString()  )
-         .openOn(map);
- }
- map.on('click', onMapClick);
+var clickCoordinates = null;
+var popup = L.popup();
+function onMapClick(e) {
+    clickCoordinates = e.latlng;
+    popup
+        .setLatLng(e.latlng)
+        .setContent("x:" +  e.latlng.lng.toString() + "<br>" + "y:" +  e.latlng.lat.toString())
+        .openOn(map);
+
+    var coordinatesHtml = document.getElementById('coordinates');
+    coordinatesHtml.innerHTML = "Coordenadas: " + e.latlng.lng.toString() + ", " + e.latlng.lat.toString();
+}
+
+map.on('click', onMapClick);
 
  
 ////hacer una funciona que cuente valores en el json y nos devuelva la cantidad almacenada en una variable para luego mandarla al assets
@@ -219,11 +194,30 @@ renderPathsFromFilters(getFilters());
         opacity: 0.8,
         errorOverlayUrl: imgData.errorOverlayUrl,
         alt: imgData.altText,
-        interactive: true
+        interactive: true,
+        className: 'blue-border'
       });
         overlay.on('click', function() {
             window.location.href = imgData.redirectUrl; // Redireccionar a la URL especificada en imgData.redirectUrl.
       });
+
+      overlay.on('mouseover', function () {
+        overlay.openPopup();
+        overlay.setStyle({ className: 'blue-border-hover' });
+      });
+  
+      overlay.on('mouseout', function () {
+        overlay.closePopup();
+        overlay.setStyle({ className: 'blue-border' });
+      });
+      overlay.bindPopup(
+        `<div>
+          <h3>${imgData.title}</h3>
+          <p>${imgData.description}</p>
+          <img src="${imgData.url}" alt="${imgData.altText}">
+          <h5>${imgData.click}</h5>
+        </div>`
+      );
       imgData.overlay = overlay;
     });
   }
@@ -241,6 +235,7 @@ renderPathsFromFilters(getFilters());
   viewimg.onclick = renderImages;
   
   createImages();
+  
 
 //Función para volver al mapa de inicio.
   function moveToCoordinates(lat, lng, zoom) {
@@ -248,6 +243,20 @@ renderPathsFromFilters(getFilters());
 }
 const button = document.getElementById('inicial-point');
 button.addEventListener('click', function() {
-    // Llama a la función moveToCoordinates con las coordenadas y el zoom deseados.
+    //Llama a la función moveToCoordinates con las coordenadas y el zoom deseados.
     moveToCoordinates(2101.5, 2250, 0);
 });
+
+
+
+//Función para mostrarlogin
+
+  document.getElementById("loginButton").addEventListener("click", function() {
+    document.getElementById("main").style.display = "none";
+    document.getElementById("login").style.display = "block";
+  });
+
+  document.getElementById("backButton").addEventListener("click", function() {
+    document.getElementById("login").style.display = "none";
+    document.getElementById("main").style.display = "block";
+  });
