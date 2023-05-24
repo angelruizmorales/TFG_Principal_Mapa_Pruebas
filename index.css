@@ -3,6 +3,7 @@
   font-family: RingBearer;
   src: url("./assets/fonts/RingbearerMedium.ttf");
 }
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 /*
                             Main
 */
@@ -543,7 +544,6 @@ footer{
 /*
                     Login
 */
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 .backgroundLogin{
   position: fixed;
   z-index: 999;
