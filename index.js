@@ -2,6 +2,7 @@ import mapImage from './assets/images/warmap.webp';
 import markersData from './assets/data/markers.json';
 import {battleIcon, darkIcon, deathIcon, dwarfIcon, elfIcon, encounterIcon, hobbitIcon, humanIcon, ogreIcon, elfhelIcon, customIcon} from "./mapIcons.js";
 import imgData from './assets/data/imgData.json';
+import imgFactionData from './assets/data/imgFactionData.json';
 
 
 // CRS.Simple toma la forma de [y, x] en lugar de [x, y], de la misma manera que Leaflet utiliza [lat, lng] en lugar de [lng, lat].Traducido esto a unas coordenadas cartesianas, tendríamos el par [y , x]||| defino el tamaño del zoom
@@ -20,8 +21,9 @@ L.imageOverlay(mapImage, bounds).addEventListener('load', () => {
         const loader = document.getElementById("loader-screen");
         loader.style.opacity = '0';
         loader.addEventListener('transitionend', () => loader.remove());
-    }, 1500)
+    }, 1900)
 }).addTo(map);
+
 
 map.fitBounds(bounds);
 map.setView([bounds[1][0] / 2, bounds[1][1] / 2], 0);
@@ -231,8 +233,8 @@ map.on('click', onMapClick);
       imgData.isVisible = !imgData.isVisible;
     });
   }  
-  const viewimg = document.getElementById('buttonViewImg');
-  viewimg.onclick = renderImages;
+  const viewImg = document.getElementById('buttonViewImg');
+  viewImg.onclick = renderImages;
   
   createImages();
   
@@ -260,3 +262,49 @@ button.addEventListener('click', function() {
     document.getElementById("login").style.display = "none";
     document.getElementById("main").style.display = "block";
   });
+
+
+  //Función para las imagens de facción
+  function createFactionImages() {
+    imgFactionData.forEach(function(imgFactionData) {
+      const overlay = L.imageOverlay(imgFactionData.url, L.latLngBounds(imgFactionData.latLngBounds), {
+        opacity: 0.8,
+        errorOverlayUrl: imgFactionData.errorOverlayUrl,
+        alt: imgFactionData.altText,
+        interactive: true,
+      });
+        overlay.on('click', function() {
+            window.location.href = imgFactionData.redirectUrl; // Redireccionar a la URL especificada en imgData.redirectUrl.
+      });
+
+      overlay.on('mouseover', function () {
+        overlay.openPopup();
+      });
+  
+      overlay.on('mouseout', function () {
+        overlay.closePopup();
+      });
+      overlay.bindPopup(
+        `<div>
+          <h3>${imgFactionData.title}</h3>
+          <p>${imgFactionData.description}</p>
+          <img src="${imgFactionData.url}" alt="${imgFactionData.altText}">
+          <h5>${imgFactionData.click}</h5>
+        </div>`
+      );
+      imgFactionData.overlay = overlay;
+    });
+  }
+  function renderFactionImages() {
+    imgFactionData.forEach(function(imgFactionData) {
+      if (imgFactionData.isVisible) {
+        map.removeLayer(imgFactionData.overlay);
+      } else {
+        imgFactionData.overlay.addTo(map);
+      }
+      imgFactionData.isVisible = !imgFactionData.isVisible;
+    });
+  }  
+  const viewFactionImg = document.getElementById('buttonViewFactionImg');
+  viewFactionImg.onclick = renderFactionImages;
+createFactionImages();

@@ -424,7 +424,7 @@ footer{
   top: 0;
   left: 0;
   z-index: 1001;
-  background: #F9F4ED;
+  /* background: #F9F4ED; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -452,6 +452,15 @@ footer{
   position: relative;
   width: 80px;
   height: 80px;
+}
+#loader-screen video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
 }
 /*Animación de carga*/
 #loader-screen #lds-ring div {
@@ -482,9 +491,17 @@ footer{
 .navTitle{
   animation: glowing 4s infinite;
 }
+.image-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
 
-
-
+.button-text {
+  display: block;
+  margin-top: 5px;
+}
 /*Keyframes lo uso para definir los fotogramas de una animación*/
 @keyframes lds-ring {
   0% {
@@ -547,9 +564,21 @@ footer{
 .backgroundLogin{
   position: fixed;
   z-index: 999;
+  /*Si quiero añadir la animación de las imagenes pongo esto*/
   animation: changeBackground 55s infinite;
   background-image: url('imagen1.jpg');
   background-size: cover;
+}
+/*Para el vídeo de fondo en el login*/
+#backgroundVideo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	object-fit: cover;
 }
 .link {
   color: #c4c3ca;
