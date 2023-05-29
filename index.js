@@ -1,6 +1,7 @@
-import mapImage from './assets/images/warmap.webp';
+import mapImage from './assets/images/warmap2.webp';
 import markersData from './assets/data/markers.json';
-import {battleIcon, darkIcon, deathIcon, dwarfIcon, elfIcon, encounterIcon, hobbitIcon, humanIcon, ogreIcon, elfhelIcon, customIcon} from "./mapIcons.js";
+import {battleIcon, darkIcon, deathIcon, dwarfIcon, elfIcon, encounterIcon, hobbitIcon, humanIcon, ogreIcon, elfhelIcon, customIcon, reiklanIcon, lothernIcon, naggarondIcon, orionIcon, grimgorardboyzIcon,
+goldtoothIcon, disciplesofthemawIcon, thedrakenhofconclaveicon, voncarsteinIcon, chaoswarriorsIcon} from "./mapIcons.js";
 import imgData from './assets/data/imgData.json';
 import imgFactionData from './assets/data/imgFactionData.json';
 
@@ -14,14 +15,14 @@ const map = L.map('map', {
     zoomControl: false
 });
 
-const bounds = [[0, 0], [3093, 4524]];//Tamaño de la imagen en px en este caso es 4524x3093
+const bounds = [[0, 0], [5608, 8160]];//Tamaño de la imagen en px en este caso es 4524x3093 8160x5608
 L.imageOverlay(mapImage, bounds).addEventListener('load', () => {
     setTimeout(() => {
         document.getElementById("lds-ring").style.opacity = '0';
         const loader = document.getElementById("loader-screen");
         loader.style.opacity = '0';
         loader.addEventListener('transitionend', () => loader.remove());
-    }, 1900)
+    }, 1800)
 }).addTo(map);
 
 
@@ -63,6 +64,15 @@ const getFilters = () => {
         'quests': [],
         'spawn': [],
         'custom': [],
+        'humans':[],
+        'dwarfs':[],
+        'highelves':[],
+        'darkelves':[],
+        'woodelves':[],
+        'greenskins':[],
+        'ogre':[],
+        'vampirecounts':[],
+        'chaos':[]
     };
     document.querySelectorAll('#filters fieldset').forEach(category => {
         category.querySelectorAll('input[type=checkbox]:checked').forEach(filter => {
@@ -148,6 +158,28 @@ const createMarker = (map, data) => {
         markerOptions.icon = humanIcon
     }else if (data.tags?.custom?.includes('custom')) {
         markerOptions.icon = customIcon
+    }else if (data.tags?.humans?.includes('reiklan')) {
+      markerOptions.icon = reiklanIcon
+    }else if (data.tags?.dwarfs?.includes('karaz')) {
+      markerOptions.icon = dwarfIcon
+    }else if (data.tags?.highelves?.includes('lothern')) {
+      markerOptions.icon = lothernIcon
+    }else if (data.tags?.darkelves?.includes('naggarond')) {
+      markerOptions.icon = naggarondIcon
+    }else if (data.tags?.woodelves?.includes('orion')) {
+      markerOptions.icon = orionIcon
+    }else if (data.tags?.greenskins?.includes('grimgorardboyz')) {
+      markerOptions.icon = grimgorardboyzIcon
+    }else if (data.tags?.ogre?.includes('goldtooth')) {
+      markerOptions.icon = goldtoothIcon
+    }else if (data.tags?.ogre?.includes('disciplesofthemaw')) {
+      markerOptions.icon = disciplesofthemawIcon
+    }else if (data.tags?.vampirecounts?.includes('thedrakenhofconclave')) {
+      markerOptions.icon = thedrakenhofconclaveicon
+    }else if (data.tags?.vampirecounts?.includes('voncarstein')) {
+      markerOptions.icon = voncarsteinIcon
+    }else if (data.tags?.chaos?.includes('chaoswarriors')) {
+      markerOptions.icon = chaoswarriorsIcon
     }
     return L.marker(t, markerOptions).bindPopup(createInfoDialog(data));
 }
@@ -243,13 +275,42 @@ map.on('click', onMapClick);
   function moveToCoordinates(lat, lng, zoom) {
     map.setView([lat, lng], zoom);
 }
+//Map center
 const button = document.getElementById('inicial-point');
 button.addEventListener('click', function() {
     //Llama a la función moveToCoordinates con las coordenadas y el zoom deseados.
-    moveToCoordinates(2101.5, 2250, 0);
+    moveToCoordinates(3789,3948,0);
 });
 
+//GreenSkins
+const buttongreemskins = document.getElementById('buttongreemskins');
+buttongreemskins.addEventListener('click', function(){
+  moveToCoordinates(4424.5,5267,0)
+});
 
+//OgreKimgdon
+const buttongoldtooth = document.getElementById('buttongoldtooth');
+buttongoldtooth.addEventListener('click', function(){
+  moveToCoordinates(3639.5,5644,0)
+});
+const buttondisciplesofthemaw = document.getElementById('buttondisciplesofthemaw');
+buttondisciplesofthemaw.addEventListener('click', function(){
+  moveToCoordinates(3872.5,4239,0)
+});
+//VampireCounts
+const buttonthedrakenhofconclave = document.getElementById('buttonthedrakenhofconclave');
+buttonthedrakenhofconclave.addEventListener('click', function(){
+  moveToCoordinates(2492.75,4160.5,0)
+});
+const buttonvoncarstein = document.getElementById('buttonvoncarstein');
+buttonvoncarstein.addEventListener('click', function(){
+  moveToCoordinates(4015.5,4659,0)
+});
+//Chaos
+const buttonchaoswarriors = document.getElementById('buttonchaoswarriors');
+buttonchaoswarriors.addEventListener('click', function(){
+  moveToCoordinates(4639.5,5123,0)
+});
 
 //Función para mostrarlogin
 

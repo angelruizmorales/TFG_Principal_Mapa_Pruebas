@@ -61,6 +61,7 @@
 <a href="#" id="inicial-point">
     <img alt="view layer" src="assets/icons/returntomap.svg" >
 </a>
+
 <main id="map">
 </main>
 <aside id="filters-container" class="background">
@@ -69,7 +70,97 @@
         </span>
     <section id="filters">
         <h1 id="main-title">Warhammer Fantasy</h1>
-        <fieldset id="filters-quests">
+        <fieldset id="filters-humans">
+            <legend>Humans</legend>
+            <div>
+                <input data-category="humans" data-filter="reiklan" id="reiklan-humans" name="reiklan-humans" type="checkbox">
+                <label for="reiklan-humans">Reiklan</label>
+                <img class="iconaside" src="assets/icons/imgFaction/reiklan.png"> 
+            </div>
+        </fieldset>
+        <fieldset id="filters-dwarfs">
+            <legend>Dwarfs</legend>
+            <div>
+                <input data-category="dwarfs" data-filter="karaz" id="karaz-dwarfs" name="karaz-dwarfs" type="checkbox">
+                <label for="karaz-dwarfs">karaz-dwarfs</label>
+                <img class="iconaside" src="assets/icons/dwarf.svg"> 
+            </div>
+        </fieldset>
+        <fieldset id="filters-highelves">
+            <legend>HighElves</legend>
+            <div>
+                <input data-category="highelves" data-filter="lothern" id="lothern-highelves" name="lothern-highelves" type="checkbox">
+                <label for="lothern-highelves">Lothern</label>
+                <img class="iconaside" src="assets/icons/imgFaction/Lothern.png"> 
+            </div>
+        </fieldset>
+        <fieldset id="filters-darkelves">
+            <legend>DarkElves</legend>
+            <div>
+                <input data-category="darkelves" data-filter="naggarond" id="naggarond-darkelves" name="naggarond-darkelves" type="checkbox">
+                <label for="naggarond-darkelves">Naggarond</label>
+                <img class="iconaside" src="assets/icons/imgFaction/naggarond.png"> 
+            </div>
+        </fieldset>
+        <fieldset id="filters-woodelves">
+            <legend>WoodElves</legend>
+            <div>
+                <input data-category="woodelves" data-filter="orion" id="orion-woodelves" name="orion-woodelves" type="checkbox">
+                <label for="orion-woodelves">Orion</label>
+                <img class="iconaside" src="assets/icons/imgFaction/orion.png"> 
+            </div>
+        </fieldset>
+        <fieldset id="filters-greenskins">
+            <legend>GreenSkins</legend>
+            <div>
+                <input data-category="greenskins" data-filter="grimgorardboyz" id="grimgorardboyz-greenskins" name="grimgorardboyz-greenskins" type="checkbox">
+                <label for="grimgorardboyz-greenskins">grimgor ard boyz</label>
+                <img class="iconaside" src="assets/icons/imgFaction/grimgorardboyz.png"><img class="iconaside" id="buttongreemskins" alt="view layer" src="assets/icons/location.svg" > 
+            </div>
+        </fieldset>
+        <fieldset id="filters-vampirecounts">
+            <legend>VampireCounts</legend>
+            <div>
+                <input data-category="vampirecounts" data-filter="thedrakenhofconclave" id="thedrakenhofconclave-vampirecounts" name="thedrakenhofconclave-vampirecounts" type="checkbox">
+                <label for="thedrakenhofconclave-vampirecounts">TheDrakenhofConclave</label>
+                <img class="iconaside" src="assets/icons/imgFaction/TheDrakenhofConclave.png"><img class="iconaside" id="buttonthedrakenhofconclave" alt="view layer" src="assets/icons/location.svg" > 
+            </div>
+            <div>
+                <input data-category="vampirecounts" data-filter="voncarstein" id="voncarstein-vampirecounts" name="voncarstein-vampirecounts" type="checkbox">
+                <label for="voncarstein-vampirecounts">VonCarstein</label>
+                <img class="iconaside" src="assets/icons/imgFaction/voncarstein.png"><img class="iconaside" id="buttonvoncarstein" alt="view layer" src="assets/icons/location.svg" > 
+            </div>
+        </fieldset>
+        <fieldset id="filters-ogre">
+            <legend>OgreKingdoms</legend>
+            <div>
+                <input data-category="ogre" data-filter="goldtooth" id="goldtooth-ogre" name="goldtooth-ogre" type="checkbox">
+                <label for="goldtooth-ogre">goldtooth</label>
+                <img class="iconaside" src="assets/icons/imgFaction/goldtooth.png"><img class="iconaside" id="buttongoldtooth" alt="view layer" src="assets/icons/location.svg" > 
+            </div>
+            <div>
+                <input data-category="ogre" data-filter="disciplesofthemaw" id="disciplesofthemaw-ogre" name="disciplesofthemaw-ogre" type="checkbox">
+                <label for="disciplesofthemaw-ogre">DisciplesOfTheMaw</label>
+                <img class="iconaside" src="assets/icons/imgFaction/DisciplesOfTheMaw.png"><img class="iconaside" id="buttondisciplesofthemaw" alt="view layer" src="assets/icons/location.svg" > 
+            </div>
+        </fieldset>
+        <fieldset id="filters-chaos">
+            <legend>Chaos</legend>
+            <div>
+                <input data-category="chaos" data-filter="chaoswarriors" id="chaoswarriors-chaos" name="chaoswarriors-chaos" type="checkbox">
+                <label for="chaoswarriors-chaos">ChaosWarriors</label>
+                <img class="iconaside" src="assets/icons/imgFaction/chaoswarriors.png"><img class="iconaside" id="buttonchaoswarriors" alt="view layer" src="assets/icons/location.svg" > 
+            </div>
+        </fieldset>
+        <fieldset id="filters-caos">
+            <legend>Norsca</legend>
+            <div>
+                <input data-category="caos" data-filter="goldtooth" id="goldtooth-ogre" name="goldtooth-ogre" type="checkbox">
+                <label for="goldtooth-ogre">goldtooth</label>
+                <img class="iconaside" src="assets/icons/imgFaction/goldtooth.png"><img class="iconaside" id="buttongoldtooth" alt="view layer" src="assets/icons/location.svg" > 
+            </div>
+        </fieldset>
+        <!-- <fieldset id="filters-quests">
             <legend>Quests</legend>
 
             <div>
@@ -94,7 +185,8 @@
                        type="checkbox">
                 <label for="caos-quest">Caos events</label>
             </div>
-        </fieldset>
+        </fieldset> -->
+        
 
         <fieldset id="filters-places">
             <legend>Places</legend>
@@ -173,11 +265,10 @@
                 <label for="encounter-events">Encounters</label>
             </div>
         </fieldset>
-
         <fieldset id="filters-spawn">
             <legend>Spawn</legend>
             <div>
-                <input data-category="spawn" data-filter="caosspawn" id="caos-spawn" name="caos-spawn-spawn" type="checkbox">
+                <input data-category="spawn" data-filter="caosspawn" id="caos-spawn" name="caos-spawn" type="checkbox">
                 <label for="caos-spawn">Caos Spawn</label>
                 <img class="iconaside" src="assets/icons/ogre.svg"> 
                 
@@ -192,7 +283,6 @@
                 <input data-category="spawn" data-filter="humanspawn" id="human-spawn" name="human-spawn" type="checkbox">
                 <label for="human-spawn">Human Spawn</label>
                 <img class="iconaside" src="assets/icons/castle.svg"> 
-                
             </div>
         </fieldset>
         <fieldset>

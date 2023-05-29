@@ -270,6 +270,9 @@ aside #filters fieldset legend {
 #human-spawn{
   display: none;
 }
+#reiklan-humans{
+  display: none;
+}
 .custom-add{
   width: 45px;
   background-color: transparent;
