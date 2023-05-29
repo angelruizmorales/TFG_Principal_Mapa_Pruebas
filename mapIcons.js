@@ -10,7 +10,16 @@ import ogreImg from './assets/icons/ogre.svg'
 import eflhelImg from './assets/icons/elfhel.svg'
 import caosImg from './assets/icons/ogre.svg'
 import customImg from './assets/icons/custom.svg'
+//Humans
 import reiklanImg from './assets/icons/imgFaction/reiklan.png'
+import goldencollegeImg from './assets/icons/imgFaction/goldencollege.png'
+import thehuntsmarshalsexpeditionImg from './assets/icons/imgFaction/thehuntsmarshalsexpedition.png'
+//Dwarfs
+import karazakarazImg from './assets/icons/imgFaction/karazakaraz.png'
+import clanangrundImg from './assets/icons/imgFaction/angrund.png'
+import karazkadrinImg from './assets/icons/imgFaction/karazkadrin.png'
+import ironbrowexpeditionImg from './assets/icons/imgFaction/ironbrowexpedition.png' 
+//Elves
 import lothernImg from './assets/icons/imgFaction/Lothern.png'
 import naggarondImg from './assets/icons/imgFaction/naggarond.png'
 import orionImg from './assets/icons/imgFaction/orion.png'
@@ -109,24 +118,65 @@ export const customIcon = L.icon({
     iconAnchor: iconAnchor,
     popupAnchor: popupAnchor
 });
+//Humans
 export const reiklanIcon = L.icon({
     iconUrl: reiklanImg,
     iconSize: iconSize,
     iconAnchor: iconAnchor,
     popupAnchor: popupAnchor
 });
+export const goldencollegeIcon = L.icon({
+    iconUrl: goldencollegeImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const thehuntsmarshalsexpeditionIcon = L.icon({
+    iconUrl: thehuntsmarshalsexpeditionImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+//Dwarfs
+export const karazakarazIcon = L.icon({
+    iconUrl: karazakarazImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const karazkadrinIcon = L.icon({
+    iconUrl: karazkadrinImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const clanangrundIcon = L.icon({
+    iconUrl: clanangrundImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const ironbrowexpeditionIcon = L.icon({
+    iconUrl: ironbrowexpeditionImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+//Elves
 export const lothernIcon = L.icon({
     iconUrl: lothernImg,
     iconSize: iconSize,
     iconAnchor: iconAnchor,
     popupAnchor: popupAnchor
 });
+//Black Elves
 export const naggarondIcon = L.icon({
     iconUrl: naggarondImg,
     iconSize: iconSize,
     iconAnchor: iconAnchor,
     popupAnchor: popupAnchor
 });
+//Wood Elves
 export const orionIcon = L.icon({
     iconUrl: orionImg,
     iconSize: iconSize,

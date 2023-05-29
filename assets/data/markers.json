@@ -927,17 +927,69 @@
     "y":4664.25
   },
   {
-    "title": "karaz",
+    "title": "GoldenCollege",
+    "sindarinTitle": "Orodruin, Amon Amarth",
+    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
+    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "tags": {
+      "humans": [
+        "goldencollege"
+      ]
+    },
+    "x":4554,
+    "y":4451.75
+  },
+  {
+    "title": "the huntsmarshal's expedition",
+    "sindarinTitle": "Orodruin, Amon Amarth",
+    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
+    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "tags": {
+      "humans": [
+        "thehuntsmarshalsexpedition"
+      ]
+    },
+    "x":1245,
+    "y":2265.75
+  },
+  {
+    "title": "karaz-a-karaz"  ,
     "sindarinTitle": "Orodruin, Amon Amarth",
     "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
     "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
     "tags": {
       "dwarfs": [
-        "karaz"
+        "karazakaraz"
       ]
     },
-    "x":2315,
-    "y":2444.25
+    "x":4757.5,
+    "y":4414.25
+  },
+  {
+    "title": "Clan Angrund"  ,
+    "sindarinTitle": "Orodruin, Amon Amarth",
+    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
+    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "tags": {
+      "dwarfs": [
+        "clanangrund"
+      ]
+    },
+    "x":4357.5,
+    "y":4344.75
+  },
+  {
+    "title": "Karaz-kadrin"  ,
+    "sindarinTitle": "Orodruin, Amon Amarth",
+    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
+    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "tags": {
+      "dwarfs": [
+        "karazkadrin"
+      ]
+    },
+    "x":4829,
+    "y":4639.75
   },
   {
     "title": "Lothern",
@@ -979,6 +1031,20 @@
     },
     "x":4315.5,
     "y":4429.75
+
+  },
+  {
+    "title": "Roble eterno",
+    "sindarinTitle": "Orodruin, Amon Amarth",
+    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
+    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "tags": {
+      "woodelves": [
+        "orion"
+      ]
+    },
+    "x":4321,
+    "y":4474.25
 
   },
   {
