@@ -1,11 +1,13 @@
 import mapImage from './assets/images/warmap2.webp';
 import markersData from './assets/data/markers.json';
 import {battleIcon, darkIcon, deathIcon, dwarfIcon, elfIcon, encounterIcon, hobbitIcon, humanIcon, ogreIcon, elfhelIcon, customIcon, reiklanIcon, lothernIcon, naggarondIcon, orionIcon,argwylonIcon,heraldsofarielIcon
-,wargroveofwoeIcon,grimgorardboyzIcon,goldtoothIcon, disciplesofthemawIcon, thedrakenhofconclaveicon, voncarsteinIcon, chaoswarriorsIcon,goldencollegeIcon,
-thehuntsmarshalsexpeditionIcon, karazakarazIcon, clanangrundIcon, karazkadrinIcon, ironbrowexpeditionIcon, theancestralthrongIcon, orderofloremastersIcon,
+,wargroveofwoeIcon,grimgorardboyzIcon,goldtoothIcon, disciplesofthemawIcon, thedrakenhofconclaveicon, voncarsteinIcon,caravanofbluerosesIcon,thebarrowlegionIcon,chaoswarriorsIcon,
+goldencollegeIcon,thehuntsmarshalsexpeditionIcon, karazakarazIcon, clanangrundIcon, karazkadrinIcon, ironbrowexpeditionIcon, theancestralthrongIcon, orderofloremastersIcon,
 nagarytheIcon,avelornIcon,yvresseIcon,knightsofcaledorIcon, cultofsigmarIcon,couronneIcon,bordeleauxerrantIcon,carcassonneIcon,chevaliersdelyonesseIcon, cultofpleasureIcon,haggraefIcon,harganethIcon,
 theblesseddreadIcon,thethousandmawsIcon, bonerattlazIcon, thebloodyhandzIcon, crookedmoonIcon, brokenaxeIcon, hexoatlIcon,lastdefendersIcon,tlaquaIcon,cultofsotekIcon,itzaIcon,spiritofthejungleIcon,
-ghostsofpahuaxIcon,worldwalkersIcon, wintertoothIcon} from "./mapIcons.js";
+ghostsofpahuaxIcon,worldwalkersIcon, wintertoothIcon,clanmorsIcon,clanpestilensIcon,clanrictusIcon,claneshinIcon,clanskryreIcon,clanmoulderIcon,khemriIcon,courtoflybarasIcon,exilesofnehekIcon,
+followersofnagashIcon,thedrownedIcon,thedreadfleetIcon,piratesofsartosaIcon,theawakenedIcon,warherdoftheoneeyeIcon,harbingerofdisasterIcon,warherdoftheshadowgaveIcon,
+slaughterhorntribeIcon,thenorthernprovincesIcon,thewesternprovincesIcon} from "./mapIcons.js";
 import imgData from './assets/data/imgData.json';
 import imgFactionData from './assets/data/imgFactionData.json';
 
@@ -26,7 +28,7 @@ L.imageOverlay(mapImage, bounds).addEventListener('load', () => {
         const loader = document.getElementById("loader-screen");
         loader.style.opacity = '0';
         loader.addEventListener('transitionend', () => loader.remove());
-    }, 1800)
+    }, 2800)
 }).addTo(map);
 
 
@@ -73,7 +75,12 @@ const getFilters = () => {
         'ogre':[],
         'vampirecounts':[],
         'lizardmen':[],
+        'grandcathay':[],
         'norsca':[],
+        'skaven':[],
+        'tombkings':[],
+        'vampirecoast':[],
+        'beastmen':[],
         'chaos':[]
     };
     document.querySelectorAll('#filters fieldset').forEach(category => {
@@ -236,6 +243,10 @@ const createMarker = (map, data) => {
       markerOptions.icon = thedrakenhofconclaveicon
     }else if (data.tags?.vampirecounts?.includes('voncarstein')) {
       markerOptions.icon = voncarsteinIcon
+    }else if (data.tags?.vampirecounts?.includes('caravanofblueroses')) {
+      markerOptions.icon = caravanofbluerosesIcon
+    }else if (data.tags?.vampirecounts?.includes('thebarrowlegion')) {
+      markerOptions.icon = thebarrowlegionIcon
     }else if (data.tags?.lizardmen?.includes('hexoatl')) {
       markerOptions.icon = hexoatlIcon
     }else if (data.tags?.lizardmen?.includes('lastdefenders')) {
@@ -250,10 +261,50 @@ const createMarker = (map, data) => {
       markerOptions.icon = spiritofthejungleIcon
     }else if (data.tags?.lizardmen?.includes('ghostsofpahuax')) {
       markerOptions.icon = ghostsofpahuaxIcon
+    }else if (data.tags?.grandcathay?.includes('thenorthernprovinces')) {
+      markerOptions.icon = thenorthernprovincesIcon
+    }else if (data.tags?.grandcathay?.includes('thewesternprovinces')) {
+      markerOptions.icon = thewesternprovincesIcon
     }else if (data.tags?.norsca?.includes('worldwalkers')) {
       markerOptions.icon = worldwalkersIcon
     }else if (data.tags?.norsca?.includes('wintertooth')) {
       markerOptions.icon = wintertoothIcon
+    }else if (data.tags?.skaven?.includes('clanmors')) {
+      markerOptions.icon = clanmorsIcon
+    }else if (data.tags?.skaven?.includes('clanpestilens')) {
+      markerOptions.icon = clanpestilensIcon
+    }else if (data.tags?.skaven?.includes('clanrictus')) {
+      markerOptions.icon = clanrictusIcon
+    }else if (data.tags?.skaven?.includes('claneshin')) {
+      markerOptions.icon = claneshinIcon
+    }else if (data.tags?.skaven?.includes('clanskryre')) {
+      markerOptions.icon = clanskryreIcon
+    }else if (data.tags?.skaven?.includes('clanmoulder')) {
+      markerOptions.icon = clanmoulderIcon
+    }else if (data.tags?.tombkings?.includes('khemri')) {
+      markerOptions.icon = khemriIcon
+    }else if (data.tags?.tombkings?.includes('courtoflybaras')) {
+      markerOptions.icon = courtoflybarasIcon
+    }else if (data.tags?.tombkings?.includes('exilesofnehek')) {
+      markerOptions.icon = exilesofnehekIcon
+    }else if (data.tags?.tombkings?.includes('followersofnagash')) {
+      markerOptions.icon = followersofnagashIcon
+    }else if (data.tags?.vampirecoast?.includes('theawakened')) {
+      markerOptions.icon = theawakenedIcon
+    }else if (data.tags?.vampirecoast?.includes('piratesofsartosa')) {
+      markerOptions.icon = piratesofsartosaIcon
+    }else if (data.tags?.vampirecoast?.includes('thedreadfleet')) {
+      markerOptions.icon = thedreadfleetIcon
+    }else if (data.tags?.vampirecoast?.includes('thedrowned')) {
+      markerOptions.icon = thedrownedIcon
+    }else if (data.tags?.beastmen?.includes('warherdoftheoneeye')) {
+      markerOptions.icon = warherdoftheoneeyeIcon
+    }else if (data.tags?.beastmen?.includes('harbingerofdisaster')) {
+      markerOptions.icon = harbingerofdisasterIcon
+    }else if (data.tags?.beastmen?.includes('warherdoftheshadowgave')) {
+      markerOptions.icon = warherdoftheshadowgaveIcon
+    }else if (data.tags?.beastmen?.includes('slaughterhorntribe')) {
+      markerOptions.icon = slaughterhorntribeIcon
     }else if (data.tags?.chaos?.includes('chaoswarriors')) {
       markerOptions.icon = chaoswarriorsIcon
     }
@@ -477,6 +528,8 @@ const buttonCoordinates = {
   //VampireCounts
   'buttonthedrakenhofconclave': [2492.75, 4160.5, 1],
   'buttonvoncarstein': [4348.25, 4610, 1],
+  'buttoncaravanofblueroses': [3036.25, 5833.5, 1],
+  'buttonthebarrowlegion': [4459.25, 4178.5, 1],
   //Lizardmen
   'buttonhexoatl': [2305.25, 719, 1],
   'buttonlastdefenders': [2345.25, 4378, 1],
@@ -485,9 +538,34 @@ const buttonCoordinates = {
   'buttonitza': [1230.75, 1763, 1],
   'buttonspiritofthejungle': [2829.25, 6915.5, 1],
   'buttonghostsofpahuax': [214.75, 3797, 1],
+  //GranCathay
+  'buttonthenorthernprovinces': [3973.75, 6336, 1],
+  'buttonthewesternprovinces': [2941.75, 6326, 1],
   //Norsca
   'buttonworldwalkers': [4832.25, 4001, 1],
   'buttonwintertooth': [4972.25, 4523.5, 1],
+  //Skaven
+  'buttonclanmors': [3120.25, 4523.5, 1],
+  'buttonclanpestilens': [795.25, 1829.5, 1],
+  'buttonclanrictus': [3976.25, 4880.5, 1],
+  'buttonclaneshin': [3216.25, 6147.5, 1],
+  'buttonclanskryre': [4122.25, 4054.5, 1],
+  'buttonclanmoulder': [4969.25, 4777.5, 1],
+  //tombkings
+  'buttonkhemri': [3080.25, 4194.5, 1],
+  'buttoncourtoflybaras': [2830.25, 4679.5, 1],
+  'buttonexilesofnehek': [3540.25, 273.5, 1],
+  'buttonfollowersofnagash': [2872.25, 2993.5, 1],
+  //VampireCoast
+  'buttontheawakened': [1646.25, 2081.5, 1],
+  'buttonpiratesofsartosa': [3853.25, 4067.5, 1],
+  'buttonthedreadfleet': [2653.25, 1967.5, 1],
+  'buttonthedrowned': [4368.25, 1612.5, 1],
+  //beastmen
+  'buttonwarherdoftheoneeye': [4608.25, 4462.5, 1],
+  'buttonharbingerofdisaster': [3332.25, 4283.5, 1],
+  'buttonwarherdoftheshadowgave': [4068.25, 3928.5, 1],
+  'buttonslaughterhorntribe': [3666.25, 617.5, 1],
   //Chaos
   'buttonchaoswarriors': [5076.5, 5059, 1]
 };

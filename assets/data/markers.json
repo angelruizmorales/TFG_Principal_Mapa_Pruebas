@@ -486,6 +486,34 @@
   }
   ,
   {
+    "title": "Caravan of Blue Roses",
+    "description": "Caravan of Blue Roses is a playable Vampire Counts faction introduced in Total War: Warhammer III. It is led by Helman Ghorst.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Caravan_of_Blue_Roses",
+    "tags": {
+      "vampirecounts": [
+        "caravanofblueroses"
+      ]
+    },
+    "x":5830.5,
+    "y":3276
+    
+  }
+  ,
+  {
+    "title": "The Barrow Legion",
+    "description": "The Midnight Aristocracy have long struck terror into the hearts of the mortal races. From their lairs deep in Sylvania, the Vampire Counts strike out against the living with their massed armies of the eager dead.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Barrow_Legion",
+    "tags": {
+      "vampirecounts": [
+        "thebarrowlegion"
+      ]
+    },
+    "x":4188.5,
+    "y":4675.5
+    
+  }
+  ,
+  {
     "title": "Swartzhafen",
     
     "description": "From the icy Sea of Claws in the north to the soaring Black Mountains in the south, the individuality of the Empire's provinces is much defined by its landscape. Its vast forest provide food and materials of production, while wide rivers and traversable valleys facilitate trade and transport. Yet at times, the land itself seems to strive against progress, concealing monsters and enemies of all sorts amongst its craggy passes and dark groves. Peril awaits within and without, but the nations of men have thus far proved equal to the challenge...",
@@ -582,7 +610,6 @@
   },
   {
     "title": "Ghosts of Pahuax",
-    
     "description": "Ghosts of Pahuax is a playable Lizardmen Lizardmen faction introduced in the Total War: Warhammer II The Silence & The Fury DLC and is led by legendary lord Oxyotl. It starts in the western parts of the Southern Chaos Wastes.",
     "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Ghosts_of_Pahuax",
     "tags": {
@@ -595,8 +622,31 @@
     
   },
   {
-    "title": "World Walkers",
-    
+    "title": "The Northern Provinces",
+    "description": "The Northern Provinces is a playable Grand Cathay Grand Cathay faction introduced in Total War: Warhammer III. It is led by Miao Ying.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Northern_Provinces",
+    "tags": {
+      "grandcathay": [
+        "thenorthernprovinces"
+      ]
+    },
+    "x":6316.5,
+    "y":4255    
+  },
+  {
+    "title": "The Western Provinces",
+    "description": "The Western Provinces is a playable Grand Cathay Grand Cathay faction introduced in Total War: Warhammer III. It is led by Zhao Ming.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Western_Provinces",
+    "tags": {
+      "grandcathay": [
+        "thewesternprovinces"
+      ]
+    },
+    "x":6301,
+    "y":3267 
+  },
+  {
+    "title": "World Walkers",  
     "description": "World Walkers is a playable subfaction of Norsca introduced in Total War: Warhammer. It is led by Wulfrik the Wanderer and can be found in Norsca, north of The Old World.Norsca is an icy mountainous peninsula in the far north, under the shadow of Chaos. Its inhabitants (the hardy and warlike Norscan Tribes) are Chaos-worshippers, and they share their inhospitable land with ferocious monsters. When the Norscans raid and plunder other lands, it is with hordes of barbarian warriors backed up by trolls, mammoths, fimir, skin-wolves and even mighty frost-drakes.",
     "infoLink": "https://totalwarwarhammer.fandom.com/wiki/World_Walkers",
     "tags": {
@@ -622,6 +672,250 @@
     "x":4517,
     "y":5295.25
     
+    
+  },
+  {
+    "title": "Clan Mors", 
+    "description": "Clan Mors is a playable faction of Skaven introduced in Total War: Warhammer II. It is led by legendary lord Queek Headtaker and can be found in The Southlands. The faction is playable in multiplayer and campaign.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Clan_Mors",
+    "tags": {
+      "skaven": [
+        "clanmors"
+      ]
+    },
+    "x":4510,
+    "y":3398
+    
+  },
+  {
+    "title": "Clan Pestilens", 
+    "description": "Clan Pestilens is a playable faction of Skaven introduced in Total War: Warhammer II. It is led by Lord Skrolk and can be found in the southern parts of Lustria.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Clan_Pestilens",
+    "tags": {
+      "skaven": [
+        "clanpestilens"
+      ]
+    },
+    "x":1809.5,
+    "y":1033
+    
+  },
+  {
+    "title": "Clan Rictus", 
+    "description": "Clan Rictus is a faction of Skaven introduced in Total War: Warhammer II. It is led by legendary lord Tretch Craventail and starts out in the middle of Naggaroth. The faction is playable in campaign and multiplayer.Clan Rictus was introduced as free DLC in the Tomb Kings update. They can be downloaded from Steam here: LinkIn Total War: Warhammer III, Clan Rictus is present at Crookback Mountain as an nonplayable faction in The Realm of Chaos campaign. In Immortal Empires, Clan Rictus is playable and starts at Crookback Mountain.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Clan_Rictus",
+    "tags": {
+      "skaven": [
+        "clanrictus"
+      ]
+    },
+    "x":4898,
+    "y":4176.5
+    
+  },
+  {
+    "title": "Clan Eshin", 
+    "description": "Clan Eshin is a Skaven faction introduced in Total War: Warhammer II, led by Deathmaster Snikch. The faction was made playable in the Shadow and the Blade DLC. In Total War: Warhammer III, they are a non-playable faction in The Realm of Chaos campaign, but fully playable in the Immortal Empires campaign.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Clan_Eshin",
+    "tags": {
+      "skaven": [
+        "claneshin"
+      ]
+    },
+    "x":6132,
+    "y":3477
+    
+  },
+  {
+    "title": "Clan Skryre", 
+    "description": "Clan Skryre is a playable Skaven faction introduced in Total War: Warhammer II. It is led by Ikit Claw and can be found in Skavenblight, south of Athel Loren in the Mortal Empires campaign and in eastern Lustria in the Eye of the Vortex campaign.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Clan_Skryre",
+    "tags": {
+      "skaven": [
+        "clanskryre"
+      ]
+    },
+    "x":4068.5,
+    "y":4325
+  },
+  {
+    "title": "Clan Moulder", 
+    "description": "Clan Moulder is a playable Skaven faction introduced in Total War: Warhammer II. It is led by Throt the Unclean and can be found in the northeastern parts of the Old World in the Mortal Empires campaign and in the very northern parts of Naggaroth in the Eye of the Vortex campaign.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Clan_Moulder",
+    "tags": {
+      "skaven": [
+        "clanmoulder"
+      ]
+    },
+    "x":4779,
+    "y":5149
+  },
+  {
+    "title": "Khemri", 
+    "description": "The Tomb Kings were previously a great human empire called Nehekhara (now known as the Land of the Dead), themed on ancient Egypt. However, the empire of Nehekhara was destroyed by the necromancer Nagash and his vampires, causing the mummified dead of Nehekhara to rise. The Tomb Kings now seek to reclaim their lost glory, and take vengeance on Nagash and the vampires. The armies of the Tomb Kings consist of ranks of skeleton soldiers and chariots, supported by towering animated statues of bone and stone.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Khemri",
+    "tags": {
+      "tombkings": [
+        "khemri"
+      ]
+    },
+    "x":4189,
+    "y":3285
+    
+  },
+  {
+    "title": "Court of Lybaras", 
+    "description": "The Tomb Kings were previously a great human empire called Nehekhara (now known as the Land of the Dead), themed on ancient Egypt. However, the empire of Nehekhara was destroyed by the necromancer Nagash and his vampires, causing the mummified dead of Nehekhara to rise. The Tomb Kings now seek to reclaim their lost glory, and take vengeance on Nagash and the vampires. The armies of the Tomb Kings consist of ranks of skeleton soldiers and chariots, supported by towering animated statues of bone and stone.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Court_of_Lybaras",
+    "tags": {
+      "tombkings": [
+        "courtoflybaras"
+      ]
+    },
+    "x":4678,
+    "y":3019
+    
+  },
+  {
+    "title": "Exiles of Nehek", 
+    "description": "The Tomb Kings were previously a great human empire called Nehekhara (now known as the Land of the Dead), themed on ancient Egypt. However, the empire of Nehekhara was destroyed by the necromancer Nagash and his vampires, causing the mummified dead of Nehekhara to rise. The Tomb Kings now seek to reclaim their lost glory, and take vengeance on Nagash and the vampires. The armies of the Tomb Kings consist of ranks of skeleton soldiers and chariots, supported by towering animated statues of bone and stone.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Exiles_of_Nehek",
+    "tags": {
+      "tombkings": [
+        "exilesofnehek"
+      ]
+    },
+    "x":268.5,
+    "y":3783.5
+    
+  },
+  {
+    "title": "Followers of Nagash", 
+    "description": "The Tomb Kings were previously a great human empire called Nehekhara (now known as the Land of the Dead), themed on ancient Egypt. However, the empire of Nehekhara was destroyed by the necromancer Nagash and his vampires, causing the mummified dead of Nehekhara to rise. The Tomb Kings now seek to reclaim their lost glory, and take vengeance on Nagash and the vampires. The armies of the Tomb Kings consist of ranks of skeleton soldiers and chariots, supported by towering animated statues of bone and stone.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Followers_of_Nagash",
+    "tags": {
+      "tombkings": [
+        "followersofnagash"
+      ]
+    },
+    "x":2990.5,
+    "y":3098
+  },
+  {
+    "title": "Followers of Nagash", 
+    "description": "The Tomb Kings were previously a great human empire called Nehekhara (now known as the Land of the Dead), themed on ancient Egypt. However, the empire of Nehekhara was destroyed by the necromancer Nagash and his vampires, causing the mummified dead of Nehekhara to rise. The Tomb Kings now seek to reclaim their lost glory, and take vengeance on Nagash and the vampires. The armies of the Tomb Kings consist of ranks of skeleton soldiers and chariots, supported by towering animated statues of bone and stone.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Followers_of_Nagash",
+    "tags": {
+      "tombkings": [
+        "followersofnagash"
+      ]
+    },
+    "x":2838,
+    "y":3291
+    
+  },
+  {
+    "title": "The Awakened", 
+    "description": "The Awakened is a playable Vampire Coast faction introduced in Total War: Warhammer II with the Curse of the Vampire Coast DLC. It is led by Luthor Harkon and can be found on Lustria's eastern shores.The Vampire Coast are undead who ply the coastline of Lustria in search of plunder. Their armies consist of zombified pirates armed with cutlasses, muskets and cannons, backed up by giant crabs and other undead horrors.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Awakened",
+    "tags": {
+      "vampirecoast": [
+        "theawakened"
+      ]
+    },
+    "x":2076.5,
+    "y":1782
+    
+  },
+  {
+    "title": "Pirates of Sartosa", 
+    "description": "Pirates of Sartosa is a playable Vampire Coast faction introduced in Total War: Warhammer II with the Curse of the Vampire Coast DLC. It is led by Aranessa Saltspite and can be found in Sartosa, east of Ulthuan.The Vampire Coast are undead who ply the coastlines of the world in search of plunder. Their armies consist of zombified pirates armed with cutlasses, muskets and cannons, backed up by giant crabs and other undead horrors. Pirates of Sartosa are a mix of human and undead pirates who make port at Sartosa, and raid the seas south of the Old World.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Pirates_of_Sartosa",
+    "tags": {
+      "vampirecoast": [
+        "piratesofsartosa"
+      ]
+    },
+    "x":4064,
+    "y":4064.5
+    
+  },
+  {
+    "title": "The Dreadfleet", 
+    "description": "The Dreadfleet is a playable Vampire Coast faction introduced in Total War: Warhammer II with the Curse of the Vampire Coast DLC. It is led by Count Noctilus and can be found in the Galleon’s Graveyard, in the middle of the ocean, south of Ulthuan.The Vampire Coast are undead who ply the coastlines of the world in search of plunder. Their armies consist of zombified pirates armed with cutlasses, muskets and cannons, backed up by giant crabs and other undead horrors.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Dreadfleet",
+    "tags": {
+      "vampirecoast": [
+        "thedreadfleet"
+      ]
+    },
+    "x":1957,
+    "y":2927.5
+    
+  },
+  {
+    "title": "The Drowned", 
+    "description": "The Vampire Coast are undead who ply the coastlines of the world in search of plunder. Their armies consist of zombified pirates armed with cutlasses, muskets and cannons, backed up by giant crabs and other undead horrors. The Drowned also use undead Bretonnian cavalry units who make port on the coast between Lustria and Naggaroth, and together raid the seas of the New World",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Drowned",
+    "tags": {
+      "vampirecoast": [
+        "thedrowned"
+      ]
+    },
+    "x":1616,
+    "y":4599
+    
+  },
+  {
+    "title": "Warherd of the One-Eye", 
+    "description": "The faction is led by Khazrak the One-Eye and has the same crest as the regular Beastmen. Khazrak is the starting lord, but Malagor the Dark Omen can be recruited later on. In Mortal Empires Morghur the Shadowgave and Taurox can also be recruited.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Warherd_of_the_One-Eye",
+    "tags": {
+      "beastmen": [
+        "warherdoftheoneeye"
+      ]
+    },
+    "x":4476.569526855006,
+    "y":4794.54995989387
+    
+  },
+  {
+    "title": "Harbinger of Disaster", 
+    "description": "Harbinger of Disaster is a playable Beastmen faction introduced in Total War: Warhammer II as part of the Beastmen rework alongside the release of The Silence & The Fury. It is led by the legendary lord Malagor the Dark Omen and is playable in Mortal Empires, custom battles and multiplayer.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Harbinger_of_Disaster",
+    "tags": {
+      "beastmen": [
+        "harbingerofdisaster"
+      ]
+    },
+    "x":4272.069526855006,
+    "y":3575.54995989387
+    
+  },
+  {
+    "title": "Warherd of the Shadowgave", 
+    "description": "Warherd of the Shadowgave is a Beastmen subfaction introduced in Total War: Warhammer, and led by Morghur the Shadowgave. They were only playable in custom battles and multiplayer, but where later also made available in Mortal Empires with The Silence & The Fury.In the Season of Revelation campaign, they appear as a non-playable antagonist faction.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Warherd_of_the_Shadowgave",
+    "tags": {
+      "beastmen": [
+        "warherdoftheshadowgave"
+      ]
+    },
+    "x":3918.0817052417856,
+    "y":4354.447298307911
+    
+  },
+  {
+    "title": "Slaughterhorn Tribe", 
+    "description": "Slaughterhorn Tribe is a playable Beastmen Beastmen faction introduced in the Total War: Warhammer II The Silence & The Fury DLC and led by legendary lord Taurox the Brass Bull. It is playable in campaign, custom battles and multiplayer.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Slaughterhorn_Tribe",
+    "tags": {
+      "beastmen": [
+        "slaughterhorntribe"
+      ]
+    },
+    "x":613,
+    "y":3819
     
   },
   {

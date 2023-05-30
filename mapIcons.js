@@ -57,6 +57,8 @@ import disciplesofthemawImg from './assets/icons/imgFaction/DisciplesOfTheMaw.pn
 //VampireCounts
 import thedrakenhofconclaveImg from './assets/icons/imgFaction/TheDrakenhofConclave.png'
 import voncarsteinImg from './assets/icons/imgFaction/voncarstein.png'
+import caravanofbluerosesImg from './assets/icons/imgFaction/caravanofblueroses.png'
+import thebarrowlegionImg from './assets/icons/imgFaction/thebarrowlegion.png'
 //Lizardmen
 import hexoatlImg from './assets/icons/imgFaction/hexoatl.png'
 import lastdefendersImg from './assets/icons/imgFaction/lastdefenders.png'
@@ -65,10 +67,35 @@ import cultofsotekImg from './assets/icons/imgFaction/cultofsotek.png'
 import itzaImg from './assets/icons/imgFaction/itza.png'
 import spiritofthejungleImg from './assets/icons/imgFaction/spiritofthejungle.png'
 import ghostsofpahuaxImg from './assets/icons/imgFaction/ghostsofpahuax.png'
+//GrandCathay
+import thenorthernprovincesImg from './assets/icons/imgFaction/thenorthernprovinces.png'
+import thewesternprovincesImg from './assets/icons/imgFaction/thewesternprovinces.png'
 //Norsca
 import worldwalkersImg from './assets/icons/imgFaction/worldwalkers.png'
 import wintertoothImg from './assets/icons/imgFaction/wintertooth.png'
-//Chaos
+//Skaven
+import clanmorsImg from './assets/icons/imgFaction/clanmors.png'
+import clanpestilensImg from './assets/icons/imgFaction/clanpestilens.png'
+import clanrictusImg from './assets/icons/imgFaction/clanrictus.png'
+import claneshinImg from './assets/icons/imgFaction/claneshin.png'
+import clanskryreImg from './assets/icons/imgFaction/clanskryre.png'
+import clanmoulderImg from './assets/icons/imgFaction/clanmoulder.png'
+//TombKings
+import khemriImg from './assets/icons/imgFaction/khemri.png'
+import courtoflybarasImg from './assets/icons/imgFaction/courtoflybaras.png'
+import exilesofnehekImg from './assets/icons/imgFaction/exilesofnehek.png'
+import followersofnagashImg from './assets/icons/imgFaction/followersofnagash.png'
+//VampireCoast
+import theawakenedImg from './assets/icons/imgFaction/theawakened.png'
+import piratesofsartosaImg from './assets/icons/imgFaction/piratesofsartosa.png'
+import thedreadfleetImg from './assets/icons/imgFaction/thedreadfleet.png'
+import thedrownedImg from './assets/icons/imgFaction/thedrowned.png'
+//Beastmen
+import warherdoftheoneeyeImg from './assets/icons/imgFaction/warherdoftheoneeye.png'
+import warherdoftheshadowgaveImg from './assets/icons/imgFaction/warherdoftheshadowgave.png'
+import harbingerofdisasterImg from './assets/icons/imgFaction/harbingerofdisaster.png'
+import slaughterhorntribeImg from './assets/icons/imgFaction/slaughterhorntribe.png'
+//Chaos  
 import chaoswarriorsImg from './assets/icons/imgFaction/chaoswarriors.png'
 
 const iconSize = [30, 30];
@@ -392,8 +419,14 @@ export const voncarsteinIcon = L.icon({
     iconAnchor: iconAnchor,
     popupAnchor: popupAnchor
 });
-export const chaoswarriorsIcon = L.icon({
-    iconUrl: chaoswarriorsImg,
+export const caravanofbluerosesIcon = L.icon({
+    iconUrl: caravanofbluerosesImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const thebarrowlegionIcon = L.icon({
+    iconUrl: thebarrowlegionImg,
     iconSize: iconSize,
     iconAnchor: iconAnchor,
     popupAnchor: popupAnchor
@@ -441,6 +474,19 @@ export const ghostsofpahuaxIcon = L.icon({
     iconAnchor: iconAnchor,
     popupAnchor: popupAnchor
 });
+//GrandCathay
+export const thenorthernprovincesIcon = L.icon({
+    iconUrl: thenorthernprovincesImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const thewesternprovincesIcon = L.icon({
+    iconUrl: thewesternprovincesImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
 //Norsca
 export const worldwalkersIcon = L.icon({
     iconUrl: worldwalkersImg,
@@ -454,4 +500,122 @@ export const wintertoothIcon = L.icon({
     iconAnchor: iconAnchor,
     popupAnchor: popupAnchor
 });
+//Skaven
+export const clanmorsIcon = L.icon({
+    iconUrl: clanmorsImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const clanpestilensIcon = L.icon({
+    iconUrl: clanpestilensImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const clanrictusIcon = L.icon({
+    iconUrl: clanrictusImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const claneshinIcon = L.icon({
+    iconUrl: claneshinImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const clanskryreIcon = L.icon({
+    iconUrl: clanskryreImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const clanmoulderIcon = L.icon({
+    iconUrl: clanmoulderImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+//TombKings
+export const courtoflybarasIcon = L.icon({
+    iconUrl: courtoflybarasImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const exilesofnehekIcon = L.icon({
+    iconUrl: exilesofnehekImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const followersofnagashIcon = L.icon({
+    iconUrl: followersofnagashImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const khemriIcon = L.icon({
+    iconUrl: khemriImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+//VampireCoast
+export const piratesofsartosaIcon = L.icon({
+    iconUrl: piratesofsartosaImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const thedreadfleetIcon = L.icon({
+    iconUrl: thedreadfleetImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const thedrownedIcon = L.icon({
+    iconUrl: thedrownedImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const theawakenedIcon = L.icon({
+    iconUrl: theawakenedImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+//beastmen
+export const harbingerofdisasterIcon = L.icon({
+    iconUrl: harbingerofdisasterImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const warherdoftheshadowgaveIcon = L.icon({
+    iconUrl: warherdoftheshadowgaveImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const slaughterhorntribeIcon = L.icon({
+    iconUrl: slaughterhorntribeImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
+export const warherdoftheoneeyeIcon = L.icon({
+    iconUrl: warherdoftheoneeyeImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
 //Chaos
+export const chaoswarriorsIcon = L.icon({
+    iconUrl: chaoswarriorsImg,
+    iconSize: iconSize,
+    iconAnchor: iconAnchor,
+    popupAnchor: popupAnchor
+});
