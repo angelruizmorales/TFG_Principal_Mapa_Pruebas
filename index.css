@@ -339,6 +339,10 @@ aside footer .credits {
   font-size: 1rem;
   line-height: 1.4rem;
 }
+/*Se aplica a la etiquete img*/
+.leaflet-popup .img{
+  width: 50px;
+}
 /*Posición del cuadro del enlace*/
 .leaflet-popup .info-link-container {
   margin-top: 1rem;
@@ -500,7 +504,6 @@ footer{
   padding: 0;
   cursor: pointer;
 }
-
 .button-text {
   display: block;
   margin-top: 5px;

@@ -1,923 +1,8 @@
 [
   {
-    "title": "Minas Tirith",
-    "description": "Minas Tirith was originally a fortress, Minas Anor, built in S.A. 3320 by the Faithful Númenóreans. From T.A. 1640 onwards it was the capital of the South-kingdom and the seat of its Kings and ruling Stewards.",
-    "infoLink": "https://tolkiengateway.net/wiki/Minas_Tirith",
-    "tags": {
-      "places": [
-        "human"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x":3277,
-    "y":1626
-  },
-  {
-    "title": "Esgaroth (Lake-Town)",
-    "description": "Lake-Town was the township of the Lake-men in Wilderland. The town was constructed entirely of wood and stood upon wooden pillars sunk into the bed of the Long Lake, as a protection against the dragon Smaug, who dwelt nearby in the Lonely Mountain.",
-    "infoLink": "https://tolkiengateway.net/wiki/Lake-town",
-    "tags": {
-      "places": [
-        "human"
-      ],
-      "quests": [
-        "erebor"
-      ]
-    },
-    "x": 3418,
-    "y": 885
-  },
-  {
-    "title": "Bree",
-    "description": "Bree was the chief village of Bree-land, a small wooded region near the intersection of the main north-south and east-west routes through Eriador. Bree-land was the only part of Middle-earth where Men and hobbits dwelt side by side and Bree had a large population of Hobbits.",
-    "infoLink": "https://tolkiengateway.net/wiki/Bree",
-    "tags": {
-      "places": [
-        "human",
-        "hobbit"
-      ],
-      "quests": [
-        "ring",
-        "erebor"
-      ]
-    },
-    "x": 1793,
-    "y": 1163
-  },
-  {
-    "title": "Erebor",
-    "description": "The Longbeards had control of Erebor since at least the early Second Age. With the awakening of Durin's Bane in the capital of Khazad-dûm, Thráin I led a group of Dwarves to Erebor. Once there, the dwarves dug caves and halls to form an underground city, thus establishing the Kingdom under the Mountain in T.A. 1999.",
-    "infoLink": "https://tolkiengateway.net/wiki/Erebor",
-    "tags": {
-      "places": [
-        "dwarven"
-      ],
-      "quests": [
-        "erebor"
-      ]
-    },
-    "x": 3405,
-    "y": 825
-  },
-  {
-    "title": "Rivendell",
-    "sindarinTitle": "Imladris",
-    "description": "Rivendell was established by Elrond in S.A. 1697 as a refuge from Sauron after the Fall of Eregion. It remained Elrond's seat throughout the remainder of the Second Age and until the end of the Third Age, when he took the White Ship for Valinor.",
-    "infoLink": "https://tolkiengateway.net/wiki/Rivendell",
-    "tags": {
-      "places": [
-        "elven"
-      ],
-      "quests": [
-        "erebor",
-        "ring"
-      ]
-    },
-    "x": 2516,
-    "y": 1123
-  },
-  {
-    "title": "Mount Doom",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
-    "tags": {
-      "places": [
-        "dark"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 3606,
-    "y": 2603
-  },
-  {
-    "title": "Osgiliath",
-    "description": "Founded by Isildur and Anárion near the end of the Second Age, Osgiliath was designated the capital of the southern Númenórean kingdom in exile, Gondor. It stays so until the King's House was moved to the more secure Minas Anor in T.A. 1640.",
-    "infoLink": "https://tolkiengateway.net/wiki/Osgiliath",
-    "tags": {
-      "places": [
-        "human"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 3330,
-    "y": 2700
-  },
-  {
-    "title": "Hobbiton",
-    "description": "Hobbiton was a hobbit village in the central regions of the Shire, within the borders of the Westfarthing.",
-    "infoLink": "https://tolkiengateway.net/wiki/Hobbiton",
-    "tags": {
-      "places": [
-        "hobbit"
-      ],
-      "quests": [
-        "erebor",
-        "ring"
-      ]
-    },
-    "x": 1482,
-    "y": 1158
-  },
-  {
-    "title": "Helm's Deep",
-    "description": "Helm's Deep was a large valley gorge in the north-western Ered Nimrais (White Mountains) below the Thrihyrne. It was actually the name of the whole defensive system including its major defensive structure, the Hornburg.",
-    "infoLink": "https://tolkiengateway.net/wiki/Helm's_Deep",
-    "tags": {
-      "places": [
-        "human"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 2423,
-    "y": 2321
-  },
-  {
-    "title": "Black Gate",
-    "sindarinTitle": "Morannon",
-    "description": "The Black Gate was the main entrance into the land of Mordor. It was built by Sauron after he chose Mordor as a land to make into a stronghold in S.A. 1000.",
-    "infoLink": "https://tolkiengateway.net/wiki/Black_Gate",
-    "tags": {
-      "places": [
-        "dark"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 3389,
-    "y": 2377
-  },
-  {
-    "title": "Weathertop",
-    "sindarinTitle": "Amun Sûl",
-    "description": "In T.A.3018, Amun Sûl was the scene of two fights involving the Nazgûl: one with Gandalf on October 3 and one with the Ring-bearer three days later.",
-    "infoLink": "https://tolkiengateway.net/wiki/Weathertop",
-    "tags": {
-      "places": [
-        "human"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 2000,
-    "y": 1158
-  },
-  {
-    "title": "Isengard",
-    "sindarinTitle": "Angrenost",
-    "description": "Isengard was one of the three major fortresses of Gondor, and held within it one of the realm's palantíri. In the latter half of the Third Age, the stronghold came into the possession of Saruman, becoming his home and personal domain until his defeat in the War of the Ring.",
-    "infoLink": "https://tolkiengateway.net/wiki/Isengard",
-    "tags": {
-      "places": [
-        "dark"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 2335,
-    "y": 2117
-  },
-  {
-    "title": "Barad-dûr",
-    "description": "Barad-dûr, also known as the Dark Tower, was the chief fortress of Sauron, on the Plateau of Gorgoroth in Mordor. Sauron began to build Barad-dûr in around S.A. 1000, and completed his fortress after 600 years of the construction with the power of the Ring. It was partially destroyed after Sauron's defeat against Isildur, and began to be rebuilt in T.A. 2951.",
-    "infoLink": "https://tolkiengateway.net/wiki/Barad-dûr",
-    "tags": {
-      "places": [
-        "dark"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 3750,
-    "y": 2553
-  },
-  {
-    "title": "Edoras",
-    "description": "Edoras was the capital of Rohan that held the Golden Hall of Meduseld. Rohan's first capital was at Aldburg in the Folde, until King Eorl the Young or his son Brego built Edoras in T.A. 2569. ",
-    "infoLink": "https://tolkiengateway.net/wiki/Edoras",
-    "tags": {
-      "places": [
-        "human"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 2589,
-    "y": 2383
-  },
-  {
-    "title": "Moria",
-    "sindarinTitle": "Khazad-dûm",
-    "description": "Khazad-dûm was the grandest and most famous of the mansions of the Dwarves. There, for many thousands of years, a thriving Dwarvish community created the greatest city ever known.",
-    "infoLink": "https://tolkiengateway.net/wiki/Moria",
-    "tags": {
-      "places": [
-        "dwarven"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 2492,
-    "y": 1505
-  },
-  {
-    "title": "Grey Havens",
-    "sindarinTitle": "Mithlond",
-    "description": "Founded by the Elves of Lindon in S.A. 1, the Grey Havens were known for their good harbourage and many ships; these were used by any of the Eldar to leave Middle-earth for Eressëa or Valinor.",
-    "infoLink": "https://tolkiengateway.net/wiki/Grey_Havens",
-    "tags": {
-      "places": [
-        "elven"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 1047,
-    "y": 1186
-  },
-  {
-    "title": "Elvenking's Hall",
-    "description": "Elvenking's Hall were a cave system in northern Mirkwood, in which King Thranduil and many of the Elves of Mirkwood lived during most of the Third Age and into the Fourth Age.",
-    "infoLink": "https://tolkiengateway.net/wiki/Elvenking's_Halls",
-    "tags": {
-      "places": [
-        "elven"
-      ],
-      "quests": [
-        "erebor"
-      ]
-    },
-    "x": 3311,
-    "y": 849
-  },
-  {
-    "title": "Dol Guldur",
-    "description": "Dol Guldur (\"Hill of Sorcery\" in Sindarin), also called \"the dungeons of the Necromancer\", was a stronghold of Sauron located in the south of Mirkwood.",
-    "infoLink": "https://tolkiengateway.net/wiki/Dol_Guldur",
-    "tags": {
-      "places": [
-        "dark"
-      ],
-      "quests": [
-        "erebor",
-        "ring"
-      ]
-    },
-    "x": 3014,
-    "y": 1629
-  },
-  {
-    "title": "Minas Morgul",
-    "description": "Minas Morgul (originally called Minas Ithil) was the twin city of Minas Tirith before its fall to the forces of Sauron in the Third Age. It then became the stronghold of the Witch-king of Angmar until Sauron's defeat.",
-    "infoLink": "https://tolkiengateway.net/wiki/Minas_Morgul",
-    "tags": {
-      "places": [
-        "dark"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 3424,
-    "y": 2695
-  },
-  {
-    "title": "Paths of the Dead",
-    "description": "The Paths of the Dead was a haunted underground passage through the White Mountains that led from Harrowdale in Rohan to Blackroot Vale in Gondor.",
-    "infoLink": "https://tolkiengateway.net/wiki/Paths_of_the_Dead",
-    "tags": {
-      "places": [
-        "human"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 2605,
-    "y": 2535
-  },
-  {
-    "title": "Mount Gram",
-    "description": "Mount Gram was inhabited by Orcs led by their King Golfimbul. In T.A. 2747 they attacked much of northern Eriador, but were defeated in the Battle of Greenfields.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Gram",
-    "tags": {
-      "places": [
-        "dark"
-      ],
-      "quests": [
-        "erebor"
-      ]
-    },
-    "x": 2353,
-    "y": 746
-  },
-  {
-    "title": "Carn Dûm",
-    "description": "Carn Dûm was the chief fortress of the realm of Angmar and the seat of its king until its defeat against the combined armies of Gondor, Lindon and Arnor in T.A. 1974.",
-    "infoLink": "https://tolkiengateway.net/wiki/Carn_Dûm",
-    "tags": {
-      "places": [
-        "dark"
-      ]
-    },
-    "x": 2115,
-    "y": 523
-  },
-  {
-    "title": "Beorn's Hall",
-    "description": "Beorn's Hall was the home of Beorn, a powerful Skin-changer. Beorn hosted and aided Thorin and Company during their Quest for Erebor.",
-    "infoLink": "https://tolkiengateway.net/wiki/Beorn's_Hall",
-    "tags": {
-      "places": [
-        "human"
-      ],
-      "quests": [
-        "erebor"
-      ]
-    },
-    "x": 2871,
-    "y": 1016
-  },
-  {
-    "title": "Goblin-town",
-    "description": "Goblin-town was a Goblin dwelling under the Misty Mountains, which was ruled by the Great Goblin. Goblin-town was a series of tunnels and caverns, which went all the way through the mountains, with a \"back door\" (the Goblin-gate) near the Eagle's Eyrie in Wilderland, which served as a means of escape, and an access to the Wilderland. A cave with a lake was deep beneath Goblin-town yet was connected to the Goblins' tunnels, with one passage leading to the \"back door\".",
-    "infoLink": "https://tolkiengateway.net/wiki/Goblin-town",
-    "tags": {
-      "places": [
-        "dark"
-      ],
-      "quests": [
-        "erebor"
-      ]
-    },
-    "x": 2647,
-    "y": 980
-  },
-  {
-    "title": "Dale",
-    "description": "Dale was a great city of the Northmen which was destroyed by Smaug and rebuilt as the capital of a great kingdom after his demise.",
-    "infoLink": "https://tolkiengateway.net/wiki/Dale",
-    "tags": {
-      "places": [
-        "human"
-      ],
-      "quests": [
-        "erebor"
-      ]
-    },
-    "x": 3430,
-    "y": 855
-  },
-  {
-    "title": "Smaug",
-    "date": "November 1, T.A. 2941",
-    "description": "Bard fired a Black Arrow into the vulnerable spot on the dragon's belly. Roaring in fury and pain, Smaug fell from the sky and plummeted into the flaming ruins of Lake-town, his death marked the end of the great dragons in Middle-earth.",
-    "infoLink": "https://tolkiengateway.net/wiki/Smaug",
-    "tags": {
-      "events": [
-        "death"
-      ],
-      "quests": [
-        "erebor"
-      ]
-    },
-    "x": 3418,
-    "y": 885
-  },
-  {
-    "title": "Battle of Dagorlad",
-    "date": "3434 of the Second Age",
-    "description": "The Battle of Dagorlad was fought between the army of the Last Alliance under Gil-galad and Elendil and an army of Orcs and other creatures loyal to Sauron.",
-    "infoLink": "https://tolkiengateway.net/wiki/Battle_of_Dagorlad",
-    "tags": {
-      "events": [
-        "battle"
-      ],
-      "quests": [
-        "other"
-      ]
-    },
-    "x": 3319,
-    "y": 2356
-  },
-  {
-    "title": "Battle of Isengard",
-    "date": "3 March, T.A. 3019",
-    "description": "Spurred on by Meriadoc Brandybuck and Peregrin Took, the Ents, followed by Huorns, invaded the Ring of Isengard from Fangorn Forest. It led the the drowning of Isengard and the defeat of Saruman.",
-    "infoLink": "https://tolkiengateway.net/wiki/Battle_of_Isengard",
-    "tags": {
-      "events": [
-        "battle"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 2335,
-    "y": 2117
-  },
-  {
-    "title": "Battle of Five Armies",
-    "date": "November 23, T.A. 2941",
-    "description": "The five warring parties were the Goblins and the Wargs against Men, Elves and Dwarves on and near the Lonely Mountain.",
-    "infoLink": "https://tolkiengateway.net/wiki/Battle_of_Five_Armies",
-    "tags": {
-      "events": [
-        "battle"
-      ],
-      "quests": [
-        "erebor"
-      ]
-    },
-    "x": 3405,
-    "y": 825
-  },
-  {
-    "title": "Thorin, Fíli and Kíli",
-    "date": "November 23, T.A. 2941",
-    "description": "When Bilbo regained consciousness, the battle was already over. Thorin II Oakenshield had been mortally wounded on the field, and his nephews Fíli and Kíli died defending him as he lay on the ground.",
-    "infoLink": "https://tolkiengateway.net/wiki/Battle_of_Five_Armies",
-    "tags": {
-      "events": [
-        "death"
-      ],
-      "quests": [
-        "erebor"
-      ]
-    },
-    "x": 3405,
-    "y": 825
-  },
-  {
-    "title": "Battle of Pelennor Fields",
-    "date": "15 March, T.A. 3019",
-    "description": "The Battle of the Pelennor Fields was the greatest battle of the War of the Ring. This battle saw the siege of Minas Tirith by Mordor's troops widely outnumbering the defenders, but resulted in the loss of Sauron's armies after the Witch King was killed in combat.",
-    "infoLink": "https://tolkiengateway.net/wiki/Battle_of_the_Pelennor_Fields",
-    "tags": {
-      "events": [
-        "battle"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 3279,
-    "y": 2707
-  },
-  {
-    "title": "Battle of the Morannon",
-    "date": "25 March, T.A. 3019",
-    "description": "The Battle of the Morannon was the last major battle against Sauron in the War of the Ring, fought at the Black Gate of Mordor on 25 March T.A. 3019. The army of the West, 6,000 strong by now, led by Aragorn marched on the gate as a diversionary feint to distract Sauron's attention from Frodo and Sam, who were carrying the One Ring through Mordor. It was hoped that Sauron would think Aragorn had the Ring and was now trying to use it to overthrow Mordor.",
-    "infoLink": "https://tolkiengateway.net/wiki/Battle_of_the_Morannon",
-    "tags": {
-      "events": [
-        "battle"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 3389,
-    "y": 2377
-  },
-  {
-    "title": "Battle of the Hornburg",
-    "date": "3-4 March, T.A. 3019",
-    "description": "The Battle of the Hornburg took place at the mountain fortress of the Hornburg in the valley of Helm's Deep in Rohan. Taking place over the night of the 3-4 March T.A. 3019, it saw the attacking Uruk-hai of Saruman defeated by the Rohirrim led by Théoden and Erkenbrand.",
-    "infoLink": "https://tolkiengateway.net/wiki/Battle_of_the_Hornburg",
-    "tags": {
-      "events": [
-        "battle"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 2423,
-    "y": 2321
-  },
-  {
-    "title": "Boromir",
-    "date": "February 26, T.A. 3019",
-    "description": "Boromir died at Amon Hen, the westernmost of the three peaks at the southern end of Nen Hithoel. He perished trying to defend Merry and Pippin from Saruman's Orcs, slaying at least 20 of them before perishing after being hit by many arrows.",
-    "infoLink": "https://tolkiengateway.net/wiki/Boromir",
-    "tags": {
-      "events": [
-        "death"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 3037,
-    "y": 2377
-  },
-  {
-    "title": "Gandalf the Grey",
-    "date": "January 25, T.A. 3019",
-    "description": "Gandalf pursued the Balrog from the deepests dungeons of Moria to Durin's Tower, climbing through the whole Endless Stair, where they fought for three days and two nights. In the end, the Balrog was cast down and it broke the mountain-side as it fell. Gandalf himself died following this ordeal, but was later sent back to Middle-earth with even greater powers as Gandalf the White.",
-    "infoLink": "https://tolkiengateway.net/wiki/Battle_of_the_Peak",
-    "tags": {
-      "events": [
-        "death"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 2500,
-    "y": 1558
-  },
-  {
-    "title": "Bilbo stole the Ring from Gollum",
-    "date": "July 12, T.A. 2941",
-    "description": "Bilbo picked up a strange golden ring in the dark passages under Goblin-town. He then met Gollum whom defied him to a riddle contest for his life. Bilbo won, but then Gollum went to get his magic ring to kill him anyway. He then discovered that his ring was missing, and understood that Bilbo took it. He chased Bilbo, but Bilbo unwittingly used the ring and escaped his notice.",
-    "infoLink": "https://tolkiengateway.net/wiki/Bilbo_Baggins#Over_the_Misty_Mountains",
-    "tags": {
-      "events": [
-        "encounter"
-      ],
-      "quests": [
-        "erebor"
-      ]
-    },
-    "x": 2685,
-    "y": 962
-  },
-  {
-    "title": "Merry and Pippin meet Treebeard",
-    "date": "February 29, T.A. 3019",
-    "description": "Treebeard discovered Merry and Pippin in Fangorn Forest after they escaped from Saruman's Orcs, and welcomed them to the WellingHall.",
-    "infoLink": "https://tolkiengateway.net/wiki/Treebeard",
-    "tags": {
-      "events": [
-        "encounter"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 2460,
-    "y": 2052
-  },
-  {
-    "title": "Tom Bombadil",
-    "date": "September 26, T.A. 3018",
-    "description": "Tom Bombadil, a mysterious creature living in the Dark Forst with his wife Goldberry, saved Frodo, Sam, Merry and Pippin from the Old Man Willow, an evil willow who cast a spell on them and trapped Merry and Pippin. He then hosted the hobbits for two nights, during which he told them many tales and songs.",
-    "infoLink": "https://tolkiengateway.net/wiki/Tom_Bombadil",
-    "tags": {
-      "events": [
-        "encounter"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 1659,
-    "y": 1184
-  },
-  {
-    "title": "Shelob",
-    "date": "March 12, T.A. 3019",
-    "description": "Shelob was born as the last child of the spider-like demon Ungoliant. On March 12 T.A. 3019, Gollum led Sam and Frodo into the tunnels of Shelob's Lair and abandoned them in the dark. He planned that Shelob would eat Sam and Frodo so that he could find the One Ring among the bones and clothes.",
-    "infoLink": "https://tolkiengateway.net/wiki/Shelob",
-    "tags": {
-      "events": [
-        "encounter"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 3456,
-    "y": 2680
-  },
-  {
-    "title": "Stone Trolls",
-    "date": "May 28, T.A. 2941",
-    "description": "Three Stone Trolls (William, Tom and Bert) captured Bilbo and the Company of Thorin. Thanks to Gandalf who tricked them, they kept fighting over how to cook the dwarves until the sun set up, frozing them into stone statues.",
-    "infoLink": "https://tolkiengateway.net/wiki/Roast_Mutton",
-    "tags": {
-      "events": [
-        "encounter"
-      ],
-      "quests": [
-        "erebor"
-      ]
-    },
-    "x": 2320,
-    "y": 1120
-  },
-  {
-    "title": "Giant Spiders",
-    "date": "August, T.A. 2941",
-    "description": "Giant spiders (Ungolianth's spawns) managed to capture and entangle in webs each of the thirteen Dwarves. Only Bilbo's magic Ring and his Elven blade Sting allowed them to escape from being eaten, before being captured by Thranduil's elves.",
-    "infoLink": "https://tolkiengateway.net/wiki/Flies_and_Spiders",
-    "tags": {
-      "events": [
-        "encounter"
-      ],
-      "quests": [
-        "erebor"
-      ]
-    },
-    "x": 3250,
-    "y": 937
-  },
-  {
-    "title": "Barrow-wights",
-    "date": "Septeùber 28, T.A. 3018",
-    "description": "The Barrow-wights were a kind of undead-like creatures, dead bones animated by evil spirits. Frodo, Sam, Merry an Pippin were trapped in the Barrow-downs by the spells of the Barrow-wights, and were nearly slain by the creatures. They were saved in the last minute by Tom, who seemed to have had complete authority over them.",
-    "infoLink": "https://tolkiengateway.net/wiki/Barrow-wights",
-    "tags": {
-      "events": [
-        "encounter"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 1725,
-    "y": 1200
-  },
-  {
-    "title": "Old Man Willow",
-    "date": "September 26, T.A. 3018",
-    "description": "Old Man Willow was a willow tree in the Old Forest, who might have been an Ent who had become tree-like, or possibly a Huorn. Old Man Willow cast a spell on the Hobbits, Frodo, Sam, Merry and Pippin, causing them to fall asleep and trying to kill them. They were saved by the timely arrival of Tom Bombadil who knew \"the tune for him\".",
-    "infoLink": "https://tolkiengateway.net/wiki/Old_Man_Willow",
-    "tags": {
-      "events": [
-        "encounter"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 1615,
-    "y": 1225
-  },
-  {
-    "title": "Battle of Bywater",
-    "date": "November 3, T.A. 3019",
-    "description": "The Battle of Bywater was a battle for control of the Shire and the final battle of the War of the Ring. After he fleed from the Battle of Isengard, Saruman took control over the Shire with a band of ruffians. When Frodo and his companions returned from the Coronation of Elessar, they rallied the hobbits wanting to resist and defeated the ruffians, then confronted Saruman. Wormtongue killed Saruman and was shot dead by the hobbits.",
-    "infoLink": "https://tolkiengateway.net/wiki/Battle_of_Bywater",
-    "tags": {
-      "events": [
-        "battle"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 1507,
-    "y": 1163
-  },
-  {
-    "title": "Mount Doom",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
-    "tags": {
-      "places": [
-        "ogre"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 3606,
-    "y": 2603
-  },
-  {
-    "title": "Mount Doom",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
-    "tags": {
-      "places": [
-        "elfhel"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 3606,
-    "y": 2603
-  },
-  {
-    "title": "Tor elasor",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
-    "tags": {
-      "places": [
-        "elfhel"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x": 2993.0625,
-    "y": 834.0625
-  },
-  {
-    "title": "Gronti Mingol",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
-    "tags": {
-      "places": [
-        "elfhel"
-      ],
-      "quests": [
-        "ring"
-      ]
-    },
-    "x":2320.75,
-    "y":2088.25
-  },
-  {
-    "title": "Caos Spawn",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "hola prueba",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
-    "tags": {
-      "spawn": [
-        "caosspawn"
-      ],
-      "quests":[
-        "caos"
-      ]
-    },
-    "y":0,
-    "x":0
-  },
-  {
-    "title": "Caos Spawn",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
-    "tags": {
-      "spawn": [
-        "caosspawn"
-      ],
-      "quests":[
-        "caos"
-      ]
-    },
-    "x":1776 ,
-    "y":3821.75
-  },
-  {
-    "title": "Caos Spawn",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
-    "tags": {
-      "spawn": [
-        "caosspawn"
-      ],
-      "quests":[
-        "caos"
-      ]
-    },
-    "x":3928 ,
-    "y":3529
-  },
-  {
-    "z": "Caos Spawn",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
-    "tags": {
-      "spawn": [
-        "caosspawn"
-      ],
-      "quests":[
-        "caos"
-      ]
-    },
-    "x":734.1590231930663 ,
-    "y":3102.750710662981
-  },
-  {
-    "title": "elf prueba",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
-    "tags": {
-      "spawn": [
-        "elfhelspawn"
-      ],
-      "quests":[
-        "caos"
-      ]
-    },
-    "x":1656 ,
-    "y":2744
-  },
-  {
-    "title": "human prueba",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
-    "tags": {
-      "spawn": [
-        "humanspawn"
-      ],
-      "quests":[
-        "caos"
-      ]
-    },
-    "x":3840 ,
-    "y":2436
-  },
-  {
-    "title": "ultima prueba",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
-    "tags": {
-      "spawn": [
-        "caosspawn"
-      ],
-      "quests":[
-        "caos"
-      ]
-    },
-    "x":3748 ,
-    "y":2598
-  },
-  {
-    "title": "prueba 50",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
-    "tags": {
-      "spawn": [
-        "caosspawn"
-      ],
-      "quests":[
-        "caos"
-      ]
-    },
-    "x":2072.75,
-    "y":1838.5
-  }
-  ,
-  {
-    "title": "Piramide negra de nagash",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
-    "tags": {
-      "spawn": [
-        "caosspawn"
-      ],
-      "quests":[
-        "caos"
-      ]
-    },
-    "x":2271,
-    "y":1782.75
-  }
-  ,
-  {
-    "title": "Temple of skulls",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
-    "tags": {
-      "spawn": [
-        "caosspawn"
-      ],
-      "quests":[
-        "caos"
-      ]
-    },
-    "x":2699,
-    "y":1526.75
-  },
-  {
     "title": "Reiklan",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "description":"Reikland is a playable faction of The Empire introduced in Total War: Warhammer. It is led by either Karl Franz or Volkmar the Grim and can be found in the western parts of the Empire, close to Dwarfs, Greenskins, Vampire Counts and Bretonnia.It is the only Empire faction that gets access to Reiksforts and thus easy access to the Reiksgard unit, which can be considered its faction-exclusive.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Reikland",
     "tags": {
       "humans": [
         "reiklan"
@@ -928,9 +13,8 @@
   },
   {
     "title": "GoldenCollege",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "description": "The Golden Order is a playable faction of The Empire introduced in Total War: Warhammer II. It is led by Balthasar Gelt and can be found in the southern parts of the Empire, close to the Dwarfs, Greenskins and Skaven.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Golden_Order",
     "tags": {
       "humans": [
         "goldencollege"
@@ -940,10 +24,9 @@
     "y":4451.75
   },
   {
-    "title": "the huntsmarshal's expedition",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "title": "The huntsmarshal's expedition",
+    "description":"The Huntsmarshal's Expedition is a playable faction of The Empire introduced in Total War: Warhammer II. It is led by Markus Wulfhart and can be found on the northern coast of Lustria, surrounded by Savage Orc Tribes, Lizardmen, Skaven and the Vampire Coast.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Huntsmarshal%27s_Expedition",
     "tags": {
       "humans": [
         "thehuntsmarshalsexpedition"
@@ -953,10 +36,74 @@
     "y":2265.75
   },
   {
+    "title": "Cult of sigmar",
+    "description": "The Cult of Sigmar is a playable The Empire faction introduced in Total War: Warhammer III. It is led by Volkmar the Grim.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Cult_of_Sigmar",
+    "tags": {
+      "humans": [
+        "cultofsigmar"
+      ]
+    },
+    "x":4014,
+    "y":2677.25
+    
+  },
+  {
+    "title": "Couronne",
+    "description": "Couronne is a playable subfaction of Bretonnia introduced in Total War: Warhammer. It is led by King Louen Leoncoeur and can be found in the western parts of The Old World.After The Empire, Bretonnia is the largest and most powerful nation of men in the Old World. They are less technologically advanced than their neighbours, but are sheltered and protected by their geography. Couronne is the capital city of Bretonnia and seat of the king. Bretonnian society has a strict division between the nobles and knights, and the lowly peasants who often live in squalor. The race is strongly based on arthurian legends and medieval France. Their armies consist of more numerous, cheaper peasant units fighting alongside a variety of powerful knights.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Couronne",
+    "tags": {
+      "humans": [
+        "couronne"
+      ]
+    },
+    "x":4030.5,
+    "y":4772.25
+  },
+  {
+    "title": "Bordeleaux Errant",
+    "description": "Bordeleaux Errant (previously known as Bordeleaux) is a playable subfaction of Bretonnia introduced in Total War: Warhammer. It is led by Alberic de Bordeleaux.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Bordeleaux_Errant",
+    "tags": {
+      "humans": [
+        "bordeleauxerrant"
+      ]
+    },
+    "x":3999.5,
+    "y":4539.75
+    
+  },
+  {
+    "title": "Carcassonne",
+    "description": "Carcassonne is a playable subfaction of Bretonnia introduced in Total War: Warhammer. It is led by The Fay Enchantress and can be found in southern Bretonnia.Bretonnia is the largest and most powerful nation of men in the Old World, after The Empire. They are less technologically advanced than their neighbours, but are sheltered and protected by their geography. Carcassone is the seat of the Fay Enchantress, a spiritual leader for the people. Bretonnian society has a strict division between the nobles and knights, and the lowly peasants who often live in squalor. The race is strongly based on arthurian legends and medieval France. Their armies consist of more numerous, cheaper peasant units fighting alongside a variety of powerful knights.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Carcassonne",
+    "tags": {
+      "humans": [
+        "carcassonne"
+      ]
+    },
+    "x":4097,
+    "y":4412.5
+    
+  },
+  {
+    "title": "Chevaliers de Lyonesse",
+    "description": "Chevaliers de Lyonesse Chevaliers de Lyonesse is a playable Couronne Bretonnia racial faction introduced in the Total War: Warhammer II - Chevaliers de Lyonesse free DLC. It is led by Repanse de Lyonesse and can be found on the Coast of Araby.These knights from Lyonesse are on a holy errantry war far from their homeland in fair, verdant Bretonnia. They have travelled far to the south, to the searing desert lands of Araby, gaining a foothold in Araby's coastal cities which bustle with trade in the many bazaars.They have a slightly diferent tech tree compared to the other Bretonnia faction's",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Chevaliers_de_Lyonesse",
+    "tags": {
+      "humans": [
+        "chevaliersdelyonesse"
+      ]
+    },
+    "x":3145,
+    "y":3551.5
+    
+    
+  },
+  {
     "title": "karaz-a-karaz"  ,
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "description": "Karaz-a-Karak is a playable faction of Dwarfs introduced in Total War: Warhammer. It is led by either Thorgrim Grudgebearer or Grombrindal - The White Dwarf and can be found in the eastern parts of The Old World, deep in the World's Edge Mountains.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Karaz-a-Karak",
     "tags": {
       "dwarfs": [
         "karazakaraz"
@@ -967,9 +114,8 @@
   },
   {
     "title": "Clan Angrund"  ,
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "description": "Clan Angrund is a playable faction of Dwarfs introduced in Total War: Warhammer. It is led by Belegar Ironhammer and can be found south of the Empire and east of Athel Loren.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Clan_Angrund",
     "tags": {
       "dwarfs": [
         "clanangrund"
@@ -980,9 +126,8 @@
   },
   {
     "title": "Karaz-kadrin"  ,
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "description": "Karak Kadrin is a playable Dwarfs faction introduced in Total War: Warhammer. It is led by Ungrim Ironfist and can be found in the northern World's Edge Mountains.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Karak_Kadrin",
     "tags": {
       "dwarfs": [
         "karazkadrin"
@@ -992,10 +137,33 @@
     "y":4639.75
   },
   {
+    "title": "Ironbrow Expedition"  ,
+    "description": "Ironbrow's Expedition is a playable Dwarfs faction introduced as free DLC in Total War: Warhammer II and led by the legendary lord Thorek Ironbrow. It is playable in both campaign maps, custom battles and multiplayer.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Ironbrow%27s_Expedition",
+    "tags": {
+      "dwarfs": [
+        "ironbrowexpedition"
+      ]
+    },
+    "x":4292,
+    "y":2777.5
+  },
+  {
+    "title": "The Ancestral Throng"  ,
+    "description": "The Ancestral Throng is a playable Dwarfs faction introduced in Total War: Warhammer III. It is led by Grombrindal.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Ancestral_Throng",
+    "tags": {
+      "dwarfs": [
+        "theancestralthrong"
+      ]
+    },
+    "x":49,
+    "y":4830
+  },
+  {
     "title": "Lothern",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "description": "Eataine is a playable High Elves faction introduced in Total War: Warhammer II. It is led by Tyrion and can be found in southern Ulthuan.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Eataine",
     "tags": {
       "highelves": [
         "lothern"
@@ -1003,13 +171,71 @@
     },
     "x":1906.5,
     "y":3427.25
-
+  },
+  {
+    "title": "Order Of Loremasters",
+    "description": "Order of Loremasters is a playable High Elves subfaction introduced in Total War: Warhammer II, led by Teclis.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Order_of_Loremasters",
+    "tags": {
+      "highelves": [
+        "orderofloremasters"
+      ]
+    },
+    "x":4191.5,
+    "y":1019.25
+  },
+  {
+    "title": "Nagarythe",
+    "description": "Nagarythe is a playable High Elves subfaction introduced in Total War: Warhammer II, led by Alith Anar. They are playable in campaign, multiplayer and custom battles.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Nagarythe",
+    "tags": {
+      "highelves": [
+        "nagarythe"
+      ]
+    },
+    "x":852,
+    "y":3674.5
+  },
+  {
+    "title": "Avelorn",
+    "description": "Avelorn is a sheltered inner kingdom of Ulthuan, ruled by the Everqueen herself who holds court among the temperate forests. The kingdom is supposedly favoured by Isha, the mother goddess, and is seen as the spiritual center of Ulthuan by High Elves. Thus Avelorn sits at Ulthuan's heart, and its symbol is hands clasping a heart, flanked by vines.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Avelorn",
+    "tags": {
+      "highelves": [
+        "avelorn"
+      ]
+    },
+    "x":1934,
+    "y":3811.5
+  },
+  {
+    "title": "Yvresse",
+    "description": "The Kingdom of Yvresse is the land of mists. It encompasses not only a sizable part of eastern Ulthuan, but also the islands of the Eastern Ocean.The mainland of Yvresse is a wild coastline, fringed by deep coniferous forests. Long fjords thrust inland from the coast. The forests tumble down the mist-shrouded valleys right to the water's edge. The foothills of the Annulii march off to form distant peaks that tower dramatically into the clouds.[5] Yvresse is the least densely populated kingdom of Ulthuan, and by those Elves from other realms, it is often considered a bleak coastal realm, and less than lovely – but to those who call it their home, the towering cliffs and soaring sea birds are sights as fine as any to be seen on the continent of Ulthuan.[1a]",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Yvresse",
+    "tags": {
+      "highelves": [
+        "yvresse"
+      ]
+    },
+    "x":2255,
+    "y":3658.5
+  },
+  {
+    "title": "Knights of Caledor",
+    "description": "The Knights of Caledor are an expedition led by Prince Imrik, the ruler of Caledor in Ulthuan. While he is away, he has entrusted command of Caledor to others. Imrik is descended from two Phoenix Kings (Caledor I and Caledor II) as well as Caledor Dragontamer, companion of Aenarion, who first woke the dragons to fight against Chaos. Imrik has inherited his family's affinity for dragons.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Knights_of_Caledor",
+    "tags": {
+      "highelves": [
+        "knightsofcaledor"
+      ]
+    },
+    "x":4893.5,
+    "y":3594.25
   },
   {
     "title": "Naggarond",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "description": "Naggarond is a great dark city that lies in the cold land of Naggaroth, on the shores of the sea of Chill. While Malekith rules over all Naggaroth, it is this city -his capital- where he holds court and personally rules with an iron grip. Called the most evil city in the world, from here Malekith gathers his personal forces and hatches his schemes. Malekith’s forces have followed him across the world in pursuit of his dark goal, and have faced the High Elves on many occasions; in spite of this, Ulthuan still stands. Nothing if not persistent, Malekith knows that soon there will be a final reckoning between the Elves – the Druchii will rise, the Asur will fall, and the work of millennia will at last be complete. If the Witch King cannot rule Ulthuan, then no one will!",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Naggarond",
     "tags": {
       "darkelves": [
         "naggarond"
@@ -1020,10 +246,71 @@
 
   },
   {
+    "title": "Cult of pleasure",
+    "description": "The events that led to the sundering happened millennia ago, and yet, the grand architect of a whole race’s tragedy not only still lives but remains one of the most powerful of all their rulers. She is the mother of the Witch King; she is Morathi, the Hag Sorceress of Ghrond.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Cult_of_Pleasure",
+    "tags": {
+      "darkelves": [
+        "cultofpleasure"
+      ]
+    },
+    "x":506,
+    "y":3536.5
+  },
+  {
+    "title": "Hag Graef",
+    "description": "Hag Graef, the Black Crag, is a sinister and foreboding place, built at the bottom of a cold, dark canyon and completely surrounded by mountains of bare rock that stretch into the clouds. It is a city permanently in shadow, for no sunlight ever reaches its walls. Hag Graef is a place of twisted and impossible architecture. Its eight black towers rise from the canyon floor like the ossified remains of some loathsome cephalopod. Between the towers are strung walkways, platforms and bridges of every shape and size. Some are fashioned from withered timber and soot-stained bone, others are crafted from jagged stone or woven from the silk of monstrous spiders.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Hag_Graef",
+    "tags": {
+      "darkelves": [
+        "haggraef"
+      ]
+    },
+    "x":439,
+    "y":4751.75
+    
+
+  },
+  {
+    "title": "Har Ganeth",
+    "description": "Har Ganeth is the center of Khaine-worship in Naggaroth. Ruled by Crone Hellebron, the Hag Queen, the Blood Queen, the leader of Khaine's Cult, it is here that said cult is strongest. Ironically, Har Ganeth is also one of the most law-abiding cities in Naggaroth, with it's harsh laws enforced by the sharp blades of the Har Ganeth Executioners. However, when a Death Night is called, the Witch Elves and Death Hags of the Cult of Khaine remain free to murder and slaughter and abduct future Khainite Assassins. Har Ganeth has a fierce rivalry with Morathi and her followers, and the two groups often vie for influence in the Witch King's court.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Har_Ganeth",
+    "tags": {
+      "darkelves": [
+        "harganeth"
+      ]
+    },
+    "x":957,
+    "y":4939.75
+  },
+  {
+    "title": "The blessed dread",
+    "description": "Lokhir Fellheart, the Krakenlord of Karond Kar, is loosed upon the world! The latest and most notorious of his line, he plies the coastlines and seaways of the world, plundering ports and settlements for their riches and enslaving their inhabitants.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Blessed_Dread",
+    "tags": {
+      "darkelves": [
+        "theblesseddread"
+      ]
+    },
+    "x":7093,
+    "y":4172.25
+  },
+  {
+    "title": "The Thousand Maws",
+    "description": "Since the distant days of Nagarythe, the Dark Elves have been experts at bending beasts and animals to their will. However, some show exceptional aptitude in this, and can command even the unruliest beasts with a single word. They are the famed Beastmasters. When a child shows talent for taming animals he is sent to the city of Karond Kar to study under the masters who dwell there.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Thousand_Maws",
+    "tags": {
+      "darkelves": [
+        "thethousandmaws"
+      ]
+    },
+    "x":1082,
+    "y":1269.5
+  },
+  {
     "title": "Orion",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "description": "",
+    "infoLink": "",
     "tags": {
       "woodelves": [
         "orion"
@@ -1031,13 +318,11 @@
     },
     "x":4315.5,
     "y":4429.75
-
   },
   {
     "title": "Roble eterno",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "description": "",
+    "infoLink": "",
     "tags": {
       "woodelves": [
         "orion"
@@ -1045,13 +330,47 @@
     },
     "x":4321,
     "y":4474.25
-
   },
   {
-    "title": "Grimgor Ard boyz",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "title": "Argwylon",
+    "description": "Argwylon is a playable sub-faction of Wood Elves introduced in Total War: Warhammer. It is led by Durthu and can be found in northern Athel Loren, in the middle of the Old World.The Wood Elves are a mysterious race of fickle elves and their forest-spirit allies, who dwell in the magical forest of Athel Loren. Their military features elite elven units who tend to be only lightly armoured, along with forest spirits such as Dryads and some monsters. Their archers are arguably the best in the game. Argwylon is a faction focused on the plant-like forest spirits and wild beasts of Athel Loren, with Elven units taking a backseat. Their mechanics differ slightly from Talsyn.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Argwylon",
+    "tags": {
+      "woodelves": [
+        "argwylon"
+      ]
+    },
+    "x":4285.5,
+    "y":4504.25
+  },
+  {
+    "title": "Heralds of Ariel",
+    "description": "Heralds of Ariel is a Wood Elves faction introduced in Total War: Warhammer II with The Twisted and the Twilight. It is led by the Sisters of Twilight and can be found in The Witchwood, in the center of Naggaroth.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Heralds_of_Ariel",
+    "tags": {
+      "woodelves": [
+        "heraldsofariel"
+      ]
+    },
+    "x":471,
+    "y":3788.5
+  },
+  {
+    "title": "Wargrove of Woe",
+    "description": "Wargrove of Woe is a playable Wood Elves faction introduced in Total War: Warhammer II with The Twisted and the Twilight. It is led by Drycha and can be found in Gryphon Wood, in the eastern parts of the Empire.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Wargrove_of_Woe",
+    "tags": {
+      "woodelves": [
+        "wargroveofwoe"
+      ]
+    },
+    "x":4678.5,
+    "y":4663.25
+  },
+  {
+    "title": "Grimgor's 'Ardboyz",
+    "description": "Orcs and Goblins are the scourge of the Old World. Collectively known as Greenskins, they are an aggressive and brutal race with an unquenchable love of fighting. For most nations, war is a means to an end - an act of aggression to conquer and dominate an enemy. However, the Greenskins - and the Orcs in particular - revel in battle purely for the sake of it. Orcs are built for violence - brutal, bullying creatures of jutting jaws and hulking appearance. The Goblins, by contrast, are smaller but more cunning as they mob up in greater numbers. This motley cast is supported by a fell menagerie of other creatures from wolves to Trolls, monstrous spiders to lumbering Giants.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Grimgor%27s_%27Ardboyz",
     "tags": {
       "greenskins": [
         "grimgorardboyz"
@@ -1062,10 +381,64 @@
   }
   ,
   {
-    "title": "great hall of greasus",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "title": "Bonerattlaz",
+    "description": "Azhag the Slaughterer is one of the most infamous Orcish Warlords in recent history. He has brought a trail of ruin and destruction to the northern lands of the Old World, laying waste to cities, fortresses and mountain strongholds wherever he goes. Atop his head lies the key to his power and uncommon intelligence in tactics and warfare - an ominous iron crown which emanates an ancient evil long thought forgotten from history. It is from this crown, a relic of olden days, which granted Azhag sorcerous powers and gave him the vision he needed to command a Waaagh! of epic proportions.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Bonerattlaz",
+    "tags": {
+      "greenskins": [
+        "bonerattlaz"
+      ]
+    },
+    "x":4854.5,
+    "y":4737.75
+    
+  }
+  ,
+  {
+    "title": "The Bloody Handz",
+    "description": "Traditionally, the Greenskins wander the Badlands as individual tribes, only coming together when the call to Waaagh! goes out. One such occasion is now; Wurrzag - aligned with the Orcs of the Bloody Handz tribe, who seek the greatness they believe 'Da Great Green Prophet' can bring them - is abroad, and has wandered into the Dragonback Mountains in search of more than just plunder and the inevitable scrap to get his filthy green hands on it.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Bloody_Handz",
+    "tags": {
+      "greenskins": [
+        "thebloodyhandz"
+      ]
+    },
+    "x":4343,
+    "y":4043.5
+    
+  }
+  ,
+  {
+    "title": "Crooked Moon",
+    "description": "Orcs and Goblins are the scourge of the Old World. Collectively known as Greenskins, they are an aggressive and brutal race with an unquenchable love of war. Orcs are built for violence – brutal, bullying creatures of jutting jaws and hulking appearance. The Goblins, by contrast, are smaller but more cunning as they mob-up in greater numbers.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Crooked_Moon",
+    "tags": {
+      "greenskins": [
+        "crookedmoon"
+      ]
+    },
+    "x":4649.5,
+    "y":4072.75
+    
+  }
+  ,
+  {
+    "title": "Broken Axe",
+    "description": "The Broken Axe tribe is a clan of Goblins that live at the eastern side of the Worlds Edge Mountains occupying one of the countless tumble-down fortresses that line the craggy and tunnel strewn passes.Some time around 2400 IC a Goblin named Grom engaged in a now infamous eating contest, ingesting a plate of raw Troll steaks. After weeks of fevered indigestion and almost terminal flatulence, Grom's stomach managed to digest the Troll flesh as fast as it regrew, making him grow quickly in size and power.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Broken_Axe",
+    "tags": {
+      "greenskins": [
+        "brokenaxe"
+      ]
+    },
+    "x":4175,
+    "y":4546.25
+  }
+  ,
+  {
+    "title": "Goldtooth",
+    "description": "Ogres are a race of large humanoids, tough, vicious and always hungry. Semi-nomadic in nature, wandering Ogre tribes can be found wrecking their way across the known world, yet no matter how far away they may be, all Ogres consider the scattered tribal kingdoms that dominate the slopes and river valleys of the Mountains of Mourn to be their rightful, hard-earned homeland.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Goldtooth",
     "tags": {
       "ogre": [
         "goldtooth"
@@ -1075,10 +448,9 @@
     "y":4045.75
   },
   {
-    "title": "disciplesofthemaw",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "title": "Disciples of the Maw",
+    "description": "Disciples of the Maw is a playable Ogre Kingdoms Ogre Kingdoms faction introduced in Total War: Warhammer III. It is led by Skrag the Slaughterer.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Disciples_of_the_Maw",
     "tags": {
       "ogre": [
         "disciplesofthemaw"
@@ -1088,10 +460,9 @@
     "y":4198.5
   },
   {
-    "title": "disciplesofthemaw",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "title": "The Drakenhof Conclave",
+    "description": "Once fertile, populous and prosperous, the Land of the Dead has been ravaged by centuries of war and neglect. Here, the searing heat of the desert sun is the least of any wandering traveler's worries, for the taint of Nagash's Great Ritual still lingers from the distant past. In this ghost haunted realm, countless unquiet spirits and elementals flit around great mortuary temples and dark tombs, their cries heard screaming in the wind. Yet still there are those who would brave this cursed place for causes both righteous and covetous.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Drakenhof_Conclave",
     "tags": {
       "vampirecounts": [
         "thedrakenhofconclave"
@@ -1102,10 +473,9 @@
   }
   ,
   {
-    "title": "castle drakenhof",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "title": "Castle Drakenhof",
+    "description": "From the icy Sea of Claws in the north to the soaring Black Mountains in the south, the individuality of the Empire's provinces is much defined by its landscape. Its vast forest provide food and materials of production, while wide rivers and traversable valleys facilitate trade and transport. Yet at times, the land itself seems to strive against progress, concealing monsters and enemies of all sorts amongst its craggy passes and dark groves. Peril awaits within and without, but the nations of men have thus far proved equal to the challenge...",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Sylvania",
     "tags": {
       "vampirecounts": [
         "voncarstein"
@@ -1116,10 +486,10 @@
   }
   ,
   {
-    "title": "swartzhafen",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "title": "Swartzhafen",
+    
+    "description": "From the icy Sea of Claws in the north to the soaring Black Mountains in the south, the individuality of the Empire's provinces is much defined by its landscape. Its vast forest provide food and materials of production, while wide rivers and traversable valleys facilitate trade and transport. Yet at times, the land itself seems to strive against progress, concealing monsters and enemies of all sorts amongst its craggy passes and dark groves. Peril awaits within and without, but the nations of men have thus far proved equal to the challenge...",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Sylvania",
     "tags": {
       "vampirecounts": [
         "voncarstein"
@@ -1129,10 +499,135 @@
     "y":4547.75
   },
   {
+    "title": "Hexoatl",
+    "description": "Hexoatl is a playable Lizardmen faction introduced in Total War: Warhammer II. It is led by Lord Mazdamundi and can be found in northern Lustria.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Hexoatl",
+    "tags": {
+      "lizardmen": [
+        "hexoatl"
+      ]
+    },
+    "x":698.5,
+    "y":2668.75
+    
+  },
+  {
+    "title": "https://totalwarwarhammer.fandom.com/wiki/Hexoatl",
+    
+    "description": "Last Defenders is a playable Lizardmen faction introduced in Total War: Warhammer II, led by Kroq-Gar.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Last_Defenders",
+    "tags": {
+      "lizardmen": [
+        "lastdefenders"
+      ]
+    },
+    "x":4363,
+    "y":2599.5
+    
+  },
+  {
+    "title": "Tlaqua",
+    
+    "description": "Tlaqua is a playable Lizardmen faction introduced in Total War: Warhammer II as part of the Doomsayers Update. It is led by Tiktaq'to, and can be downloaded free from Steam by clicking here.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Tlaqua",
+    "tags": {
+      "lizardmen": [
+        "tlaqua"
+      ]
+    },
+    "x":4015,
+    "y":2442.5
+    
+  },
+  {
+    "title": "Cult of Sotek",
+    
+    "description": "Cult of Sotek is a playable Lizardmen faction introduced in Total War: Warhammer II as part of The Prophet and the Warlock DLC. It is led by Tehenhauin.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Cult_of_Sotek",
+    "tags": {
+      "lizardmen": [
+        "cultofsotek"
+      ]
+    },
+    "x":2251,
+    "y":807.5
+    
+  },
+  {
+    "title": "Itza",
+    
+    "description": "Itza is a playable Lizardmen faction introduced in Total War: Warhammer II at launch and later made playable with the Empire Undivided Update.The faction was previously led by the Saurus Old-Blood Rinki but is now ruled by Gor-Rok, the Great White Lizard. Itza can be found in the heart of Lustria.To play as Itza, you must download the free-DLC 'Gor-Rok' which can found here.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Itza",
+    "tags": {
+      "lizardmen": [
+        "itza"
+      ]
+    },
+    "x":1753,
+    "y":1392.5
+  }, 
+  {
+    "title": "Spirit of the Jungle",
+    
+    "description": "Spirit of the Jungle is a playable Lizardmen faction introduced in Total War: Warhammer II with The Hunter and the Beast DLC. It is the first Horde faction for the Lizardmen, led by the legendary lord Nakai the Wanderer.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Spirit_of_the_Jungle",
+    "tags": {
+      "lizardmen": [
+        "spiritofthejungle"
+      ]
+    },
+    "x":6900,
+    "y":3125
+    
+  },
+  {
+    "title": "Ghosts of Pahuax",
+    
+    "description": "Ghosts of Pahuax is a playable Lizardmen Lizardmen faction introduced in the Total War: Warhammer II The Silence & The Fury DLC and is led by legendary lord Oxyotl. It starts in the western parts of the Southern Chaos Wastes.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Ghosts_of_Pahuax",
+    "tags": {
+      "lizardmen": [
+        "ghostsofpahuax"
+      ]
+    },
+    "x":3770,
+    "y":553
+    
+  },
+  {
+    "title": "World Walkers",
+    
+    "description": "World Walkers is a playable subfaction of Norsca introduced in Total War: Warhammer. It is led by Wulfrik the Wanderer and can be found in Norsca, north of The Old World.Norsca is an icy mountainous peninsula in the far north, under the shadow of Chaos. Its inhabitants (the hardy and warlike Norscan Tribes) are Chaos-worshippers, and they share their inhospitable land with ferocious monsters. When the Norscans raid and plunder other lands, it is with hordes of barbarian warriors backed up by trolls, mammoths, fimir, skin-wolves and even mighty frost-drakes.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/World_Walkers",
+    "tags": {
+      "norsca": [
+        "worldwalkers"
+      ]
+    },
+    "x":3984.5,
+    "y":5135.25
+    
+    
+  },
+  {
+    "title": "Wintertooth",
+    
+    "description": "Wintertooth is a sub-faction of Norsca introduced in Total War: Warhammer. It is led by Throgg and can be found in eastern Norsca, in the northern Old World. The faction is playable in the The Old World, Mortal Empires, and Immortal Empires campaigns, and appears as a non-playable faction in The Realm of Chaos.Norsca is an icy mountainous peninsula in the far north, under the shadow of Chaos. Its inhabitants (the hardy and warlike Norscan Tribes) are Chaos-worshippers, and they share their inhospitable land with ferocious monsters. When the Norscans raid and plunder other lands, it is with hordes of barbarian warriors backed up by trolls, mammoths, fimir, skin-wolves and even mighty frost-drakes.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Wintertooth",
+    "tags": {
+      "norsca": [
+        "wintertooth"
+      ]
+    },
+    "x":4517,
+    "y":5295.25
+    
+    
+  },
+  {
     "title": "ChaosWarriorsSpawn",
-    "sindarinTitle": "Orodruin, Amon Amarth",
-    "description": "Melkor created Mount Doom in the First Age. When Sauron chose the land of Mordor as his dwelling-place in the Second Age, Orodruin was the reason for his choice. The mountain erupted in S.A. 3429, signalling Sauron's attack on Gondor and it took the name Amon Amarth, \"Mount Doom\". This is where the One Ring was forged by Sauron, and where it was destroyed by Gollum.",
-    "infoLink": "https://tolkiengateway.net/wiki/Mount_Doom",
+    "description": "",
+    "infoLink": "",
     "tags": {
       "chaos": [
         "chaoswarriors"
