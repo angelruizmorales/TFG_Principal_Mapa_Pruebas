@@ -35,5 +35,213 @@
       "description":"ciudad de ...",
       "click":"Haz click para saber más"
     }
+    ,
+    {
+      "url": "/assets/images/imgoverlay/Vortex1.webp",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "The Great Vortex",
+      "latLngBounds": [[3717.75,1881], [3650.25,1975.5]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/The_Great_Vortex",
+      "title":"The Great Vortex",
+      "description":"The Great Vortex is a large feature located in the very center of Ulthuan on the Isle of the Dead. Gaining control of the Vortex is the main goal of the Eye of the Vortex campaign and rituals.",
+      "click":"Haz click para saber más"
+    }
+    ,
+    {
+      "url": "/assets/images/imgoverlay/Naggarond.webp",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "Naggarond",
+      "latLngBounds": [[4904.75,378], [4836.25,497.5]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Naggarond",
+      "title":"Naggarond",
+      "description":"Naggarond is a playable Dark Elves faction introduced in Total War: Warhammer II, led by Malekith.",
+      "click":"Haz click para saber más"
+    }
+    ,
+    {
+      "url": "/assets/images/imgoverlay/hexoalt.webp",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "Hexoatl",
+      "latLngBounds": [[2679.75,662], [2638.25,733.5]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Hexoatl",
+      "title":"Hexoatl",
+      "description":"Hexoatl is a playable Lizardmen faction introduced in Total War: Warhammer II. It is led by Lord Mazdamundi and can be found in northern Lustria.",
+      "click":"Haz click para saber más"
+    }
+    ,
+    {
+      "url": "/assets/images/imgoverlay/sartosa.webp",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "Sartosa",
+      "latLngBounds": [[4070.75,4029], [4024.25,4095.5]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Sartosa?so=search",
+      "title":"Sartosa",
+      "description":"In Mortal Empires, it can be found in the Old World region, off the southern coast of Tilea but north of The Southlands. It was added to Mortal Empires in the 2018 resurgent update.In Eye of the Vortex, it is located in the far middle right of the map, occupied by Pirates of Sartosa.",
+      "click":"Haz click para saber más"
+    }
+    ,
+    {
+      "url": "/assets/images/imgoverlay/greatmortisriver.webp",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "Great Mortis Delta",
+      "latLngBounds": [[3379.75,4152], [3428.25,4072.5]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Great_Mortis_Delta",
+      "title":"Great Mortis Delta",
+      "description":"Great Mortis Delta is a province introduced in Total War: Warhammer II. It is located in the Southlands region and can be found in the Eye of the Vortex, Mortal Empires and Immortal Empires.It contains the unique settlement Black Pyramid of Nagash which is important for Tomb Kings campaign objectives. The Sentinels faction will never leave The Black Pyramid. Taking the black pyramid is needed to win a campaign as any tomb king faction.",
+      "click":"Haz click para saber más"
+    }
+    ,
+    {
+      "url": "/assets/images/imgoverlay/nagashizar.webp",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "Nagashizzar",
+      "latLngBounds": [[3584.75,4502], [3512.25,4639.5]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Nagashizzar?so=search",
+      "title":"Nagashizzar",
+      "description":"Nagashizzar, which means 'Glory of Nagash' in High Nehekharan, known also the Cursed Pit, is one of the mightiest fortresses the world has ever seen. Built by the tireless labour of countless Undead, the castle rises nearly half a mile over the desert. It was excavated from the living rock of Cripple Peak and the mountain top is its highest spire. Hundreds of other great towers bristle from the mountainside. By night terrible green witchlights burn in their windows.",
+      "click":"Haz click para saber más"
+    }
+    ,
+    {
+      "url": "/assets/images/imgoverlay/skavenblights.webp",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "Skavenblight",
+      "latLngBounds": [[4339.75,4038], [4280.25,4107.5]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Skavenblight",
+      "title":"Skavenblight",
+      "description":"The Lord Sigmar sends me visions of hell! I see gigantic treadmills eternally turning in the dark. I see uncountable masses of swarming vermin standing on their hindlegs in a foul parody of Man. I see diabolic machines made by deranged mutants. I see bloated queens with atrophied limbs breeding their rotten offspring. All this I see and in my head the dreadful tolling of the cursed bells still screams. It won't stop! The multitude of red eyes stare at us from the darkness of sewers and graves. They loathe us, and they will rise to devour us all for our sins! Make it stop, please, make it stop!",
+      "click":"Haz click para saber más"
+    }
+    ,
+    {
+      "url": "/assets/images/imgoverlay/Altdorf.webp",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "Altdorf",
+      "latLngBounds": [[4678.75,4396], [4635.25,4475.5]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Altdorf_(City)?so=search",
+      "title":"Altdorf",
+      "description":"The current capital of the Empire and seat of the Reikland Emperors. Altdorf is a large, cosmopolitan city-port full of wonders and danger",
+      "click":"Haz click para saber más"
+    }
+    ,
+    {
+      "url": "/assets/images/imgoverlay/drakenhorft.webp",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "Castle Drakenhof",
+      "latLngBounds": [[4585.75,4607], [4537.25,4695.5]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Castle_Drakenhof_(Dark_Castle)",
+      "title":"Castle Drakenhof",
+      "description":"Drakenhof is the sprawling ancestral fortress of the von Carstein bloodline. Ever since the coming of Vlad it has been the de facto political centre of Sylvania.",
+      "click":"Haz click para saber más"
+    }
+    ,
+    {
+      "url": "/assets/images/imgoverlay/kislev.webp",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "Kislev",
+      "latLngBounds": [[4824.75,4746], [4792.25,4809.5]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Kislev",
+      "title":"Kislev",
+      "description":"Kislev is a playable race introduced in Total War: Warhammer III on launch. They are a proud human nation located in the northern Old World, known for harsh winters and their staunch opposition to Chaos. In battle, Kislev has many hybrid melee/ranged units, strong cavalry, and many bear units.Previously in Total War: Warhammer and Total War: Warhammer II, it was a minor non-playable faction, without a unique unit roster.",
+      "click":"Haz click para saber más"
+    }
+    ,
+    {
+      "url": "/assets/images/imgoverlay/DarkLands.webp",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "The Dark Lands",
+      "latLngBounds": [[5570.75,4226], [5498.25,4362.5]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Kislev",
+      "title":"The Dark Lands",
+      "description":"The Dark Lands is a region introduced in Total War: Warhammer II in the Potion of Speed Update for Mortal Empires. It is located east of The Old World and The Southlands, and consists of many wastelands and aggressive factions. It has been expanded in Total War: Warhammer III, it features the entire region, starting at the Worlds Edge Mountains and ending at the Mountains of Mourn. It has been populated with Chaos Dwarfs, Greenskins, Skaven, and Ogre Kingdoms factions, along with one Lizardmen faction on the nearby Dragon Isles.",
+      "click":"Haz click para saber más"
+    }
+    ,
+    {
+      "url": "/assets/images/imgoverlay/Bastion.webp",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "Great Bastion",
+      "latLngBounds": [[4260.75,6302], [4141.25,6698.5]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Great_Bastion",
+      "title":"Great Bastion",
+      "description":"The Great Bastion is a massive wall between the lands of Grand Cathay and the Chaos Wastes to the north. It is designed to protect Cathay from attacks by Chaos factions.",
+      "click":"Haz click para saber más"
+    }
+    ,
+    {
+      "url": "/assets/images/imgoverlay/galleon's.webp",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "The Galleon's Graveyard",
+      "latLngBounds": [[2967.75,1902], [2890.25,2030.5]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/The_Galleon%27s_Graveyard",
+      "title":"The Galleon's Graveyard",
+      "description":"The Galleon's Graveyard is a province introduced to Total War: Warhammer II in the same patch as the Curse of the Vampire Coast paid DLC. It is an island that lies in The Great Ocean waterway that serves as the starting position for the Dreadfleet, led by Count Noctilus.In Immortal Empires in WH3, it was renamed to The Great Ocean.",
+      "click":"Haz click para saber más"
+    }
+    ,
+    {
+      "url": "/assets/images/imgoverlay/Yn_Edri_Eternos.webp",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "Yn Edri Eternos",
+      "latLngBounds": [[4509.75,4255], [4438.25,4360.5]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Yn_Edri_Eternos",
+      "title":"Yn Edri Eternos",
+      "description":"Yn Edri Eternos is one of the provinces in the world of Warhammer. It is unique in that it contains the Oak of Ages settlement, vital to the Wood Elves win condition and an instant loss if it falls.",
+      "click":"Haz click para saber más"
+    }
+    ,
+    {
+      "url": "/assets/images/imgoverlay/Great_maw.webp",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "The great maw",
+      "latLngBounds": [[3827.75,6038], [3775.25,6140.5]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Lore_of_the_Great_Maw",
+      "title":"The great maw",
+      "description":"The Lore of the Great Maw is a lore of magic introduced in Total War: Warhammer III. It is unique to the Ogre Kingdoms Ogre Kingdoms race.",
+      "click":"Haz click para saber más"
+    }
+    ,
+    {
+      "url": "/assets/images/imgoverlay/fallengates.jpg",
+      "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+      "altText": "Fallen Gates",
+      "latLngBounds": [[2793.75,532], [2744.25,659.5]],
+      "isVisible": false,
+      "overlay": null,
+      "redirectUrl": "",
+      "title":"Fallen Gates",
+      "description":"https://www.honga.net/totalwar/warhammer2/building.php?l=en&v=warhammer2&f=wh2_main_lzd_hexoatl&b=wh2_main_special_fallen_gates_1",
+      "click":"Haz click para saber más"
+    }
   ]
   

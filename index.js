@@ -1,15 +1,17 @@
 import mapImage from './assets/images/warmap2.webp';
 import markersData from './assets/data/markers.json';
-import {battleIcon, darkIcon, deathIcon, dwarfIcon, elfIcon, encounterIcon, hobbitIcon, humanIcon, ogreIcon, elfhelIcon, customIcon, reiklanIcon, lothernIcon, naggarondIcon, orionIcon,argwylonIcon,heraldsofarielIcon
+import {reiklanIcon, lothernIcon, naggarondIcon, orionIcon,argwylonIcon,heraldsofarielIcon
 ,wargroveofwoeIcon,grimgorardboyzIcon,goldtoothIcon, disciplesofthemawIcon, thedrakenhofconclaveicon, voncarsteinIcon,caravanofbluerosesIcon,thebarrowlegionIcon,chaoswarriorsIcon,
 goldencollegeIcon,thehuntsmarshalsexpeditionIcon, karazakarazIcon, clanangrundIcon, karazkadrinIcon, ironbrowexpeditionIcon, theancestralthrongIcon, orderofloremastersIcon,
 nagarytheIcon,avelornIcon,yvresseIcon,knightsofcaledorIcon, cultofsigmarIcon,couronneIcon,bordeleauxerrantIcon,carcassonneIcon,chevaliersdelyonesseIcon, cultofpleasureIcon,haggraefIcon,harganethIcon,
 theblesseddreadIcon,thethousandmawsIcon, bonerattlazIcon, thebloodyhandzIcon, crookedmoonIcon, brokenaxeIcon, hexoatlIcon,lastdefendersIcon,tlaquaIcon,cultofsotekIcon,itzaIcon,spiritofthejungleIcon,
 ghostsofpahuaxIcon,worldwalkersIcon, wintertoothIcon,clanmorsIcon,clanpestilensIcon,clanrictusIcon,claneshinIcon,clanskryreIcon,clanmoulderIcon,khemriIcon,courtoflybarasIcon,exilesofnehekIcon,
 followersofnagashIcon,thedrownedIcon,thedreadfleetIcon,piratesofsartosaIcon,theawakenedIcon,warherdoftheoneeyeIcon,harbingerofdisasterIcon,warherdoftheshadowgaveIcon,
-slaughterhorntribeIcon,thenorthernprovincesIcon,thewesternprovincesIcon} from "./mapIcons.js";
+slaughterhorntribeIcon,thenorthernprovincesIcon,thewesternprovincesIcon,legionofchaosIcon,exilesofkhorneIcon,poxmakersofnurgleIcon,seducersofslaaneshIcon,oraclesoftzeentchIcon,shadowlegionIcon,
+theicecourtIcon,thegreatorthodoxyIcon,ursunrevivalistsIcon,disciplesofhashutIcon,thelegionofazgorhIcon,thewarhostofzharrIcon} from "./mapIcons.js";
 import imgData from './assets/data/imgData.json';
-import imgFactionData from './assets/data/imgFactionData.json';
+import imgQuestData from './assets/data/imgQuestData.json';
+import ruin from './assets/data/ruins.json';
 
 
 // CRS.Simple toma la forma de [y, x] en lugar de [x, y], de la misma manera que Leaflet utiliza [lat, lng] en lugar de [lng, lat].Traducido esto a unas coordenadas cartesianas, tendríamos el par [y , x]||| defino el tamaño del zoom
@@ -61,11 +63,7 @@ const createInfoDialog = (data) => {
 
 const getFilters = () => {
     let filters = {
-        'places': [],
         'events': [],
-        'quests': [],
-        'spawn': [],
-        'custom': [],
         'humans':[],
         'dwarfs':[],
         'highelves':[],
@@ -81,7 +79,8 @@ const getFilters = () => {
         'tombkings':[],
         'vampirecoast':[],
         'beastmen':[],
-        'chaos':[]
+        'chaos':[],
+        'chaosdwarfs':[]
     };
     document.querySelectorAll('#filters fieldset').forEach(category => {
         category.querySelectorAll('input[type=checkbox]:checked').forEach(filter => {
@@ -139,35 +138,7 @@ const createMarker = (map, data) => {
         title: data.title,
         alt: data.title,
     }
-    if (data.tags?.events?.includes('battle')) {
-        markerOptions.icon = battleIcon
-    } else if (data.tags?.events?.includes('death')) {
-        markerOptions.icon = deathIcon
-    } else if (data.tags?.events?.includes('encounter')) {
-        markerOptions.icon = encounterIcon
-    } else if (data.tags?.places?.includes('dwarven')) {
-        markerOptions.icon = dwarfIcon
-    } else if (data.tags?.places?.includes('elven')) {
-        markerOptions.icon = elfIcon
-    } else if (data.tags?.places?.includes('human')) {
-        markerOptions.icon = humanIcon
-    } else if (data.tags?.places?.includes('dark')) {
-        markerOptions.icon = darkIcon
-    } else if (data.tags?.places?.includes('hobbit')) {
-        markerOptions.icon = hobbitIcon
-    } else if (data.tags?.places?.includes('ogre')) {
-        markerOptions.icon = ogreIcon
-    }else if (data.tags?.places?.includes('elfhel')) {
-        markerOptions.icon = elfhelIcon
-    }else if (data.tags?.spawn?.includes('caosspawn')) {
-        markerOptions.icon = ogreIcon
-    }else if (data.tags?.spawn?.includes('elfhelspawn')) {
-        markerOptions.icon = elfhelIcon
-    }else if (data.tags?.spawn?.includes('humanspawn')) {
-        markerOptions.icon = humanIcon
-    }else if (data.tags?.custom?.includes('custom')) {
-        markerOptions.icon = customIcon
-    }else if (data.tags?.humans?.includes('reiklan')) {
+    if (data.tags?.humans?.includes('reiklan')) {
       markerOptions.icon = reiklanIcon
     }else if (data.tags?.humans?.includes('thehuntsmarshalsexpedition')) {
       markerOptions.icon = thehuntsmarshalsexpeditionIcon
@@ -183,6 +154,12 @@ const createMarker = (map, data) => {
       markerOptions.icon = carcassonneIcon
     }else if (data.tags?.humans?.includes('chevaliersdelyonesse')) {
       markerOptions.icon = chevaliersdelyonesseIcon
+    }else if (data.tags?.humans?.includes('theicecourt')) {
+      markerOptions.icon = theicecourtIcon
+    }else if (data.tags?.humans?.includes('thegreatorthodoxy')) {
+      markerOptions.icon = thegreatorthodoxyIcon
+    }else if (data.tags?.humans?.includes('ursunrevivalists')) {
+      markerOptions.icon = ursunrevivalistsIcon
     }else if (data.tags?.dwarfs?.includes('karazakaraz')) {
       markerOptions.icon = karazakarazIcon
     }else if (data.tags?.dwarfs?.includes('clanangrund')) {
@@ -307,7 +284,28 @@ const createMarker = (map, data) => {
       markerOptions.icon = slaughterhorntribeIcon
     }else if (data.tags?.chaos?.includes('chaoswarriors')) {
       markerOptions.icon = chaoswarriorsIcon
+    }else if (data.tags?.chaos?.includes('legionofchaos')) {
+      markerOptions.icon = legionofchaosIcon
+    }else if (data.tags?.chaos?.includes('exilesofkhorne')) {
+      markerOptions.icon = exilesofkhorneIcon
+    }else if (data.tags?.chaos?.includes('poxmakersofnurgle')) {
+      markerOptions.icon = poxmakersofnurgleIcon
+    }    else if (data.tags?.chaos?.includes('seducersofslaanesh')) {
+      markerOptions.icon = seducersofslaaneshIcon
+    }    else if (data.tags?.chaos?.includes('oraclesoftzeentch')) {
+      markerOptions.icon = oraclesoftzeentchIcon
+    }    else if (data.tags?.chaos?.includes('shadowlegion')) {
+      markerOptions.icon = shadowlegionIcon
+    }else if (data.tags?.chaosdwarfs?.includes('disciplesofhashut')) {
+      markerOptions.icon = disciplesofhashutIcon
+    }else if (data.tags?.chaosdwarfs?.includes('thelegionofazgorh')) {
+      markerOptions.icon = thelegionofazgorhIcon
+    }else if (data.tags?.chaosdwarfs?.includes('thewarhostofzharr')) {
+      markerOptions.icon = thewarhostofzharrIcon
     }
+    
+    
+
     return L.marker(t, markerOptions).bindPopup(createInfoDialog(data));
 }
 
@@ -347,7 +345,8 @@ map.on('click', onMapClick);
 ////hacer una funciona que cuente valores en el json y nos devuelva la cantidad almacenada en una variable para luego mandarla al assets
 ////Función para guardar localizaciones en una base de datos.
 
-
+const viewImg = document.getElementById('buttonViewImg');
+viewImg.addEventListener('click', renderImages);
 //Función para crear imageOverlay en el mapa y al hacer click en un botón en el html que cargue o elimine las imageOverlay.
   function createImages() {
     imgData.forEach(function(imgData) {
@@ -391,10 +390,7 @@ map.on('click', onMapClick);
       }
       imgData.isVisible = !imgData.isVisible;
     });
-  }  
-  const viewImg = document.getElementById('buttonViewImg');
-  viewImg.onclick = renderImages;
-  
+  }    
   createImages();
   
 
@@ -412,67 +408,6 @@ button.addEventListener('click', function() {
 // buttonreiklan.addEventListener('click', function() {
 //     moveToCoordinates(3914.5,4598.5,0);
 // });
-// const buttongoldencollege = document.getElementById('buttongoldencollege');
-// buttongoldencollege.addEventListener('click', function() {
-//     moveToCoordinates(3914.5,4598,0);
-// });
-// const buttonthehuntsmarshalsexpedition = document.getElementById('buttonthehuntsmarshalsexpedition');
-// buttonthehuntsmarshalsexpedition.addEventListener('click', function() {
-//     moveToCoordinates(1698.5,1267,0);
-// });
-// //dwarfs
-// const buttonkarazakaraz = document.getElementById('buttonkarazakaraz');
-// buttonkarazakaraz.addEventListener('click', function() {
-//     moveToCoordinates(3940.75,4712.5,0);
-// });
-// const buttonclanangrund = document.getElementById('buttonclanangrund');
-// buttonclanangrund.addEventListener('click', function() {
-//     moveToCoordinates(3874.25,4378,0);
-// });
-// const buttonkarazkadrin = document.getElementById('buttonkarazkadrin');
-// buttonkarazkadrin.addEventListener('click', function() {
-//     moveToCoordinates(4188.75,4812.5,0);
-// });
-// //Elves
-// const buttonlothern = document.getElementById('buttonlothern');
-// buttonlothern.addEventListener('click', function() {
-//     moveToCoordinates(2906.5,1946,0);
-// });
-// //WoodElves
-// const buttonorion = document.getElementById('buttonorion');
-// buttonorion.addEventListener('click', function() {
-//     moveToCoordinates(3759.5,4304,0);
-// });
-// //GreenSkins
-// const buttongreemskins = document.getElementById('buttongreemskins');
-// buttongreemskins.addEventListener('click', function(){
-//   moveToCoordinates(4424.5,5267,0)
-// });
-
-// //OgreKimgdon
-// const buttongoldtooth = document.getElementById('buttongoldtooth');
-// buttongoldtooth.addEventListener('click', function(){
-//   moveToCoordinates(3639.5,5644,0)
-// });
-// const buttondisciplesofthemaw = document.getElementById('buttondisciplesofthemaw');
-// buttondisciplesofthemaw.addEventListener('click', function(){
-//   moveToCoordinates(3872.5,4239,0)
-// });
-// //VampireCounts
-// const buttonthedrakenhofconclave = document.getElementById('buttonthedrakenhofconclave');
-// buttonthedrakenhofconclave.addEventListener('click', function(){
-//   moveToCoordinates(2492.75,4160.5,0)
-// });
-// const buttonvoncarstein = document.getElementById('buttonvoncarstein');
-// buttonvoncarstein.addEventListener('click', function(){
-//   moveToCoordinates(4015.5,4659,0)
-// });
-// //Chaos
-// const buttonchaoswarriors = document.getElementById('buttonchaoswarriors');
-// buttonchaoswarriors.addEventListener('click', function(){
-//   moveToCoordinates(4639.5,5123,0)
-// });
-
 //Una Función para coger los valores lat,lng,zoom y pasar le a moveToCoordinates esos valores.
 function handleButtonClick(lat, lng, zoom) {
   moveToCoordinates(lat, lng, zoom);
@@ -491,6 +426,10 @@ const buttonCoordinates = {
   'buttonbordeleauxerrant':[4434.25,4003.5,1],
   'buttoncarcassonne':[4016.25,4101,1],
   'buttonchevaliersdelyonesse':[3348.25,3170,1],
+  //Kislev
+  'buttontheicecourt':[4622.25,4786,1],
+  'buttonthegreatorthodoxy':[4790.25,4828,1],
+  'buttonursunrevivalists':[5196.25,4731,1],
   //Dwarfs
   'buttonkarazakaraz': [4239.75, 4754, 1],
   'buttonclanangrund': [4094.25, 4352, 1],
@@ -566,8 +505,18 @@ const buttonCoordinates = {
   'buttonharbingerofdisaster': [3332.25, 4283.5, 1],
   'buttonwarherdoftheshadowgave': [4068.25, 3928.5, 1],
   'buttonslaughterhorntribe': [3666.25, 617.5, 1],
+  //ChaosDwarfs
+  'buttondisciplesofhashut': [4931.25, 5042.5, 1],
+  'buttonthelegionofazgorh': [3501.25, 5354.5, 1],
+  'buttonthewarhostofzharr': [4607.25, 5206.5, 1],
   //Chaos
-  'buttonchaoswarriors': [5076.5, 5059, 1]
+  'buttonchaoswarriors': [5076.5, 5059, 1],
+  'buttonlegionofchaos': [5255.5, 4280, 1],
+  'buttonexilesofkhorne': [3203.5, 4394, 1],
+  'buttonpoxmakersofnurgle': [3074.5, 5420, 1],
+  'buttonseducersofslaanesh': [3945.5, 2007, 1],
+  'buttonoraclesoftzeentch': [187.5, 4120, 1],
+  'buttonshadowlegion': [4518.5, 3587, 1],
 };
 
 //Con el object.entries entro dentro de buttonCoordinates y itero sobre el para extraer los valores por separado y por último obtengo el buttonId y le doy un evento click.
@@ -591,47 +540,101 @@ Object.entries(buttonCoordinates).forEach(([buttonId, coordinates]) => {
   });
 
 
-  //Función para las imagens de facción
-  function createFactionImages() {
-    imgFactionData.forEach(function(imgFactionData) {
-      const overlay = L.imageOverlay(imgFactionData.url, L.latLngBounds(imgFactionData.latLngBounds), {
-        opacity: 0.8,
-        errorOverlayUrl: imgFactionData.errorOverlayUrl,
-        alt: imgFactionData.altText,
-        interactive: true,
-      });
-        overlay.on('click', function() {
-            window.location.href = imgFactionData.redirectUrl; // Redireccionar a la URL especificada en imgData.redirectUrl.
-      });
-
-      overlay.on('mouseover', function () {
-        overlay.openPopup();
-      });
+  //Función para las imagens de quests
+  const viewquestImg = document.getElementById('buttonViewquestImg');
+  viewquestImg.addEventListener('click', renderquestImages);
+  // Función para crear las imágenes de las quests
+  function createquestImages() {
+    imgQuestData.forEach(function(imgQuestData) {
+          const overlay = L.imageOverlay(imgQuestData.url, L.latLngBounds(imgQuestData.latLngBounds), {
+              opacity: 0.8,
+              errorOverlayUrl: imgQuestData.errorOverlayUrl,
+              alt: imgQuestData.altText,
+              interactive: true,
+              className: 'blue-border'
+          });
+          overlay.on('click', function() {
+              window.location.href = imgQuestData.redirectUrl;//Redireccionar al hacer click
+          });
   
-      overlay.on('mouseout', function () {
-        overlay.closePopup();
+          overlay.on('mouseover', function () {
+              overlay.openPopup();
+          });
+  
+          overlay.on('mouseout', function () {
+              overlay.closePopup();
+          });
+          overlay.bindPopup(
+              `<div>
+                  <h3>${imgQuestData.title}</h3>
+                  <p>${imgQuestData.description}</p>
+                  <h5>${imgQuestData.click}</h5>
+              </div>`
+          );
+          imgQuestData.overlay = overlay;
       });
-      overlay.bindPopup(
-        `<div>
-          <h3>${imgFactionData.title}</h3>
-          <p>${imgFactionData.description}</p>
-          <img src="${imgFactionData.url}" alt="${imgFactionData.altText}">
-          <h5>${imgFactionData.click}</h5>
-        </div>`
-      );
-      imgFactionData.overlay = overlay;
-    });
   }
-  function renderFactionImages() {
-    imgFactionData.forEach(function(imgFactionData) {
-      if (imgFactionData.isVisible) {
-        map.removeLayer(imgFactionData.overlay);
-      } else {
-        imgFactionData.overlay.addTo(map);
-      }
-      imgFactionData.isVisible = !imgFactionData.isVisible;
-    });
-  }  
-  const viewFactionImg = document.getElementById('buttonViewFactionImg');
-  viewFactionImg.onclick = renderFactionImages;
-createFactionImages();
+  // Función para renderizar las imágenes de las quests
+  function renderquestImages() {
+    imgQuestData.forEach(function(imgQuestData) {
+          if (imgQuestData.isVisible) {
+              map.removeLayer(imgQuestData.overlay);
+          } else {
+            imgQuestData.overlay.addTo(map);
+          }
+          imgQuestData.isVisible = !imgQuestData.isVisible;
+      });
+  }
+  // Llamar a la función para crear las imágenes de las quests
+  createquestImages();
+
+
+
+
+
+  const viewruinImg = document.getElementById('buttonViewruinImg');
+  viewruinImg.addEventListener('click', renderruinImages);
+  // Función para crear las imágenes de las ruinas
+  function createruinImages() {
+    ruin.forEach(function(ruin) {
+          const overlay = L.imageOverlay(ruin.url, L.latLngBounds(ruin.latLngBounds), {
+              opacity: 0.8,
+              errorOverlayUrl: ruin.errorOverlayUrl,
+              alt: ruin.altText,
+              interactive: true,
+              className: 'blue-border'
+          });
+          overlay.on('click', function() {
+              window.location.href = ruin.redirectUrl;//Redireccionar al hacer click
+          });
+  
+          overlay.on('mouseover', function () {
+              overlay.openPopup();
+          });
+  
+          overlay.on('mouseout', function () {
+              overlay.closePopup();
+          });
+          overlay.bindPopup(
+              `<div>
+                  <h3>${ruin.title}</h3>
+                  <p>${ruin.description}</p>
+                  <h5>${ruin.click}</h5>
+              </div>`
+          );
+          ruin.overlay = overlay;
+      });
+  }
+  // Función para renderizar las imágenes de las ruinas
+  function renderruinImages() {
+    ruin.forEach(function(ruin) {
+          if (ruin.isVisible) {
+              map.removeLayer(ruin.overlay);
+          } else {
+            ruin.overlay.addTo(map);
+          }
+          ruin.isVisible = !ruin.isVisible;
+      });
+  }
+  // Llamar a la función para crear las imágenes de las ruinas
+  createruinImages();

@@ -1,0 +1,156 @@
+[
+    {
+        "url": "/assets/icons/quest.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "The Unforgiven",
+        "latLngBounds": [[ 4477, 4352.625], [4461.75,4383.125]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/The_Unforgiven_(quest)",
+        "title":"The Unforgiven",
+        "description":"It is part of the Wood Elves faction mechanic to confederate other Wood Elves factions such as Argwylon in this case. As long as the Argwylon faction exists, it can be triggered by completing the Oak of Ages (Budding) building in the The Oak of Ages settlement, the province capital of Yn Edri Eternos. It involves defeating Dwarfs armies in battle.",
+        "click":"Haz click para saber más"
+      },    
+      {
+        "url": "/assets/icons/quest.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "Deathsword & the Cursed Blade",
+        "latLngBounds": [[4238.625, 1925], [4218.125, 1947.75]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Deathsword_%26_the_Cursed_Blade_(Quest)",
+        "title":"Deathsword & the Cursed Blade",
+        "description":"Druchii under Morathi's dominion intercept the Blood Queen's retinue. Hellebron is unconcerned, for the time of murder is at hand, and for every enemy throat severed and dedicated to Khaine her twin blades will find their edge once more. Yet... this battle - like all the events leading up to it - is of Morathi's machinations. Nothing should be taken as it seems.",
+        "click":"Haz click para saber más"
+      }
+      ,    
+      {
+        "url": "/assets/icons/quest.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "Slaughter & Carnage",
+        "latLngBounds": [[3434.625, 4449], [3415.125, 4477.75]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Slaughter_%26_Carnage_(quest)",
+        "title":"Slaughter & Carnage",
+        "description":"Slaughter & Carnage is a unique quest for the legendary lord Skarbrand the Exiled, who leads the Exiles of Khorne faction of the Khorne race, introduced in Total War Warhammer III to obtain his exclusive item, the unique Slaughter & Carnage weapon",
+        "click":"Haz click para saber más"
+      }
+      ,    
+      {
+        "url": "/assets/icons/quest.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "Necrotic Missiles",
+        "latLngBounds": [[3286.625, 5426], [3264.125, 5448.75]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Necrotic_Missiles_(quest)",
+        "title":"Necrotic Missiles",
+        "description":"Necrotic Missiles is a unique quest for the legendary lord Ku'gath Plaguefather, who leads the Poxmakers of Nurgle faction of the Nurgle race, introduced in Total War Warhammer III to obtain his exclusive item, the unique Necrotic Missiles weapon.",
+        "click":"Haz click para saber más"
+      }
+      ,    
+      {
+        "url": "/assets/icons/quest.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "Gorduz Backstabber",
+        "latLngBounds": [[5099.625, 5052], [5083.125, 5072.75]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Gorduz_Backstabber_(quest)",
+        "title":"Gorduz Backstabber",
+        "description":"Gorduz Backstabber is a unique quest for the Disciples of Hashut Chaos Dwarfs that unlocks the Legendary Hero Gorduz Backstabber for the Chaos Dwarf faction that completes it.",
+        "click":"Haz click para saber más"
+      }
+      ,    
+      {
+        "url": "/assets/icons/quest.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "Star of Avelorn",
+        "latLngBounds": [[3820.625, 1956], [3801.125, 1978.75]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Star_of_Avelorn_(Quest)",
+        "title":"Star of Avelorn",
+        "description":"Secrecy and Stealth are the Everqueen's allies as her war host seeks to take the higher ground and gain a key tactical advantage against the mortal servants of the Dark Gods. The enemy has placed his artillery forces on a hill to the east. How the Everqueen deals with them will be the key to unlocking victory.",
+        "click":"Haz click para saber más"
+      }
+      ,    
+      {
+        "url": "/assets/icons/quest.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "Lord Kroak",
+        "latLngBounds": [[2688.625, 758], [2673.125, 779.75]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Lord_Kroak_(quest)",
+        "title":"Lord Kroak",
+        "description":"Lord Kroak is a unique quest for the Lizardmen race introduced in Total War Warhammer II The Hunter and the Beast DLC to obtain the exclusive legendary hero Lord Kroak.This is a three-part quest requires performing the Rite of Awakening, moving a character to a specific location and then fighting a set battle against a powerful Skaven army.",
+        "click":"Haz click para saber más"
+      }
+      ,    
+      {
+        "url": "/assets/icons/quest.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "Ymwrath the Eternal",
+        "latLngBounds": [[3617.625, 4950], [3603.125, 4979.75]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Ymwrath_the_Eternal_(Quest)",
+        "title":"Ymwrath the Eternal",
+        "description":"Throught its herald, you have issued a challenge of battle to Ymwrath the Eternal. The ancient Star Dragon and his attendants shall fight without mercy to test our strength!",
+        "click":"Haz click para saber más"
+      }
+      ,    
+      {
+        "url": "/assets/icons/quest.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "",
+        "latLngBounds": [[4111.625, 3339], [4093.125, 3362.75]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl": "",
+        "title":"",
+        "description":"",
+        "click":"Haz click para saber más"
+      }
+      ,    
+      {
+        "url": "/assets/icons/quest.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "Talisman of Hoeth",
+        "latLngBounds": [[3739.625, 2128], [3711.125, 2150.75]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Talisman_of_Hoeth_(Quest)",
+        "title":"Talisman of Hoeth",
+        "description":"Talisman of Hoeth is a set piece battle in Total War: Warhammer II. It requires The Warden and the Paunch DLC to be playable.",
+        "click":"Haz click para saber más"
+      }
+      ,    
+      {
+        "url": "/assets/icons/quest.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "Vessel of Chaos",
+        "latLngBounds": [[5427.625, 3648], [5415.125, 3672.75]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Vessel_of_Chaos_(quest)",
+        "title":"Vessel of Chaos",
+        "description":"Vessel of Chaos is a unique quest for the legendary lord Vilitch the Curseling, who leads the Puppets of Misrule Puppets of Misrule faction of the Warhost of the Apocalypse Warriors of Chaos race, introduced in Total War: Warhammer III with the Champions of Chaos DLC to obtain his exclusive item, the unique arcane item: Vessel of Chaos.",
+        "click":"Haz click para saber más"
+      }
+      ,    
+      {
+        "url": "/assets/icons/quest.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "Staff of Command",
+        "latLngBounds": [[4666.625, 4484], [4650.125, 4506.75]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl": "https://totalwarwarhammer.fandom.com/wiki/Staff_of_Command_(quest)",
+        "title":"Staff of Command",
+        "description":"Staff of Command is a unique 6-stage quest for Volkmar the Grim, a Commander legendary cavalry lord who may lead the Reikland Reikland faction of The Empire The Empire race, to obtain one his bound items, Equipment Items Weapon SmallIcon rarity legendary small Staff of Command, a unique weapon item, introduced in Total War Warhammer.",
+        "click":"Haz click para saber más"
+      }
+]

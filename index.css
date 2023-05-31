@@ -36,7 +36,7 @@ aside {
 .background{
   position: fixed;
   z-index: 999;
-  animation: changeBackground 55s infinite;
+  animation: changeBackground 32s infinite;
   background-image: url('imagen1.jpg');
   background-size: cover;
 }
@@ -202,7 +202,7 @@ aside #filters fieldset legend {
 #inicial-point {
   position: absolute;
   top: 0;
-  right: 14.5rem;
+  right: 3.5rem;
   z-index: 410;
   width: 2.8rem;
 }
@@ -518,18 +518,15 @@ footer{
   }
 }
 @keyframes changeBackground {
-  0% { background-image: url('/assets/images/background/imagen12.webp'); }
-  9.09% { background-image: url('/assets/images/background/imagen2.jpg'); }
-  18.18% { background-image: url('/assets/images/background/imagen3.jpg'); }
-  27.27% { background-image: url('/assets/images/background/imagen4.jpg'); }
-  36.36% { background-image: url('/assets/images/background/imagen5.jpg'); }
-  45.45% { background-image: url('/assets/images/background/imagen6.jpg'); }
-  54.54% { background-image: url('/assets/images/background/imagen7.jpg'); }
-  63.63% { background-image: url('/assets/images/background/imagen8.jpg'); }
-  72.72% { background-image: url('/assets/images/background/imagen9.jpg'); }
-  81.81% { background-image: url('/assets/images/background/imagen10.jpg'); }
-  90.09% { background-image: url('/assets/images/background/imagen11.jpg'); }
-  100%   {background-image: url('/assets/images/background/imagen10.jpg');}
+  0% { background-image: url('/assets/images/background/imagen1.jpg'); }
+  12.5% { background-image: url('/assets/images/background/imagen2.png'); }
+  25% { background-image: url('/assets/images/background/imagen3.jpg'); }
+  37.5% { background-image: url('/assets/images/background/imagen4.jpg'); }
+  50% { background-image: url('/assets/images/background/imagen5.jpg'); }
+  62.5% { background-image: url('/assets/images/background/imagen6.jpg'); }
+  75% { background-image: url('/assets/images/background/imagen7.jpg'); }
+  87.5% { background-image: url('/assets/images/background/imagen8.webp'); }
+  100% { background-image: url('/assets/images/background/imagen1.jpg'); }
 }
 @keyframes glowing {
   0% {
@@ -571,7 +568,7 @@ footer{
   position: fixed;
   z-index: 999;
   /*Si quiero añadir la animación de las imagenes pongo esto*/
-  animation: changeBackground 55s infinite;
+  animation: changeBackground 32s infinite;
   background-image: url('imagen1.jpg');
   background-size: cover;
 }

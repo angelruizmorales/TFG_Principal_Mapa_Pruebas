@@ -25,7 +25,9 @@
           <div class="bg-dark p-4">
             <img class="iconaside warhammer" src="assets/icons/warhammer.svg">
             <label class="text-white h4 navTitle">Warhammer Fantasy Map</label>
-            <li><a href="https://www.games-workshop.com/es-ES/Inicio?_requestid=8901414">Games workshop</a></li>
+            <li><a href="https://www.games-workshop.com/es-ES/Inicio?_requestid=8901414">Games Workshop</a></li>
+            <li><a href="https://www.honga.net/totalwar/warhammer3/index.php">Royal Military Academy</a></li>
+            <li><a href="https://totalwarwarhammer.fandom.com/wiki/Total_War:_Warhammer_Wiki">Total War: Warhammer Wiki</a></li>
           </div>
         </div>
         <nav class="navbar navbar-dark bg-dark">
@@ -51,12 +53,6 @@
 </div>
 <a href="#" id="open-btn">
     <img alt="open filters" src="assets/icons/compass.svg">
-</a>
-<a href="#" id="view-img">
-    <img id="buttonViewImg" alt="view img" src="assets/icons/viewimg.svg">
-</a>
-<a href="#" id="view-layer">
-    <img id="buttonViewFactionImg" alt="view layer" src="assets/icons/layer.svg" >
 </a>
 <a href="#" id="inicial-point">
     <img alt="view layer" src="assets/icons/returntomap.svg" >
@@ -118,6 +114,24 @@
                 <input data-category="humans" data-filter="chevaliersdelyonesse" id="chevaliersdelyonesse-humans" name="chevaliersdelyonesse-humans" type="checkbox">
                 <label for="chevaliersdelyonesse-humans">Chevaliers de Lyonesse</label>
                 <img class="iconaside" src="assets/icons/imgFaction/chevaliersdelyonesse.png"><img class="iconaside" id="buttonchevaliersdelyonesse" alt="view layer" src="assets/icons/location.svg" >
+            </div>
+        </fieldset>
+        <fieldset id="filters-humans">
+            <legend>Kislev</legend>
+            <div>
+                <input data-category="humans" data-filter="theicecourt" id="theicecourt-humans" name="theicecourt-humans" type="checkbox">
+                <label for="theicecourt-humans">The Ice Court</label>
+                <img class="iconaside" src="assets/icons/imgFaction/theicecourt.png"><img class="iconaside" id="buttontheicecourt" alt="view layer" src="assets/icons/location.svg" >
+            </div>
+            <div>
+                <input data-category="humans" data-filter="thegreatorthodoxy" id="thegreatorthodoxy-humans" name="thegreatorthodoxy-humans" type="checkbox">
+                <label for="thegreatorthodoxy-humans">The Great Orthodoxy</label>
+                <img class="iconaside" src="assets/icons/imgFaction/thegreatorthodoxy.png"><img class="iconaside" id="buttonthegreatorthodoxy" alt="view layer" src="assets/icons/location.svg" >
+            </div>
+            <div>
+                <input data-category="humans" data-filter="ursunrevivalists" id="ursunrevivalists-humans" name="ursunrevivalists-humans" type="checkbox">
+                <label for="ursunrevivalists-humans">Ursun Revivalists</label>
+                <img class="iconaside" src="assets/icons/imgFaction/ursunrevivalists.png"><img class="iconaside" id="buttonursunrevivalists" alt="view layer" src="assets/icons/location.svg" >
             </div>
         </fieldset>
         <fieldset id="filters-dwarfs">
@@ -320,7 +334,7 @@
             </div>
             <div>
                 <input data-category="ogre" data-filter="goldtooth" id="goldtooth-ogre" name="goldtooth-ogre" type="checkbox">
-                <label for="goldtooth-ogre">goldtooth</label>
+                <label for="goldtooth-ogre">Goldtooth</label>
                 <img class="iconaside" src="assets/icons/imgFaction/goldtooth.png"><img class="iconaside" id="buttongoldtooth" alt="view layer" src="assets/icons/location.svg" > 
             </div>
             <div>
@@ -523,6 +537,28 @@
                 <img class="iconaside" src="assets/icons/imgFaction/slaughterhorntribe.png"><img class="iconaside" id="buttonslaughterhorntribe" alt="view layer" src="assets/icons/location.svg" > 
             </div>
         </fieldset>
+        <fieldset id="filters-chaosdwarfs">
+            <legend>ChaosDwarfs</legend>
+            <div>
+                <input data-category="chaosdwarfs" data-filter="all" id="all-chaosdwarfs" name="all-chaosdwarfs" type="checkbox">
+                <label for="all-chaosdwarfs">All</label>
+            </div>
+            <div>
+                <input data-category="chaosdwarfs" data-filter="disciplesofhashut" id="disciplesofhashut-chaosdwarfs" name="disciplesofhashut-chaosdwarfs" type="checkbox">
+                <label for="disciplesofhashut-chaosdwarfs">Disciples of Hashut</label>
+                <img class="iconaside" src="assets/icons/imgFaction/disciplesofhashut.png"><img class="iconaside" id="buttondisciplesofhashut" alt="view layer" src="assets/icons/location.svg" > 
+            </div>
+            <div>
+                <input data-category="chaosdwarfs" data-filter="thelegionofazgorh" id="legionofchaos-thelegionofazgorh" name="legionofchaos-thelegionofazgorh" type="checkbox">
+                <label for="legionofchaos-thelegionofazgorh">The Legion of Azgorh</label>
+                <img class="iconaside" src="assets/icons/imgFaction/thelegionofazgorh.png"><img class="iconaside" id="buttonthelegionofazgorh" alt="view layer" src="assets/icons/location.svg" > 
+            </div>
+            <div>
+                <input data-category="chaosdwarfs" data-filter="thewarhostofzharr" id="thewarhostofzharr-chaosdwarfs" name="thewarhostofzharr-chaosdwarfs" type="checkbox">
+                <label for="thewarhostofzharr-chaosdwarfs">The Warhost of Zharr</label>
+                <img class="iconaside" src="assets/icons/imgFaction/thewarhostofzharr.png"><img class="iconaside" id="buttonthewarhostofzharr" alt="view layer" src="assets/icons/location.svg" > 
+            </div>
+        </fieldset>
         <fieldset id="filters-chaos">
             <legend>Chaos</legend>
             <div>
@@ -531,133 +567,56 @@
             </div>
             <div>
                 <input data-category="chaos" data-filter="chaoswarriors" id="chaoswarriors-chaos" name="chaoswarriors-chaos" type="checkbox">
-                <label for="chaoswarriors-chaos">ChaosWarriors</label>
+                <label for="chaoswarriors-chaos">Chaos Warriors</label>
                 <img class="iconaside" src="assets/icons/imgFaction/chaoswarriors.png"><img class="iconaside" id="buttonchaoswarriors" alt="view layer" src="assets/icons/location.svg" > 
             </div>
-        </fieldset>
-        <!-- <fieldset id="filters-quests">
-            <legend>Quests</legend>
-
             <div>
-                <input data-category="quests" data-filter="all" id="all-quests" name="all-quests" type="checkbox">
-                <label for="all-quests">All</label>
-                
-            </div>
-
-            <div>
-                <input data-category="quests" data-filter="erebor" id="erebor-quest" name="erebor-quest"
-                       type="checkbox">
-                <label for="erebor-quest">Quest for Erebor</label>
-            </div>
-
-            <div>
-                <input data-category="quests" data-filter="ring" id="ring-quest" name="ring-quest"
-                       type="checkbox">
-                <label for="ring-quest">Quest of the Ring</label>
+                <input data-category="chaos" data-filter="legionofchaos" id="legionofchaos-chaos" name="legionofchaos-chaos" type="checkbox">
+                <label for="legionofchaos-chaos">Legion of Chaos</label>
+                <img class="iconaside" src="assets/icons/imgFaction/legionofchaos.png"><img class="iconaside" id="buttonlegionofchaos" alt="view layer" src="assets/icons/location.svg" > 
             </div>
             <div>
-                <input data-category="quests" data-filter="caos" id="caos-quest" name="caos-quest"
-                       type="checkbox">
-                <label for="caos-quest">Caos events</label>
-            </div>
-        </fieldset> -->
-        
-
-        <fieldset id="filters-places">
-            <legend>Places</legend>
-
-            <div>
-                <input data-category="places" data-filter="all" id="all-places" name="all-places" type="checkbox">
-                <label for="all-places">All</label>
-            </div>
-
-            <div>
-                <input data-category="places" data-filter="human" id="human-places" name="human-places" type="checkbox">
-                <label for="human-places">Humans</label>
-                <img class="iconaside" src="assets/icons/castle.svg">
-            </div>
-
-            <div>
-                <input data-category="places" data-filter="elven" id="elven-places" name="elven-places" type="checkbox">
-                <label for="elven-places">Elves</label>
-                <img class="iconaside" src="assets/icons/elf.svg">
-            </div>
-
-            <div>
-                <input data-category="places" data-filter="dwarven" id="dwarven-places" name="dwarven-places"
-                       type="checkbox">
-                <label for="dwarven-places">Dwarves</label>
-                <img class="iconaside" src="assets/icons/dwarf.svg">
-            </div>
-
-            <div>
-                <input data-category="places" data-filter="hobbit" id="hobbit-places" name="hobbit-places"
-                       type="checkbox">
-                <label for="hobbit-places">Hobbits</label>
-                <img class="iconaside" src="assets/icons/hobbit.svg">
-            </div>
-
-            <div>
-                <input data-category="places" data-filter="dark" id="dark-places" name="dark-places" type="checkbox">
-                <label for="dark-places">Evil</label>
-                <img class="iconaside" src="assets/icons/evil.svg">
+                <input data-category="chaos" data-filter="exilesofkhorne" id="exilesofkhorne-chaos" name="exilesofkhorne-chaos" type="checkbox">
+                <label for="exilesofkhorne-chaos">Exiles of Khorne</label>
+                <img class="iconaside" src="assets/icons/imgFaction/exilesofkhorne.png"><img class="iconaside" id="buttonexilesofkhorne" alt="view layer" src="assets/icons/location.svg" > 
             </div>
             <div>
-                <input data-category="places" data-filter="ogre" id="ogre-places" name="ogre-places" type="checkbox">
-                <label for="ogre-places">Ogre</label>
-                <img class="iconaside" src="assets/icons/ogre.svg">
+                <input data-category="chaos" data-filter="poxmakersofnurgle" id="poxmakersofnurgle-chaos" name="poxmakersofnurgle-chaos" type="checkbox">
+                <label for="poxmakersofnurgle-chaos">Poxmakers of Nurgle</label>
+                <img class="iconaside" src="assets/icons/imgFaction/poxmakersofnurgle.png"><img class="iconaside" id="buttonpoxmakersofnurgle" alt="view layer" src="assets/icons/location.svg" > 
             </div>
             <div>
-                <input data-category="places" data-filter="elfhel" id="elfhel-places" name="elfhel-places" type="checkbox" >
-                <label for="elfhel-places">Elf</label>
-                <img class="iconaside" src="assets/icons/elfhel.svg">
+                <input data-category="chaos" data-filter="seducersofslaanesh" id="seducersofslaanesh-chaos" name="seducersofslaanesh-chaos" type="checkbox">
+                <label for="seducersofslaanesh-chaos">Seducers of Slaanesh</label>
+                <img class="iconaside" src="assets/icons/imgFaction/seducersofslaanesh.png"><img class="iconaside" id="buttonseducersofslaanesh" alt="view layer" src="assets/icons/location.svg" > 
+            </div>
+            <div>
+                <input data-category="chaos" data-filter="oraclesoftzeentch" id="oraclesoftzeentch-chaos" name="oraclesoftzeentch-chaos" type="checkbox">
+                <label for="oraclesoftzeentch-chaos">Oracles of Tzeentch</label>
+                <img class="iconaside" src="assets/icons/imgFaction/oraclesoftzeentch.png"><img class="iconaside" id="buttonoraclesoftzeentch" alt="view layer" src="assets/icons/location.svg" > 
+            </div>
+            <div>
+                <input data-category="chaos" data-filter="shadowlegion" id="shadowlegion-chaos" name="shadowlegion-chaos" type="checkbox">
+                <label for="shadowlegion-chaos">Shadow Legion</label>
+                <img class="iconaside" src="assets/icons/imgFaction/shadowlegion.png"><img class="iconaside" id="buttonshadowlegion" alt="view layer" src="assets/icons/location.svg" > 
             </div>
         </fieldset>
-        
         <fieldset id="filters-events">
             <legend>Events</legend>
-
             <div>
-                <input data-category="events" data-filter="all" id="all-events" name="all-events" type="checkbox">
-                <label for="all-events">All</label>
-            </div>
-
-            <div>
-                <input data-category="events" data-filter="battle" id="battle-events" name="battle-events"
-                       type="checkbox">
-                <label for="battle-events">Battles</label>
-            </div>
-
-            <div>
-                <input data-category="events" data-filter="death" id="death-events" name="death-events"
-                       type="checkbox">
-                <label for="death-events">Deaths</label>
-            </div>
-
-            <div>
-                <input data-category="events" data-filter="encounter" id="encounter-events" name="encounter-events"
-                       type="checkbox">
-                <label for="encounter-events">Encounters</label>
-            </div>
-        </fieldset>
-        <fieldset id="filters-spawn">
-            <legend>Spawn</legend>
-            <div>
-                <input data-category="spawn" data-filter="caosspawn" id="caos-spawn" name="caos-spawn" type="checkbox">
-                <label for="caos-spawn">Caos Spawn</label>
-                <img class="iconaside" src="assets/icons/ogre.svg"> 
-                
+                <input data-category="events" data-filter="quest" id="quest-events"  name="quest-events" type="checkbox">
+                <label id="buttonViewquestImg" for="quest-events">Quest</label>
+                <img class="iconaside" src="assets/icons/quest.png"> 
             </div>
             <div>
-                <input data-category="spawn" data-filter="elfhelspawn" id="elfhel-spawn" name="elfhel-spawn" type="checkbox">
-                <label for="elfhel-spawn">Elf Spawn</label>
-                <img class="iconaside" src="assets/icons/elfhel.svg"> 
-                
+                <input data-category="events" data-filter="quest" id="ruin-events"  name="ruin-events" type="checkbox">
+                <label id="buttonViewruinImg" for="ruin-events">Ruins</label>
+                <img class="iconaside" src="assets/icons/ruin.png"> 
             </div>
             <div>
-                <input data-category="spawn" data-filter="humanspawn" id="human-spawn" name="human-spawn" type="checkbox">
-                <label for="human-spawn">Human Spawn</label>
-                <img class="iconaside" src="assets/icons/castle.svg"> 
+                <input data-category="events" data-filter="picture" id="picture-events"  name="picture-events" type="checkbox">
+                <label id="buttonViewImg" for="picture-events">Pictures</label>
+                <img class="iconaside" src="assets/icons/viewimg.svg"> 
             </div>
         </fieldset>
         <fieldset>

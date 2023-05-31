@@ -101,6 +101,45 @@
     
   },
   {
+    "title": "The Ice Court",
+    "description": "The Ice Court is a playable Kislev Kislev faction introduced in Total War: Warhammer III. It is led by Tzarina Katarin.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Ice_Court",
+    "tags": {
+      "humans": [
+        "theicecourt"
+      ]
+    },
+    "x":4782,
+    "y":4814.5
+    
+  },
+  {
+    "title": "The Great Orthodoxy",
+    "description": "The Great Orthodoxy is a playable Kislev Kislev faction introduced in Total War: Warhammer III. It is led by Kostaltyn.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Great_Orthodoxy",
+    "tags": {
+      "humans": [
+        "thegreatorthodoxy"
+      ]
+    },
+    "x":4826,
+    "y":5029.5
+    
+  },
+  {
+    "title": "Ursun Revivalists",
+    "description": "Ursun Revivalists is a playable Kislev Kislev faction introduced in Total War: Warhammer III. It is led by Boris Ursus.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Ursun_Revivalists",
+    "tags": {
+      "humans": [
+        "ursunrevivalists"
+      ]
+    },
+    "x":4714,
+    "y":5462.5
+    
+  },
+  {
     "title": "karaz-a-karaz"  ,
     "description": "Karaz-a-Karak is a playable faction of Dwarfs introduced in Total War: Warhammer. It is led by either Thorgrim Grudgebearer or Grombrindal - The White Dwarf and can be found in the eastern parts of The Old World, deep in the World's Edge Mountains.",
     "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Karaz-a-Karak",
@@ -919,9 +958,65 @@
     
   },
   {
+    "title": "Disciples of Hashut",
+    "description": "Disciples of Hashut is a playable Disciples of Hashut Chaos Dwarfs faction introduced in Total War: Warhammer III. It is led by Astragoth Ironhand.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Disciples_of_Hashut",
+    "tags": {
+      "chaosdwarfs": [
+        "disciplesofhashut"
+      ]
+    },
+    "x":5027.497397697658,
+    "y":5089.24743247728
+    
+  }
+  ,
+  {
+    "title": "The Legion of Azgorh",
+    "description": "The Legion of Azgorh is a playable Disciples of Hashut Chaos Dwarfs faction introduced in Total War: Warhammer III. It is led by Drazhoath the Ashen.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Legion_of_Azgorh",
+    "tags": {
+      "chaosdwarfs": [
+        "thelegionofazgorh"
+      ]
+    },
+    "x":5314,
+    "y":3826.5
+    
+  }
+  ,
+  {
+    "title": "The Warhost of Zharr",
+    "description": "The Warhost of Zharr is a playable Disciples of Hashut Chaos Dwarfs faction introduced in Total War: Warhammer III. It is led by Zhatan the Black.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Warhost_of_Zharr",
+    "tags": {
+      "chaosdwarfs": [
+        "thewarhostofzharr"
+      ]
+    },
+    "x":5197.5,
+    "y":4829.75
+    
+  }
+  ,
+  {
+    "title": "The Warhost of Zharr",
+    "description": "The Warhost of Zharr is a playable Disciples of Hashut Chaos Dwarfs faction introduced in Total War: Warhammer III. It is led by Zhatan the Black.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/The_Warhost_of_Zharr",
+    "tags": {
+      "chaosdwarfs": [
+        "thewarhostofzharr"
+      ]
+    },
+    "x":5255.5,
+    "y":4844.25
+    
+  }
+  ,
+  {
     "title": "ChaosWarriorsSpawn",
-    "description": "",
-    "infoLink": "",
+    "description": "Chaos Warriors are a Warhost of the Apocalypse Warriors of Chaos melee infantry unit introduced in Total War: Warhammer with the Chaos Warriors Race Pack.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Chaos_Warriors",
     "tags": {
       "chaos": [
         "chaoswarriors"
@@ -929,6 +1024,90 @@
     },
     "x":5070,
     "y":5354.5
+  }
+  ,
+  {
+    "title": "Legion of Chaos",
+    "description": "Legion of Chaos is a playable Daemons of Chaos faction introduced in Total War: Warhammer III. It is led by The Daemon Prince who can be named by the player.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Legion_of_Chaos#Starting_territory",
+    "tags": {
+      "chaos": [
+        "legionofchaos"
+      ]
+    },
+    "x":4257,
+    "y":5540.5
+    
+  }
+  ,
+  {
+    "title": "Exiles of Khorne",
+    "description": "Exiles of Khorne is a playable Khorne Khorne faction introduced in Total War: Warhammer III. It is led by Skarbrand the Exiled.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Exiles_of_Khorne",
+    "tags": {
+      "chaos": [
+        "exilesofkhorne"
+      ]
+    },
+    "x":4391,
+    "y":3407.25
+    
+    
+  }
+  ,
+  {
+    "title": "Poxmakers of Nurgle",
+    "description": "Poxmakers of Nurgle is a playable Nurgle Nurgle faction introduced in Total War: Warhammer III. It is led by Ku'gath Plaguefather.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Poxmakers_of_Nurgle",
+    "tags": {
+      "chaos": [
+        "poxmakersofnurgle"
+      ]
+    },
+    "x":5411.969688581741,
+    "y":3312.280311418259
+    
+  }
+  ,
+  {
+    "title": "Seducers of Slaanesh",
+    "description": "Seducers of Slaanesh is a playable Slaanesh Slaanesh faction introduced in Total War: Warhammer III. It is led by N'Kari.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Seducers_of_Slaanesh",
+    "tags": {
+      "chaos": [
+        "seducersofslaanesh"
+      ]
+    },
+    "x":2001,
+    "y":4140.25
+    
+  }
+  ,
+  {
+    "title": "Oracles of Tzeentch",
+    "description": "Oracles of Tzeentch is a playable Tzeentch Tzeentch faction introduced in Total War: Warhammer III. It is led by Kairos Fateweaver.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Oracles_of_Tzeentch",
+    "tags": {
+      "chaos": [
+        "oraclesoftzeentch"
+      ]
+    },
+    "x":4140,
+    "y":513
+    
+  }
+  ,
+  {
+    "title": "Shadow Legion",
+    "description": "Shadow Legion is a Warhost of the Apocalypse Warriors of Chaos playable faction and a Wh3 main dae daemon prince 256 Daemons of Chaos minor faction introduced in Total War: Warhammer III. It is led by Be'lakor in both campaigns, but in Immortal Empires he's a legendary lord.Shadow Legion/Be'lakor are free in Immortal Empires - they do not require any paid DLC to play as.",
+    "infoLink": "https://totalwarwarhammer.fandom.com/wiki/Shadow_Legion",
+    "tags": {
+      "chaos": [
+        "shadowlegion"
+      ]
+    },
+    "x":3577,
+    "y":4846.25
   }
 
   

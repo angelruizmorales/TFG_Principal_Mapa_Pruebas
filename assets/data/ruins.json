@@ -1,0 +1,98 @@
+[
+    {
+        "url": "/assets/icons/ruin.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "City of the Dead",
+        "latLngBounds": [[ 1622, 2188.625], [1586.75,2269.125]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl":"",
+        "title":"City of the Dead",
+        "description":"",
+        "click":"Haz click para saber más"
+      },
+          {
+        "url": "/assets/icons/ruin.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "Quetza",
+        "latLngBounds": [[ 1553, 1765.625], [1522.75,1820.125]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl":"",
+        "title":"Quetza",
+        "description":"",
+        "click":"Haz click para saber más"
+      },
+                {
+        "url": "/assets/icons/ruin.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "Lahmia",
+        "latLngBounds": [[ 3373, 4598.625], [3343.75,4649.125]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl":"",
+        "title":"Lahmia",
+        "description":"",
+        "click":"Haz click para saber más"
+      },
+      {
+        "url": "/assets/icons/ruin.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "Morgheim",
+        "latLngBounds": [[ 3931, 4418.625], [3887.75,4510.125]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl":"",
+        "title":"Morgheim",
+        "description":"",
+        "click":"Haz click para saber más"
+      },
+      {
+        "url": "/assets/icons/ruin.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "Pahuax",
+        "latLngBounds": [[ 2552, 702.625], [2519.75,766.125]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl":"",
+        "title":"Pahuax",
+        "description":"",
+        "click":"Haz click para saber más"
+      },
+      {
+        "url": "/assets/icons/ruin.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "The Frigid Wasteland",
+        "latLngBounds": [[ 5339, 1521.625], [5315.75,1558.125]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl":"",
+        "title":"The Frigid Wasteland",
+        "description":"",
+        "click":"Haz click para saber más"
+      },
+      {
+        "url": "/assets/icons/ruin.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "Karak Krakaten",
+        "latLngBounds": [[ 3908, 5582.625], [3877.75,5649.125]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl":"",
+        "title":"Karak Krakaten",
+        "description":"",
+        "click":"Haz click para saber más"
+      },
+      {
+        "url": "/assets/icons/ruin.png",
+        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
+        "altText": "Bel-Alid",
+        "latLngBounds": [[ 3355, 3853.625], [3312.75,3936.125]],
+        "isVisible": false,
+        "overlay": null,
+        "redirectUrl":"",
+        "title":"Bel-Alid",
+        "description":"",
+        "click":"Haz click para saber más"
+      }
+]
