@@ -42,14 +42,12 @@ const cluster = L.markerClusterGroup({
     maxClusterRadius: 20
 });
 map.addLayer(cluster);
-//me devuelve la informacion de cada punto de interes como su nombre, descripción, fecha... "solo de los puntos de interes, de los path lo hacemos en otra"
+
+//me devuelve la informacion de cada punto de interes como su nombre, descripción, fecha...
 const createInfoDialog = (data) => {
     let info = ``;
     if (data.title) {
         info += `<h1 class="title">${data.title}</h1>`;
-    }
-    if (data.date) {
-        info += `<h2 class="date">[${data.date}]</h2>`;
     }
     if (data.description) {
         info += `<p class="description">${data.description}</p>`;

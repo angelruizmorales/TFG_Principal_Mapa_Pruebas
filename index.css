@@ -327,12 +327,6 @@ aside footer .credits {
   margin-bottom: 1rem;
   border-bottom: 1px solid #cecece;
   padding-bottom: 1rem;
-  
-}
-/*Se aplica a la etiqueta date*/
-.leaflet-popup .date {
-  font-weight: bold;
-  font-size: 1rem;
 }
 /*Se aplica a la etiqueta description*/
 .leaflet-popup .description {
