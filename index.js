@@ -343,9 +343,9 @@ map.on('click', onMapClick);
 ////hacer una funciona que cuente valores en el json y nos devuelva la cantidad almacenada en una variable para luego mandarla al assets
 ////Función para guardar localizaciones en una base de datos.
 
+//Función para crear imageOverlay en el mapa y al hacer click en un botón en el html que cargue o elimine las imageOverlay.
 const viewImg = document.getElementById('buttonViewImg');
 viewImg.addEventListener('click', renderImages);
-//Función para crear imageOverlay en el mapa y al hacer click en un botón en el html que cargue o elimine las imageOverlay.
   function createImages() {
     imgData.forEach(function(imgData) {
       const overlay = L.imageOverlay(imgData.url, L.latLngBounds(imgData.latLngBounds), {
@@ -399,7 +399,7 @@ viewImg.addEventListener('click', renderImages);
 //Map center
 const button = document.getElementById('inicial-point');
 button.addEventListener('click', function() {
-        moveToCoordinates(4533,3906.5,0);
+        moveToCoordinates(3412,3873.5,0);
 });
 // //Humans
 // const buttonreiklan = document.getElementById('buttonreiklan');

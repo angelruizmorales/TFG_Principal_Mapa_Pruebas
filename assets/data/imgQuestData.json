@@ -105,19 +105,6 @@
       {
         "url": "/assets/icons/quest.png",
         "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
-        "altText": "",
-        "latLngBounds": [[4111.625, 3339], [4093.125, 3362.75]],
-        "isVisible": false,
-        "overlay": null,
-        "redirectUrl": "",
-        "title":"",
-        "description":"",
-        "click":"Haz click para saber más"
-      }
-      ,    
-      {
-        "url": "/assets/icons/quest.png",
-        "errorOverlayUrl": "https://cdn-icons-png.flaticon.com/512/110/110686.png",
         "altText": "Talisman of Hoeth",
         "latLngBounds": [[3739.625, 2128], [3711.125, 2150.75]],
         "isVisible": false,
