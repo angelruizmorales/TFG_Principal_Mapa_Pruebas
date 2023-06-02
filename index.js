@@ -323,7 +323,7 @@ document.getElementById('close-btn').addEventListener('click', () => {
 renderMarkersFromFilters(getFilters());
 
 
-//Al hacer click me devuelve la posición en el mapa   /////Tamaño modificado en el index.css ".leaflet-popup" es de manera global ver si es posible cambiar el tamaño solo de este.
+//Al hacer click me devuelve la posición en el mapa .Tamaño modificado en el index.css ".leaflet-popup" es de manera global ver si es posible cambiar el tamaño solo de este.
 var clickCoordinates = null;
 var popup = L.popup();
 function onMapClick(e) {
@@ -339,9 +339,6 @@ function onMapClick(e) {
 
 map.on('click', onMapClick);
 
- 
-////hacer una funciona que cuente valores en el json y nos devuelva la cantidad almacenada en una variable para luego mandarla al assets
-////Función para guardar localizaciones en una base de datos.
 
 //Función para crear imageOverlay en el mapa y al hacer click en un botón en el html que cargue o elimine las imageOverlay.
 const viewImg = document.getElementById('buttonViewImg');
@@ -396,24 +393,13 @@ viewImg.addEventListener('click', renderImages);
   function moveToCoordinates(lat, lng, zoom) {
     map.setView([lat, lng], zoom);
 }
-//Map center
-const button = document.getElementById('inicial-point');
-button.addEventListener('click', function() {
-        moveToCoordinates(3412,3873.5,0);
-});
-// //Humans
-// const buttonreiklan = document.getElementById('buttonreiklan');
-// buttonreiklan.addEventListener('click', function() {
-//     moveToCoordinates(3914.5,4598.5,0);
-// });
 //Una Función para coger los valores lat,lng,zoom y pasar le a moveToCoordinates esos valores.
 function handleButtonClick(lat, lng, zoom) {
   moveToCoordinates(lat, lng, zoom);
 }
-
 //Aquí guardo el nombre de los botones y sus coordenadas
 const buttonCoordinates = {
-  'inicial-point': [4533, 3906.5, -1],
+  'inicial-point': [3412,3873.5,0],
   //Empire
   'buttonreiklan': [4452.5, 4496.25, 1],
   'buttongoldencollege': [4355.75, 4561, 1],
@@ -538,10 +524,9 @@ Object.entries(buttonCoordinates).forEach(([buttonId, coordinates]) => {
   });
 
 
-  //Función para las imagens de quests
+ // Función para crear las imágenes de las quests
   const viewquestImg = document.getElementById('buttonViewquestImg');
   viewquestImg.addEventListener('click', renderquestImages);
-  // Función para crear las imágenes de las quests
   function createquestImages() {
     imgQuestData.forEach(function(imgQuestData) {
           const overlay = L.imageOverlay(imgQuestData.url, L.latLngBounds(imgQuestData.latLngBounds), {
@@ -589,10 +574,9 @@ Object.entries(buttonCoordinates).forEach(([buttonId, coordinates]) => {
 
 
 
-
+  // Función para crear las imágenes de las ruinas
   const viewruinImg = document.getElementById('buttonViewruinImg');
   viewruinImg.addEventListener('click', renderruinImages);
-  // Función para crear las imágenes de las ruinas
   function createruinImages() {
     ruin.forEach(function(ruin) {
           const overlay = L.imageOverlay(ruin.url, L.latLngBounds(ruin.latLngBounds), {
